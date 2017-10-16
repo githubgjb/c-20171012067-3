@@ -1,0 +1,46 @@
+﻿生成启动时间为 2017/10/16 14:22:42。
+     1>项目“D:\imooc\git\source\20171012\c-20171012067-3\2017101603Dijkstra\2017101603Dijkstra\2017101603Dijkstra.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\sparsegraph.h(38): warning C4018: “<”: 有符号/无符号不匹配
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\sparsegraph.h(36): 编译类 模板 成员函数“SparseGraph<int>::~SparseGraph(void)”时
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\main.cpp(14): 参见对正在编译的函数 模板 实例化“SparseGraph<int>::~SparseGraph(void)”的引用
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\main.cpp(14): 参见对正在编译的类 模板 实例化“SparseGraph<int>”的引用
+     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\dijkstra.h(129): warning C4018: “<”: 有符号/无符号不匹配
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\dijkstra.h(122): 编译类 模板 成员函数“void Dijkstra<SparseGraph<int>,int>::showPath(int)”时
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\main.cpp(25): 参见对正在编译的函数 模板 实例化“void Dijkstra<SparseGraph<int>,int>::showPath(int)”的引用
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\main.cpp(20): 参见对正在编译的类 模板 实例化“Dijkstra<SparseGraph<int>,int>”的引用
+     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\sparsegraph.h(109): warning C4018: “<”: 有符号/无符号不匹配
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\sparsegraph.h(107): 编译类 模板 成员函数“Edge<Weight> *SparseGraph<Weight>::adjIterator::next(void)”时
+                 with
+                 [
+                     Weight=int
+                 ]
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\dijkstra.h(59): 参见对正在编译的函数 模板 实例化“Edge<Weight> *SparseGraph<Weight>::adjIterator::next(void)”的引用
+                 with
+                 [
+                     Weight=int
+                 ]
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\dijkstra.h(58): 参见对正在编译的类 模板 实例化“SparseGraph<int>::adjIterator”的引用
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\dijkstra.h(30): 编译类 模板 成员函数“Dijkstra<SparseGraph<int>,int>::Dijkstra(Graph &,int)”时
+                 with
+                 [
+                     Graph=SparseGraph<int>
+                 ]
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\main.cpp(20): 参见对正在编译的函数 模板 实例化“Dijkstra<SparseGraph<int>,int>::Dijkstra(Graph &,int)”的引用
+                 with
+                 [
+                     Graph=SparseGraph<int>
+                 ]
+     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\sparsegraph.h(116): warning C4018: “>=”: 有符号/无符号不匹配
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\sparsegraph.h(115): 编译类 模板 成员函数“bool SparseGraph<int>::adjIterator::end(void)”时
+                 d:\imooc\git\source\20171012\c-20171012067-3\2017101603dijkstra\2017101603dijkstra\dijkstra.h(59): 参见对正在编译的函数 模板 实例化“bool SparseGraph<int>::adjIterator::end(void)”的引用
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\imooc\git\source\20171012\c-20171012067-3\2017101603Dijkstra\Debug\2017101603Dijkstra.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\imooc\git\source\20171012\c-20171012067-3\2017101603Dijkstra\Debug\2017101603Dijkstra.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\imooc\git\source\20171012\c-20171012067-3\2017101603Dijkstra\Debug\2017101603Dijkstra.lib" /MACHINE:X86 Debug\main.obj
+         2017101603Dijkstra.vcxproj -> D:\imooc\git\source\20171012\c-20171012067-3\2017101603Dijkstra\Debug\2017101603Dijkstra.exe
+     1>已完成生成项目“D:\imooc\git\source\20171012\c-20171012067-3\2017101603Dijkstra\2017101603Dijkstra\2017101603Dijkstra.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.18
