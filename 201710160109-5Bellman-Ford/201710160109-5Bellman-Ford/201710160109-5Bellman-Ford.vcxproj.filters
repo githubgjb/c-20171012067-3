@@ -26,5 +26,25 @@
     <ClInclude Include="Edge.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="DenseGraph.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadGraph.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BellmanFord.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="testG_negative_circle.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="testG2.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="ReadMe.txt">
+      <Filter>源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>

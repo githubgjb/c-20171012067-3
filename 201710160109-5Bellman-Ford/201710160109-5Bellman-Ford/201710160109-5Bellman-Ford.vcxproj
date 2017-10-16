@@ -81,8 +81,16 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BellmanFord.h" />
+    <ClInclude Include="DenseGraph.h" />
     <ClInclude Include="Edge.h" />
+    <ClInclude Include="ReadGraph.h" />
     <ClInclude Include="SparseGraph.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="testG2.txt" />
+    <Text Include="testG_negative_circle.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
