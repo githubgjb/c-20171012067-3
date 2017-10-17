@@ -1,0 +1,15 @@
+﻿生成启动时间为 2017/10/17 15:02:29。
+     1>项目“D:\imooc\git\source\20171012\c-20171012067-3\Play-with-Algorithms-master\02-Sorting-Basic\Chapter-02-Completed-Code\Chapter-02-Completed-Code\Chapter-02-Completed-Code.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\imooc\git\source\20171012\c-20171012067-3\play-with-algorithms-master\02-sorting-basic\chapter-02-completed-code\chapter-02-completed-code\sorttesthelper.h(25): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+     1>d:\imooc\git\source\20171012\c-20171012067-3\play-with-algorithms-master\02-sorting-basic\chapter-02-completed-code\chapter-02-completed-code\sorttesthelper.h(42): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\imooc\git\source\20171012\c-20171012067-3\Play-with-Algorithms-master\02-Sorting-Basic\Chapter-02-Completed-Code\Debug\Chapter-02-Completed-Code.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\imooc\git\source\20171012\c-20171012067-3\Play-with-Algorithms-master\02-Sorting-Basic\Chapter-02-Completed-Code\Debug\Chapter-02-Completed-Code.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\imooc\git\source\20171012\c-20171012067-3\Play-with-Algorithms-master\02-Sorting-Basic\Chapter-02-Completed-Code\Debug\Chapter-02-Completed-Code.lib" /MACHINE:X86 Debug\main.obj
+         Chapter-02-Completed-Code.vcxproj -> D:\imooc\git\source\20171012\c-20171012067-3\Play-with-Algorithms-master\02-Sorting-Basic\Chapter-02-Completed-Code\Debug\Chapter-02-Completed-Code.exe
+     1>已完成生成项目“D:\imooc\git\source\20171012\c-20171012067-3\Play-with-Algorithms-master\02-Sorting-Basic\Chapter-02-Completed-Code\Chapter-02-Completed-Code\Chapter-02-Completed-Code.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.96
