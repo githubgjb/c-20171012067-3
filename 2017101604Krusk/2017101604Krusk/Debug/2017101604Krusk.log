@@ -1,82 +1,83 @@
-﻿生成启动时间为 2017/10/16 15:37:18。
-     1>项目“D:\imooc\git\source\20171012\c-20171012067-3\2017101604Krusk\2017101604Krusk\2017101604Krusk.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2017/10/17 6:10:04。
+     1>项目“D:\git\c\c-20171012067-3\2017101604Krusk\2017101604Krusk\2017101604Krusk.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(24): warning C4018: “<”: 有符号/无符号不匹配
-     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(35): warning C4018: “<”: 有符号/无符号不匹配
-     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(46): warning C4018: “<”: 有符号/无符号不匹配
-     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(38): warning C4018: “<”: 有符号/无符号不匹配
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(36): 编译类 模板 成员函数“SparseGraph<double>::~SparseGraph(void)”时
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(17): 参见对正在编译的函数 模板 实例化“SparseGraph<double>::~SparseGraph(void)”的引用
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(17): 参见对正在编译的类 模板 实例化“SparseGraph<double>”的引用
-     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\lazyprimmst.h(70): warning C4018: “<”: 有符号/无符号不匹配
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\lazyprimmst.h(42): 编译类 模板 成员函数“LazyPrimMST<SparseGraph<double>,double>::LazyPrimMST(Graph &)”时
+     1>d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(24): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(35): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(46): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(38): warning C4018: “<”: 有符号/无符号不匹配
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(36): 编译类 模板 成员函数“SparseGraph<double>::~SparseGraph(void)”时
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(17): 参见对正在编译的函数 模板 实例化“SparseGraph<double>::~SparseGraph(void)”的引用
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(17): 参见对正在编译的类 模板 实例化“SparseGraph<double>”的引用
+     1>d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\lazyprimmst.h(70): warning C4018: “<”: 有符号/无符号不匹配
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\lazyprimmst.h(42): 编译类 模板 成员函数“LazyPrimMST<SparseGraph<double>,double>::LazyPrimMST(Graph &)”时
                  with
                  [
                      Graph=SparseGraph<double>
                  ]
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(22): 参见对正在编译的函数 模板 实例化“LazyPrimMST<SparseGraph<double>,double>::LazyPrimMST(Graph &)”的引用
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(22): 参见对正在编译的函数 模板 实例化“LazyPrimMST<SparseGraph<double>,double>::LazyPrimMST(Graph &)”的引用
                  with
                  [
                      Graph=SparseGraph<double>
                  ]
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(22): 参见对正在编译的类 模板 实例化“LazyPrimMST<SparseGraph<double>,double>”的引用
-     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\primmst.h(80): warning C4018: “<”: 有符号/无符号不匹配
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\primmst.h(56): 编译类 模板 成员函数“PrimMST<SparseGraph<double>,double>::PrimMST(Graph &)”时
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(22): 参见对正在编译的类 模板 实例化“LazyPrimMST<SparseGraph<double>,double>”的引用
+     1>d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\primmst.h(80): warning C4018: “<”: 有符号/无符号不匹配
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\primmst.h(56): 编译类 模板 成员函数“PrimMST<SparseGraph<double>,double>::PrimMST(Graph &)”时
                  with
                  [
                      Graph=SparseGraph<double>
                  ]
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(33): 参见对正在编译的函数 模板 实例化“PrimMST<SparseGraph<double>,double>::PrimMST(Graph &)”的引用
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(33): 参见对正在编译的函数 模板 实例化“PrimMST<SparseGraph<double>,double>::PrimMST(Graph &)”的引用
                  with
                  [
                      Graph=SparseGraph<double>
                  ]
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(33): 参见对正在编译的类 模板 实例化“PrimMST<SparseGraph<double>,double>”的引用
-     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(39): warning C4018: “<”: 有符号/无符号不匹配
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(26): 编译类 模板 成员函数“KruskalMST<SparseGraph<double>,double>::KruskalMST(Graph &)”时
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(33): 参见对正在编译的类 模板 实例化“PrimMST<SparseGraph<double>,double>”的引用
+     1>d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(39): warning C4018: “<”: 有符号/无符号不匹配
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(26): 编译类 模板 成员函数“KruskalMST<SparseGraph<double>,double>::KruskalMST(Graph &)”时
                  with
                  [
                      Graph=SparseGraph<double>
                  ]
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(44): 参见对正在编译的函数 模板 实例化“KruskalMST<SparseGraph<double>,double>::KruskalMST(Graph &)”的引用
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(44): 参见对正在编译的函数 模板 实例化“KruskalMST<SparseGraph<double>,double>::KruskalMST(Graph &)”的引用
                  with
                  [
                      Graph=SparseGraph<double>
                  ]
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(44): 参见对正在编译的类 模板 实例化“KruskalMST<SparseGraph<double>,double>”的引用
-     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(53): warning C4018: “<”: 有符号/无符号不匹配
-     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(109): warning C4018: “<”: 有符号/无符号不匹配
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(107): 编译类 模板 成员函数“Edge<Weight> *SparseGraph<Weight>::adjIterator::next(void)”时
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(44): 参见对正在编译的类 模板 实例化“KruskalMST<SparseGraph<double>,double>”的引用
+     1>d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(53): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(109): warning C4018: “<”: 有符号/无符号不匹配
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(107): 编译类 模板 成员函数“Edge<Weight> *SparseGraph<Weight>::adjIterator::next(void)”时
                  with
                  [
                      Weight=double
                  ]
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(32): 参见对正在编译的函数 模板 实例化“Edge<Weight> *SparseGraph<Weight>::adjIterator::next(void)”的引用
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(32): 参见对正在编译的函数 模板 实例化“Edge<Weight> *SparseGraph<Weight>::adjIterator::next(void)”的引用
                  with
                  [
                      Weight=double
                  ]
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(31): 参见对正在编译的类 模板 实例化“SparseGraph<double>::adjIterator”的引用
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(26): 编译类 模板 成员函数“KruskalMST<SparseGraph<double>,double>::KruskalMST(Graph &)”时
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(31): 参见对正在编译的类 模板 实例化“SparseGraph<double>::adjIterator”的引用
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(26): 编译类 模板 成员函数“KruskalMST<SparseGraph<double>,double>::KruskalMST(Graph &)”时
                  with
                  [
                      Graph=SparseGraph<double>
                  ]
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(44): 参见对正在编译的函数 模板 实例化“KruskalMST<SparseGraph<double>,double>::KruskalMST(Graph &)”的引用
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\main.cpp(44): 参见对正在编译的函数 模板 实例化“KruskalMST<SparseGraph<double>,double>::KruskalMST(Graph &)”的引用
                  with
                  [
                      Graph=SparseGraph<double>
                  ]
-     1>d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(116): warning C4018: “>=”: 有符号/无符号不匹配
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(115): 编译类 模板 成员函数“bool SparseGraph<double>::adjIterator::end(void)”时
-                 d:\imooc\git\source\20171012\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(32): 参见对正在编译的函数 模板 实例化“bool SparseGraph<double>::adjIterator::end(void)”的引用
+     1>d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(116): warning C4018: “>=”: 有符号/无符号不匹配
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\sparsegraph.h(115): 编译类 模板 成员函数“bool SparseGraph<double>::adjIterator::end(void)”时
+                 d:\git\c\c-20171012067-3\2017101604krusk\2017101604krusk\kruskalmst.h(32): 参见对正在编译的函数 模板 实例化“bool SparseGraph<double>::adjIterator::end(void)”的引用
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\imooc\git\source\20171012\c-20171012067-3\2017101604Krusk\Debug\2017101604Krusk.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\imooc\git\source\20171012\c-20171012067-3\2017101604Krusk\Debug\2017101604Krusk.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\imooc\git\source\20171012\c-20171012067-3\2017101604Krusk\Debug\2017101604Krusk.lib" /MACHINE:X86 Debug\main.obj
-         2017101604Krusk.vcxproj -> D:\imooc\git\source\20171012\c-20171012067-3\2017101604Krusk\Debug\2017101604Krusk.exe
-     1>已完成生成项目“D:\imooc\git\source\20171012\c-20171012067-3\2017101604Krusk\2017101604Krusk\2017101604Krusk.vcxproj”(Build 个目标)的操作。
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\git\c\c-20171012067-3\2017101604Krusk\Debug\2017101604Krusk.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\git\c\c-20171012067-3\2017101604Krusk\Debug\2017101604Krusk.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\git\c\c-20171012067-3\2017101604Krusk\Debug\2017101604Krusk.lib" /MACHINE:X86 Debug\main.obj
+         LINK : 没有找到 D:\git\c\c-20171012067-3\2017101604Krusk\Debug\2017101604Krusk.exe 或上一个增量链接没有生成它；正在执行完全链接
+         2017101604Krusk.vcxproj -> D:\git\c\c-20171012067-3\2017101604Krusk\Debug\2017101604Krusk.exe
+     1>已完成生成项目“D:\git\c\c-20171012067-3\2017101604Krusk\2017101604Krusk\2017101604Krusk.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.18
+已用时间 00:00:01.71
