@@ -30,7 +30,7 @@
 //从最后一个不是叶子的节点开始 从0
 //(count-1)/2
 
-////todo 未完...待续... 4-6
+////
 
 //最大堆的骨架
 template<typename Item>
@@ -136,6 +136,46 @@ void heapSort2(T arr[],int n){
 	}
 	
 }
+
+template<typename T>
+void __shiftDown(T arr[],int n,int k){
+	
+	//在完全二叉树有有右孩子,一定有孩子
+	while(2*k+1 < n){
+		int j = 2*k+1; 
+		//在此轮循环中,arr[k]和data[j]交换位置
+		//有右孩子         右孩子大于左孩子
+		if(j+1 < n && arr[j+1] > arr[j]){
+			j += 1;
+		}
+		if(arr[k] >= arr[j]){
+			break;
+		}
+		swap(arr[k],arr[j]);
+		k = j;
+	}
+	
+}
+
+//原地堆排序
+template<typename T>
+void heapSort(T arr[],int ns){
+	
+	//heapify 堆排序
+	//从非叶子节点开始
+	//从最后一个不是叶子的节点开始 从0
+	//(count-1)/2
+	for(int i = (n-1)/2 ; i>=0 ; i--){
+		__shiftDown(arr, n , i);
+	}
+	
+	//把最大堆,变成从小到大的数组
+	for(int i = n-1;i>0;i--){
+		swap(arr[0] , arr[i]);
+		__shiftDown(arr,i,0);
+	}
+}
+
 
 int main() {
 	MaxHeap<int> maxheap = MaxHeap<int>(100);
