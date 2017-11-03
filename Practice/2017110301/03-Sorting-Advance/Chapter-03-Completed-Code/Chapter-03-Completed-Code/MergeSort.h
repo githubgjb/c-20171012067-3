@@ -20,6 +20,8 @@ void __merge(T arr[], int l, int mid, int r){
 	//T aux[r - l + 1];
 	T *aux = new T[r-l+1];
 
+	cout << "l: " << l << " mid: " << mid << " r:" << r << endl;
+
 	for (int i = l; i <= r; i++)
 		aux[i - l] = arr[i];
 
@@ -52,20 +54,16 @@ void __mergeSort(T arr[], int l, int r){
 		return;
 
 	int mid = (l + r) / 2;
-	//cout << "l:" << l << "  ";
-	//cout << "r:" << r << "  ";
-	//cout << "mid:" << mid << endl;
 
-
-	cout << "l: " << l <<"  ";
-	cout << "mid: " << mid << endl;
+	cout << l << endl;
+	cout << mid << endl;
 	__mergeSort(arr, l, mid);
 
-	cout << endl;
-
-	cout << "mid+1: " << mid+1 << "  ";
-	cout << "r: " << r << endl;
+	cout << "------------------" << endl;
+	cout << mid + 1 << endl;
+	cout << r << endl;
 	__mergeSort(arr, mid + 1, r);
+
 	__merge(arr, l, mid, r);
 }
 
