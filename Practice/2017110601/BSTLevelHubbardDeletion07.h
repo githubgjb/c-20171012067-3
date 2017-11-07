@@ -15,6 +15,15 @@ private:
 		   this->value = value;
 		   this->left = this ->right = NULL;
 	   }
+	   
+	   Node(Node *node){
+		   this->key = node->key;
+		   this->value = node->value;
+		   this->left = node->left;
+		   this->right = node->right;
+	   }
+	   
+    };
 	Node *root; //根
 	int count;  //计数   
 
@@ -120,6 +129,11 @@ public:
 			root = removeMax( root );
 		}
 		
+	}
+	
+	//从二叉树中删除键值为key的节点
+	void remove(Key key){
+		root = remove(root , key);
 	}
 	
 private:
@@ -273,6 +287,59 @@ private:
 		node->right = removeMax(node->right);
 		
 		return node;
+	}
+	
+	Node* remove(Node* node,Key key){
+		
+		//递归到底
+		if(node == NULL){
+			return NULL;
+		}
+		
+		//找的过程
+		if(key < node->key){
+			node->left = remove(node->left , key);
+			return node;
+		}
+		else if(key > node->key){
+			node->right = remove(node->right,key);			
+		}//要处理的
+		else{//key == node->key
+			
+			//只有右孩子
+			if(node->left == NULL){
+				Node *rightNode = node->right;
+				delete node;
+				count --;
+				return rightNode;				
+			}
+			
+			//只有左孩子
+			if(node->right == NULL){
+				Node *leftNode = node->left;
+				delete node;
+				count--;
+				return leftNode;
+			}
+			
+			//左右两孩子都不为空
+			//node->left != NULL && node->right != NULL
+			//Node *delNode = node; //要删除的node先保存下来
+			//右节点的最小值
+			Node *successor = new Node(minimum(node->right));
+			coutn ++;
+			
+			
+			successor->right = removeMin(node->right);
+			successor->left = node->left;
+			
+			delete node;
+			count --;
+			
+			return successor;
+		}
+		
+		
 	}
 
 	
