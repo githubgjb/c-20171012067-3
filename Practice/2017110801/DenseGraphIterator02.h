@@ -55,5 +55,35 @@ public:
 	   return g[v][w];
    }
    
-   //7-3 10:01
+   class adjIterator{
+   private:
+      DenseGraph &G; //图
+	  int v;         //点
+	  int index;     //索引
+
+   public:   
+	   adjIterator(DenseGraph &graph, int v): G(graph){
+		   this->v = v;
+		   this->index = -1;	   
+	   }
+	   
+	   int begin(){
+		   index = -1;
+		   return next();
+	   }
+	   int next(){
+		                          //图中顶点个数
+		   for(index += 1; index < G.V() ; index++){
+			   if(G.g[v][index]){
+				   return index;
+			   }
+		   }
+		   return -1;
+	   }
+	   bool end(){
+		   //是否大于等于顶点的个数
+		   //说明这一行所有的都遍历完了
+		   return index >= G.V();
+	   }
+   };
 };
