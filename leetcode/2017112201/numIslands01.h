@@ -9,7 +9,8 @@ using namespace std;
 
 
 class Solution{
-	
+
+private:	
 	int d[4][2] = {{0,1},{1,0},{0,-1},{-1,0}};
 	int m,n;
 	vector<vector<bool>> visited;
