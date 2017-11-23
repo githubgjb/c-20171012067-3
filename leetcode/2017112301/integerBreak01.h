@@ -45,7 +45,7 @@ private:
 public:
 
 	int integerBreak(int n){
-		assert( n>=1 );//9-3 16:06
+		assert( n>=2 );
 		
 		memo = vector<int>(n+1,-1);
 		
