@@ -105,3 +105,9 @@ https://leetcode.com/problems/move-zeroes/
 如nums = [1,1,1,2,2,3],
 结果应返回5,且nums的前五个元素为1,1,1,2,2,3
 
+
+20171124
+归并排序自底向上
+
+leetcode
+9章以后,不行了
