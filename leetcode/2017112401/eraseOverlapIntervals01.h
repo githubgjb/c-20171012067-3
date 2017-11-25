@@ -6,6 +6,23 @@
 #include<algorithm>
 
 using namespace std;
+struct Interval {
+	int start;
+	int end;
+	Interval() :  start(0),end(0) {}
+	Interval()(int s ,int e): start(s),end(e){}
+	
+};
+
+bool compare(const Interval &a ,const Interval &b){
+	
+	if(a.start != b.start){
+		return a.start < b.start;
+	}
+	
+	return a.end < b.end;
+	
+}
 
 
 class Solution{
@@ -14,33 +31,36 @@ private:
 	
 
 public:
-	int findContentChildren(vector<int>& g,vector<int>& s){
-		//排序从大到小
-		//小朋友贪心指数
-		sort(g.begin(),g.end(),greater<int>());
-		//饼干大小排序
-		sort(s.begin(),s.end(),greate<int>());
+
+	int ereaseOverlapIntervals(vector<Interal>& intervals){
 		
-		//最大饼干,最贪心的小朋友
-		int si = 0,gi = 0;
-		//让多少个小朋友贪心了
-		int res = 0;
+		if(intervals.size() == 0){
+			return 0
+		}
+		//C++排序库
+		sort(intervals.begin(),intervals.end(),compare );
 		
-		while(gi < g.size() && si < s.size()){
-			//把最大块分给最贪心的朋友
-			if(s[si] >= g[gi]){
-				res ++;
-				si ++;
-				gi ++;
-			}else{ //不能满足最贪心的小朋友
-				
-				//找下一个最贪心的小朋友
-				//满足不了,就不满足
-				gi ++;
+		//动态规划
+		//
+		vector<int> memo( intervals.size() , 1 );
+		
+		for(int i = 1 ; i < intervals.size() ; i++){
+			
+			//memo[i]
+			for(int j = 0 ; j < i ; j++){
+				if(intervals[i].start >= intervals[j].end){
+					memo[i] = max(memo[i], 1+memo[j]);
+				}
 			}
+			
 		}
 		
-		return res;
+		int res = 0;
+		for(int i = 0 ; i < memo.size() ; i++){
+			res = max(res,memo[i]);
+		}
+		
+		return intervals.size() - res;
 		
 	}
 };
