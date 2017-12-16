@@ -129,3 +129,18 @@ https://www.kancloud.cn/ithome/thinkphp5-video/373353
 
 --------------------------------------------------------------------
 thinkphp5刚出炉的高清视频下载带源码：http://t.cn/Rl8EXcH
+
+-----------------------------------------------------
+
+postman
+
+https://www.baidu.com/s?wd=postman&rsv_spt=1&rsv_iqid=0xb8bb7a3500014426&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=7&rsv_sug1=7&rsv_sug7=100
+
+
+Postman用法简介-Http请求模拟工具 在我们平时开发中,特别是需要与接口打交道时,无论是写接口还是用接口,拿到接口后肯定都得提前测试一下,这样的话就非常需要有一..--------------------------------------------------------------------
+
+
+
+
+
+
