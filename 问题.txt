@@ -141,6 +141,29 @@ PostmanÓÃ·¨¼ò½é-HttpÇëÇóÄ£Äâ¹¤¾ß ÔÚÎÒÃÇÆ½Ê±¿ª·¢ÖĞ,ÌØ±ğÊÇĞèÒªÓë½Ó¿Ú´ò½»µÀÊ±,ÎŞÂÛÊ
 
 
 
+20171217
 
 
+´óĞÍPHPµçÉÌÍøÕ¾ÉÌÆ·ÃëÉ±¹¦ÄÜÊµÏÖË¼Â··ÖÎö
 
+
+https://www.imooc.com/learn/722
+
+
+-------------------------------------------------------------
+
+½¨Õ¾¼¯³ÉÈí¼ş°ü XAMPP
+
+http://rj.baidu.com/soft/detail/12489.html?ald
+
+lampp
+
+https://www.baidu.com/s?wd=lampp&rsv_spt=1&rsv_iqid=0xb3eb118a00002c8f&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=baiduhome_pg&rsv_enter=1&oq=lammps&rsv_t=97deOd77DA27c%2Bj2c2vLB04%2BD6noNnQbdAfewj5FMEDRv5gQyc1e1NYdUMKeuTz3nDxH&rsv_sug1=7&rsv_sug7=100&rsv_pq=d0809dae00002097&rsv_sug3=6&bs=lammps
+
+
+XAMPP µÄ°²×°ÅäÖÃ(Linux °æ)
+http://blog.csdn.net/jaimejth/article/details/5669089
+
+LinuxÏµÍ³ÏÂ°²×°lampp¼¯³É»·¾³¼ÇÂ¼
+
+http://blog.csdn.net/underdogs/article/details/54648919
