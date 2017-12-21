@@ -1,0 +1,3024 @@
+生化危机5(惩罚) 英语 2012
+
+http://v.baidu.com/movie/27509.htm?frp=browse
+
+http://m.pianha.com/tv-yunboplay-id-55075-src-3-num-1.html
+
+异形：契约
+
+http://m.pianha.com/tv-detail-id-17074.html
+
+
+异型4
+https://v.qq.com/x/cover/pwiytu6qq0sc7vx.html
+
+
+猿球崛起
+https://v.qq.com/x/cover/aggiy0qv89a47k3.html
+
+异形2
+http://vip.iqiyi.com/20111230/f5abb8060405e284.html
+
+
+终结者2
+http://m.pianha.com/tv-detail-id-51638.html
+
+
+新木乃伊
+
+http://m.pianha.com/tv-yunboplay-id-55590-src-1-num-1.html
+
+
+
+    终结者2018
+
+http://m.pianha.com/tv-yunboplay-id-58055-src-1-num-1.html
+
+
+20170325 
+36)入库功能        
+46)图片识别跟踪进展,进行整合
+47)测试
+48)Linux技术储备  
+49)视频图片截取,做一个shell,是一个单独的工具软件还是声纹下的一个功能
+
+
+
+
+东风牌校车,12年8月份落户,现正常运营中校车,41座,(现在41座同款新校车全部办完价格约为25左右),本人即将60岁了,所以忍痛割爱了,车辆保养很好,本人是这个车的新车购买者,一手车,真心想买，车价可以再聊,非诚勿扰.
+
+
+第2章 如何组织项目目录结构
+
+    2-1 简述 02:17
+    2-2 文件夹的组织 08:20
+    2-3 有用的文件1（robots.txt、favicon.ico、humans.txt） 07:42
+    2-4 有用的文件2（.editorconfig、gitignore） 13:41
+    2-5 有用的文件3（LICENSE.txt、README.md、CHANGELOG.md） 08:23
+    2-6 有用的文件4（markdown） 08:51
+
+第3章 开始编写HTML代码
+第4章 如何实现PC端的样式
+第5章 如何实现移动端的样式
+第6章 如何实现响应式广告及响应式图片
+第7章 Node.js简介
+第8章 如何处理兼容性及在多个设备上进行调试
+第9章 如何打包发布
+第10章 课程扩展1 -- 选择一个趁手的IDE
+第11章 课程扩展2 -- 聊聊原型设计和切图
+第12章 课程大作业
+本课程已完结
+项目演示地址
+
+http://responsiveweb.t.imooc.io
+
+QQ技术讨论群：437781046
+
+验证信息：1706100955316006
+
+此群仅做技术讨论和功能bug反馈，不支持讲师答疑等教学类服务
+课程介绍
+
+    难度 初级
+    时长 10小时0分钟
+    人数 2844
+
+用一套代码开发出不受设备型号、尺寸限制的互联网金融网站
+讲师
+姜维_Wayne Web前端工程师
+
+资深UI 前端 架构，互联网行业折腾10余年，前后端开发、敏捷过程、项目管理经验丰富，负责过多个产品和技术团队，一直奋斗在Full Stack的道路上，爱技术，爱创业，爱一切新事物，玩过乐队，喜欢折腾！
+
+
+E:\weixin_platform\weixinpl\back_nowpaySystem\cashplatform\discount_order.php
+
+
+location.href = "../../card/show_card.php?customer_id="+customer_id_en+"&user_id=<?php echo $userid; ?>&card_id="+card_id+"";
+
+
+E:\weixin_platform\weixinpl\card\show_card.php
+
+location.href = "../../card/show_card.php?customer_id="+customer_id_en+"&user_id=<?php echo $userid; ?>&card_id="+card_id+"";
+
+location.href = "../back_nowpaySystem\cashplatform\discount_order.php";
+
+function moveDiscount_order(){
+  location.href = "../back_nowpaySystem\cashplatform\discount_order.php";
+
+}
+ moveDiscount_order();
+
+
+E:\weixin_platform\weixinpl\card\show_card.php
+
+
+
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/cashplatform/discount_order.php?customer_id=VmQCMQ==&fromuser=odRh-xK_pRgfHAffz0cyWzSJ6Evk&parent_openid=0&n_p_cashierid=88&n_p_custid=9&n_p_userid=202050
+
+
+
+var ho_url="http://"+H_HOST+"/weixinpl/back_nowpaySystem/cashplatform/discount_order.php?n_p_custid="+n_p_custid+"&n_p_cashierid="+n_p_cashierid+"&weixin_openid="+weixin_openid+"&custid="+custid+"&n_p_userid="+n_p_userid+"&user_id="+user_id;
+	
+
+E:\weixin_platform\weixinpl\customer_id_decrypt.php	
+
+
+header("Location:../../back_nowpaySystem/cashplatform/discount_order.php?customer_id=".$customer_id_en."&fromuser=".$openid."&parent_openid=".$parent_openid."&n_p_cashierid=".$n_p_cashierid."&n_p_custid=".$n_p_custid."&n_p_userid=".$n_p_userid);
+
+
+E:\weixin_platform\weixinpl\common_shop\jiushop\forward.php
+
+362
+
+
+
+$jssdk = new JSSDK($customer_id);
+
+
+// 领取会员卡
+		function show_card(customer_id_en,user_id,card_id){
+        	location.href = "../../card/show_card.php?customer_id="+customer_id_en+"&user_id=<?php echo $userid; ?>&card_id="+card_id+"";
+    	}
+
+customer_id   ok有了
+----------------------------------------------------------
+
+提现管理
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/withdrawals/withdrawalslist.php?customer_id=ADJRYg==
+
+
+308行
+
+
+$bank= $row->bank;		   总行
+$bank_deposit= $row->bank_deposit; 支行
+
+
+涉及到的表
+
+SELECT id withdrawalsid,wiehRocde,createtime,isvalid,moditime,n_p_custid,type,money,account,name,phone,bank,bank_deposit ,bank_type,status,confirm_time,remark,serial_number,custid FROM now_pay_withdrawals where isvalid=1 
+
+now_pay_withdrawals
+
+
+
+<td style="word-break: break-all;line-height: 1.6em;"><?php if($type==3){echo "联系电话:".$phone."<br/>银行账户:".$account."<br/>开户总行:".$bank."<br/>开户支行:".$bank_deposit."<br/>开户姓名:".$name;}else{echo $account;}?></td>
+
+-------------------------------------------------------------------
+进入,没有会员卡就得领
+
+E:\weixin_platform\weixinpl\back_nowpaySystem\cashplatform\discount_order.php
+
+
+if ($(".bkyh").hasClass("select")) {
+
+
+
+E:\weixin_platform\weixinpl\back_nowpaySystem\common\js\cashplatform\discount_order.js
+
+<iframe id="content-iframe"  name="content-iframe"  src="" frameborder="no" border="0"></iframe>
+
+
+
+
+		<!--会员卡优惠 start-->
+		
+        //判断是否领会员卡
+		 
+		var nLeft = 1; 		
+	    var card_member_id = <?php echo $consumes['card_member_id'];?>;
+		var customerid = '<?php echo $customerid;?>';
+		var userid = '<?php echo $userid;?>';
+		var card_id = '<?php echo $card_id;?>';
+		var times = 1000;
+	    
+	    if(card_member_id>0){
+	    	nLeft = 2;
+		}else{  		
+    		var timer = setInterval(ReceiveMemberCard(nLeft,customerid,userid,card_id,timer),times);
+		}  
+	    
+
+	    //ExecuteReceiveMemberCard(nLeft,customerid,userid,card_id,timer,times,card_member_id);   
+		<!--会员卡优惠 end-->
+
+---------------------------------------------------------
+		if(card_member_id>0){
+			
+		}else{
+	    	var src = "../../card/show_card.php?customer_id="+customerid+"&user_id=<?php echo $userid; ?>&card_id="+card_id+"";
+	    	$('#content-iframe').attr('src',src);
+		    function startCount() {
+			    //alert("会员卡!");
+			    //window.location.reload();//刷新当前页面.
+			    parent.document.location.reload();//相当于F5 
+		    }
+		    window.setTimeout("startCount()",times);
+		 }   
+-----------------------------------------------------------
+
+E:\weixin_platform\weixinpl\common\utility_nowpay.php
+
+
+
+4.收银员要在公众号内显示收9折，以及折后价格。
+
+$sql_order_state = "select order_state state , np_customer_id , product_id ,total_count,discount,discount_price , money,order_type,use_currency from now_pay_product_orders where isvalid = true and batchcode = '" . $batchcode . "'";
+--------------------------------------------------------
+
+数据统计是9.5折,实收是9折
+
+/weixinpl/back_nowpaySystem/data_info/orderDateAnalyze.php?customer_id=41&n_p_custid=321&type=backa
+
+--------------------------------------------------------------
+
+
+商户入驻申请
+
+基本信息：
+
+		*商户名称：
+		*所属城市：
+		缩略图：
+		图片上传
+		营业执照：
+		图片上传
+		商户介绍：
+		银行账号:
+		开户行名称:
+		开户行姓名:
+		法人:
+		法人电话:
+		*邮箱：
+
+总店信息：
+		电话:
+		联系人:
+		*所属分类：
+		所属子类：
+		商户地址：
+		营业时间:
+		门店简介：
+账号信息：
+		用户名:
+		密码:
+
+--------------------------------------------------------------------
+
+商户入驻信息
+
+基本信息：
+
+		商户名称：
+		所属城市：
+		缩略图：
+		图片上传
+		营业执照：
+		图片上传
+		商户介绍：
+		银行账号:
+		开户行名称:
+		开户行姓名:
+		法人:
+		法人电话:
+		邮箱：
+
+总店信息：
+		电话:
+		联系人:
+		所属分类：
+		所属子类：
+		商户地址：
+		营业时间:
+		门店简介：
+账号信息：
+		用户名:
+		密码:
+
+---------------------------------------------------------------------
+
+取消退款按钮
+
+http://www.zfshlm.com/weixin/plat/app/index.php/nowpay/manager.html
+
+orderlist
+
+E:\weixin_platform\weixin\plat\app\Tpl\nowpay\orderlist.html
+
+
+---------------------------------------------
+
+收银员界面
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/index.php?customer_id=41
+
+-------------------------------------------------------------
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/index.php?customer_id=41
+
+------------------------------------------------------------
+查看定单详情
+
+../order/order.php?customer_id=41&np_custid=9
+
+
+
+E:\weixin_platform\weixinpl\back_nowpaySystem\order\order.php
+
+
+<dd><b>商家入账：</b><span><?php echo $shop_money; ?>元</span></dd>
+
+
+$shop_money=sprintf("%.2f",$data[$i]['shop_money']);
+
+
+$data = $data_array["data"];
+
+$data_array = $Order_Class->getOrderList($np_custid,$p_batchcode,$begintime,$endtime,$PXl,$PX,$page_index,$op,$orderId,$cust_name,$username,$spaytime,$epaytime);
+
+
+.$this->table." o LEFT JOIN weixin_users
+
+private $table = "now_pay_orders";
+
+$supply_money = $commission_result['shop_money']; //商家入账
+
+-----------------------------------------------------------------
+20170726
+
+http://www.zfshlm.com/weixinpl/group/show_group.php?customer_id=41&obj_id=&fromuser=odRh-xK_pRgfHAffz0cyWzSJ6Evk&oauth=1
+
+http://www.zfshlm.com/weixinpl/group/myorder.php
+
+http://www.zfshlm.com/weixinpl/group/detail.php?item_id=60&group_id=15
+
+color: #fff;
+
+
+
+.buy-top .but-order{
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    top:0;
+    right: 0;
+    background-image:-webkit-gradient(linear,left top,left bottom,from(#53dd49), to(#05c001));
+    background-image:-moz-linear-gradient(top,#53dd49,#05c001);
+
+
+}
+
+
+
+.buy-top .buy-more-class{
+
+    text-align: center;
+    background-image:-webkit-gradient(linear,left top,left bottom,from(#1d9700), to(#077100));
+    background-image:-moz-linear-gradient(top,#1d9700,#077100);
+    font-weight: bold;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+    word-break:break-all;
+    line-height:50px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+
+
+}
+
+相册管理
+
+基础设置
+
+
+20170809
+店铺管理
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/shops/shoplist.php?customer_id=VmQCMQ==
+
+
+
+优惠买单
+<a class="er_icon09 WSY_menu_lefticon" href="http://www.zfshlm.com/weixinpl/back_nowpaySystem/order/order.php?customer_id=VmQCMQ==" target="iframe">优惠买单</a>
+
+
+产品管理  --->  换成店铺管理缺功能
+
+<a class="nav1 WSY_menu_lefticon" href="http://www.zfshlm.com/weixinpl/back_nowpaySystem/coupon/couponlist.php?customer_id=VmQCMQ==" target="iframe">产品管理</a>
+
+
+<if condition="($is_auth_user neq 'yes') or in_array('sy优惠券/套餐管理',$user_auth)" >
+						<li><em class="left_navIcon"></em><a class="nav1" href="http://{$http_host}/weixinpl/back_nowpaySystem/coupon/couponlist.php?customer_id={$C_id_en}" target="iframe">产品管理</a><li>
+					</if>
+
+
+
+
+<a class="am-cf" href="setwithdrawals" target="content-iframe">
+<span class="am-icon-send am-icon-fw"></span> 提现设置
+----------------------------------------------------------------------------------------------------
+20170816
+简化支付流程
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/cashplatform/discount_order.php?n_p_custid=321&n_p_cashierid=0&weixin_openid=odRh-xHusm8FYGBD72yDzosoDbeY&custid=41&n_p_userid=197402&user_id=202050
+
+
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/cashplatform/order_pay.php?user_id=202050&customer_id=41&type=1&order_id=3509
+
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/cashplatform/discount_order.php?n_p_custid=321&n_p_cashierid=0&weixin_openid=odRh-xHusm8FYGBD72yDzosoDbeY&custid=41&n_p_userid=197402&user_id=202050
+
+-----------------------------------------------------------------------------------------
+
+pdf例子
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/example_001.php
+
+
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/index.php
+
+http://www.zfshlm.com/index/contract/index.php
+
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/index_gjb.php
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/index_gjb2.php
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/index_gjb2017081701.php
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/index_gjb2017081701.php
+
+
+http://www.zfshlm.com/index/contract/test/server.php
+
+http://www.zfshlm.com/index/contract/test/XMLHttpRequest.html
+
+http://www.zfshlm.com/index/contract/test/XMLHttpRequestJson.html
+
+http://www.zfshlm.com/index/contract/test/XMLHttpRequestjQuery.html
+
+http://www.zfshlm.com/index/contract/test/XMLHttpRequestjQueryJsonp.html
+
+http://www.zfshlm.com/index/contract/test/01/XMLHttpRequestjQuery01.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/index_gjb2017082201.php
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/XMLHttpRequestjQuery01.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/XMLHttpRequestjQuery2017082302area.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/XMLHttpRequestjQuery2017082303BootStrap.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/XMLHttpRequestjQuery2017082304BootStrap.html
+
+XMLHttpRequestjQuery2017082302area.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/XMLHttpRequestjQuery2017082401BootStrap.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/XMLHttpRequestjQuery2017082402BootStrap.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/XMLHttpRequestjQuery2017082403Validate.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/ajaxSubmit.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/XMLHttpRequestjQuery2017082404Form.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/SUCCESS.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/SUCCESS2017082401.html
+
+
+http://www.zfshlm.com/index/contract/test/2017082201/XMLHttpRequestjQuery01.html
+
+
+http://www.zfshlm.com/index/contract/test/2017082301/XMLHttpRequestjQuery01.html
+
+
+E:\weixin_platform\weixin\plat\app\Tpl\nowpay\cust_qrcode_gjb_sendMessage20170822.html
+
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/XMLHttpRequestjQuery2017082501js.html
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/pdf/黑龙江省哈尔滨市香坊区2017-08-25 09:18:11.pdf
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/pdf/黑龙江省齐齐哈尔市克山县2017-08-30 09:15:26.pdf
+
+黑龙江省齐齐哈尔市克山县2017-08-30 09:15:26.pdf
+
+XMLHttpRequestjQuery2017082501js.htmls
+
+http://www.zfshlm.com/index/contract
+
+http://www.zfshlm.com/index/contract/indexRequire.html
+
+
+http://www.zfshlm.com/index/contract/lib/TCPDF-master/examples/XMLHttpRequestjQuery2017083001Config.html
+
+//好使,短信测试
+http://www.zfshlm.com/weixin/plat/app/Tpl/nowpay/cust_qrcode_gjb_sendMessage20170822.html
+
+
+------------------------------------------------------------------------------------------
+
+E:\weixin_platform\weixin\plat\app\Tpl\nowpay\cust_qrcode_gjb_sendMessage20170822.html
+
+E:\weixin_platform\weixinpl\back_nowpaySystem\contract_PDF_sendmessage.php
+
+
+找短信的验证码,找短信接口
+
+E:\weixin_platform\weixin\plat\app\Tpl\nowpay\cust_qrcode.html
+
+短信具体发送
+
+$.get("/weixinpl/back_nowpaySystem/user_sendmessage.php?phone="+mobile+"&custid="+custid,
+
+
+短信发送具体文件
+E:\weixin_platform\weixinpl\common\utility.php
+
+具体内容
+$http = "http://www.sms800.cc:6630/WebAPI/doodsms.asmx/SendSmsExt";
+
+
+
+
+select * from sms_settings
+
+
+<input id="custid" value="41" type="hidden">
+
+
+---------------------------------------------------------------
+20170825
+
+结算
+
+orderlist?o_status=1&o_type=1
+
+1.更改分页条数  ok
+
+2.默认全选.
+
+
+
+
+$("#ck_all").on('click',function(){
+		$("input[name='batchcode_ids']").attr("checked",this.chec
+
+ked);
+
+	});
+
+if($("button[name='waitPay']")){
+	alert("未结算!我找到你了!");
+}
+
+
+20170828
+
+企业管理   ---
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/coupon/couponlist.php?customer_id=VmRXZA==
+
+
+店铺管理
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/shops/shoplist.php?customer_id=VmRXZA==
+
+
+首页:待结算 ,去掉搜索
+
+main.html
+
+
+总订单数
+2
+的来源
+E:\weixin_platform\weixin\plat\app\Lib\Action\nowpayAction.class.php
+
+
+
+manager.html
+
+$SY_orders = M('now_pay_orders',null)->field('count(id) count1')->where('n_p_custid='.$ic["n_p_custid"].' and isvalid=1')->select();
+$this->assign('SY_orders',$SY_orders );
+
+
+
+if($se['o_status']==1){
+				$sql_where.=" and o.order_status = 1 ";
+				$title_name = "待结算订单";
+			}
+
+
+-------------------------------------------
+
+------------------
+20170830
+来源：【支付成功】
+
+
+E:\weixin_platform\weixinpl\common\utility_shop_0.php
+
+23
+
+E:\weixin_platform\weixinpl\common\utility_shop_1.php
+
+
+E:\weixin_platform\weixinpl\common\utility_shop.php
+
+35
+
+E:\weixin_platform\weixinpl\common\utility_shop2.php
+
+
+
+【支付成功】34
+
+
+这是我实际修改的文件
+E:\weixin_platform\weixinpl\common\utility_shop.php
+
+
+$msg_content = "亲，您的钱包余额1 +".$money."\r\n".
+
+
+--结算,,不是这个文件
+E:\weixin_platform\weixinpl\common\utility_shop.php 
+
+--这个也不是
+E:\weixin_platform\weixinpl\back_nowpaySystem\fuction.php
+
+
+
+11
+E:\weixin_platform\weixinpl\common\utility_cityarea.php
+
+
+13
+E:\weixin_platform\weixinpl\common\utility_nowpay.php
+
+
+15
+E:\weixin_platform\weixinpl\common\utility_shop_1.php
+
+
+
+实际修改的文件【支付成功】34
+E:\weixin_platform\weixinpl\common\utility_nowpay.php
+
+
+这是我实际修改的文件【订单完成】13
+E:\weixin_platform\weixinpl\common\utility_shop.php
+
+------------------------------------------------------------------------
+
+20170831微信提现
+
+http://www.zfshlm.com/weixinpl/mshop/money_tocash.php?customer_id=UGJaaQ==
+
+
+全局提示对话框
+
+E:\weixin_platform\weixinpl\mshop\js\global.js
+
+
+showAlertMsg("提示","请联系商家 "+advisory_telephone,"确定");
+
+
+自定义提示框
+
+showAlertMsg("提示","请联系商家 "+advisory_telephone,"确定");
+
+
+20170831
+
+<a class="white1" href="cash_being.php?customer_id=AjAHNA==">待提现列表</a>
+
+---------------------------------------------------------------------------
+
+
+20170904
+
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/cashplatform/T_IndustryDiversionA.php?customer_id=41&latitude=46.58931&longitude=125.103784&Pname=%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81&Cname=%E5%A4%A7%E5%BA%86%E5%B8%82&Aname=%E5%A4%A7%E5%BA%86%E5%B8%82
+
+
+公网账号二维码
+
+不能直接进去
+
+http://weixin.qq.com/q/023MOY4gRod-410000M07r
+
+
+https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5NjU5ODEzMw==&scene=124#wechat_redirect
+
+用于推广的网址
+http://mp.weixin.qq.com/s/Tw06E2Qg10zSGg2o1R2bhw
+
+
+
+https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5OTEwODM2Ng==&scene=110#wechat_redirect
+
+
+
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaf034ee5c10a4dfc&redirect_uri=http%3A%2F%2Fwww.zfshlm.com%2Fweixinpl%2Fback_nowpaySystem%2Fcashplatform%2FT_IndustryDiversionA.php%3Fcustomer_id%3D41%26menu_id%3D11587&response_type=code&scope=snsapi_base&state=wsy#wechat_redirect
+
+
+
+商家列表
+E:\weixin_platform\weixinpl\back_nowpaySystem\cashplatform\T_IndustryDiversionA.php
+
+
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaf034ee5c10a4dfc&redirect_uri=http%3A%2F%2Fwww.zfshlm.com%2Fweixinpl%2Fback_nowpaySystem%2Fcashplatform%2FT_IndustryDiversionA.php%3Fcustomer_id%3D41%26menu_id%3D11587&response_type=code&scope=snsapi_base&state=wsy#wechat_redirect
+
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/cashplatform/T_IndustryDiversionA.php?customer_id=41&latitude=46.58931&longitude=125.103784&Pname=%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81&Cname=%E5%A4%A7%E5%BA%86%E5%B8%82&Aname=%E5%A4%A7%E5%BA%86%E5%B8%82
+
+
+
+
+https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5NjU5ODEzMw==&scene=124#wechat_redirect
+
+
+http://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5NjU5ODEzMw==&scene=124#wechat_redirect
+
+---------------------------------------------------------------------------------------------------------
+
+让我的账号有权限编辑权限的功能
+
+/***商家开的权限用户**/
+$condition_auth['confirm_name'] = $username;
+$re_auth = M('customer_users', null)->where($condition_auth)->find();
+
+
+
+SELECT * FROM `customer_users` WHERE `confirm_name` = 'zhifu0_gjb'
+
+
+
+login_name
+zhifu0
+
+
+$re = M('customers', null)->where($condition)->find();
+
+
+
+权限具体存的东西
+<input class="links2" name="links2[]" value="sy行业管理" type="checkbox">
+
+$links  = $_POST['links'];
+$links2 = $_POST['links2'];
+
+
+for ($i = 0; $i < count($links2); $i++) {
+            $data_funs2['funs'] = $links2[$i];
+
+
+if (!M('customer_user_funs2', null)->add($data_funs2)) {
+
+
+
+
+获得权限的地方
+if ($re_auth = M('customer_user_funs2', null)->where($c_auth)->field('funs')->select()) {
+
+
+<if condition="($is_auth_user neq 'yes') or in_array('sy优惠券/套餐管理',$user_auth)" >
+
+
+----------------------------------------------------------------------
+
+E:\weixin_platform\weixinpl\back_nowpaySystem\shops\shop_head.php
+
+
+E:\weixin_platform\weixinpl\back_nowpaySystem\coupon\couponlist.php
+
+
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/coupon/couponlist.php
+
+couponlist.php?customer_id=AzFXZA==
+
+---------------------------------------------------------------------
+20170906
+
+入
+E:\weixin_platform\weixin\plat\app\Tpl\IndexV2\auth_add_user.html
+
+出
+E:\wplatform\weixin\plat\app\Tpl\IndexV2\managerV2.html
+
+
+E:\weixin_platform\weixinpl\back_nowpaySystem\coupon\couponlist.php
+
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/coupon/couponlist.php?customer_id=DT9XZA==
+
+
+http://{$http_host}/weixinpl/back_nowpaySystem/coupon/couponlist.php?customer_id={$C_id_en}
+
+
+分公司设置
+
+
+肇东分公司
+
+绥化分公司
+
+安达分公司
+
+大同分公司
+
+肇州分公司
+
+肇源分公司
+
+林甸分公司
+
+杜尔伯特分公司
+
+
+
+<!-- 分公司 -->
+									<dl class="scdl">
+										<input type="checkbox" class="links" name="links2[]" value="Branch_Office_set" <?php if(in_array("Branch_Office_set",$selected_funs2)){echo 'checked';} ?> /><label>分公司设置</label>
+										<dd>
+											<input type="checkbox" class="links2" name="links2[]" value="Branch_Office_zd" <?php if(in_array("Branch_Office_zd",$selected_funs2)){echo 'checked';} ?> /><label>肇东分公司</label>
+										</dd>
+										<dd>
+											<input type="checkbox" class="links2" name="links2[]" value="Branch_Office_sh" <?php if(in_array("Branch_Office_sh",$selected_funs2)){echo 'checked';} ?> /><label>绥化分公司</label>
+										</dd>
+										<dd>
+											<input type="checkbox" class="links2" name="links2[]" value="Branch_Office_ad" <?php if(in_array("Branch_Office_ad",$selected_funs2)){echo 'checked';} ?> /><label>安达分公司</label>
+										</dd>
+										<dd>
+											<input type="checkbox" class="links2" name="links2[]" value="Branch_Office_dt" <?php if(in_array("Branch_Office_dt",$selected_funs2)){echo 'checked';} ?> /><label>大同分公司</label>
+										</dd>
+										<dd>
+											<input type="checkbox" class="links2" name="links2[]" value="Branch_Office_zz" <?php if(in_array("Branch_Office_zz",$selected_funs2)){echo 'checked';} ?> /><label>肇州分公司</label>
+										</dd>
+										<dd>
+											<input type="checkbox" class="links2" name="links2[]" value="Branch_Office_zy" <?php if(in_array("Branch_Office_zy",$selected_funs2)){echo 'checked';} ?> /><label>肇源分公司</label>
+										</dd>
+										<dd>
+											<input type="checkbox" class="links2" name="links2[]" value="Branch_Office_ld" <?php if(in_array("Branch_Office_ld",$selected_funs2)){echo 'checked';} ?> /><label>林甸分公司</label>
+										</dd>
+										<dd>
+											<input type="checkbox" class="links2" name="links2[]" value="Branch_Office_drbt" <?php if(in_array("Branch_Office_drbt",$selected_funs2)){echo 'checked';} ?> /><label>杜尔伯特分公司</label>
+										</dd>
+									</dl>
+
+
+商家格式
+
+商家名称：至富生活联盟肇东公司测试（肇东）
+
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/cashplatform/T_IndustryDiversionA.php?customer_id=41&latitude=46.58931&longitude=125.103784&Pname=%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81&Cname=%E5%A4%A7%E5%BA%86%E5%B8%82&Aname=%E5%A4%A7%E5%BA%86%E5%B8%82
+
+
+---------------------------------------------------------------------------------------------------------------------------
+20170907
+
+<a class="er_icon09 WSY_menu_lefticon" href="http://www.zfshlm.com/weixinpl/back_nowpaySystem/order/order.php?customer_id=VWdTYA==" target="iframe">优惠买单</a>
+
+
+Branch_Office
+
+branch_office_order.php
+
+
+http://{$http_host}/weixinpl/back_nowpaySystem/order/order.php?customer_id={$C_id_en}
+
+
+cust_name
+肇东
+
+
+http://{$http_host}/weixinpl/back_nowpaySystem/coupon/couponlist.php?customer_id={$C_id_en}&p_name=肇东
+
+
+http://{$http_host}/weixinpl/back_nowpaySystem/order/branch_office_order.php?customer_id={$C_id_en}&cust_name=肇东
+
+
+查看所属于店员
+
+../employes/employeelist.php?customer_id=41&np_custid=2453
+
+branchofficeemployeelist.php
+
+---------------------------------------------------------------------------------
+20170908
+
+http://{$http_host}/weixinpl/back_nowpaySystem/coupon/couponlist.php?customer_id={$C_id_en}&p_name=肇东
+
+
+<input type="text" name="p_name" id="p_name" value="<?php echo $p_name; ?>"></span>
+
+
+
+<li><a name="add_store" id="add_store"href="../shops/addshop.php?customer_id=<?php echo passport_encrypt((string)$customer_id); ?>&p_name=<?php echo $p_name; ?>">添加门店</a></li>
+
+
+--------------------------------------------------
+$p_nameflag="";//企业管理标志位
+if(!empty($_GET["p_name"])){
+    $p_nameflag = $configutil->splash_new($_GET["p_nameflag"]);
+}
+
+---------------------------------------------------------------
+
+<input id="submitVaId" type="button" class="WSY_button" value="提交" onclick="submitVa();" style="cursor:pointer;"/>
+
+$("#submitVaId").attr("disabled", true);//点击按钮就不可用了
+
+---------------------------------------------------------------------
+20170911
+
+couponlist.php
+
+style="display: none;"
+
+
+<?php 
+    					    //只有大庆公司可以查询功能
+    					?>
+						<div <?php if(empty($p_nameflag)){echo ' style="display: none;" ';} ?>>
+							门店名称
+							<span class="WSY_input01 WSY_input_dd"><input type="text" name="p_name" id="p_name" value="<?php echo $p_name; ?>"></span>
+							<button class="WSY_search_01" onclick="searchForm();">搜索</button>
+						</div>
+
+
+
+<?php 
+    					    //只有大庆公司可以查询功能
+    					?>
+						<div <?php if(empty($p_nameflag)){echo ' style="display: none;" ';} ?>>
+
+
+function modi_cust(npID){
+	document.location="../shops/addshop.php?INDEX=1&Itype=0&npID="+npID+"&customer_id=<?php echo passport_encrypt((string)$customer_id); ?>&n_p_custid=<?php echo $n_p_custid;?>";
+}
+
+
+<li><a name="add_store" id="add_store"href="../shops/addshop.php?customer_id=<?php echo passport_encrypt((string)$customer_id); ?>&p_name=<?php echo $p_name; ?>&p_nameflag=<?php echo $p_nameflag; ?>">添加门店</a></li>
+----------------------------------------------------------------------------------
+20170912
+
+select pid,akey from alipays
+
+select price,callBackBatchcode from paycallback_t
+
+select pid,akey fr
+
+om alipays
+
+-------------------------------------------------------------------------
+20170913
+
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/order/branch_office_order.php?customer_id=UWMGNQ==&cust_name=肇东
+
+
+
+E:\weixin_platform\weixinpl\back_nowpaySystem\coupon\couponlist.php
+
+E:\weixin_platform\weixin\plat\app\Tpl\IndexV2\auth_add_user.html
+
+E:\weixin_platform\weixin\plat\app\Tpl\IndexV2\managerV2.html
+
+
+branch_off=employee
+
+----------------------------------------------------------------------------
+20170914
+
+
+E:\weixin_platform\weixinpl\back_nowpaySystem\coupon\couponlist.php
+
+656
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/coupon/couponlist.php?customer_id=BTcFNg==&p_nameflag=大庆
+
+627
+
+
+$p_nameflag="";//企业管理标志位
+if(!empty($_GET["p_nameflag"])){
+    $p_nameflag = $configutil->splash_new($_GET["p_nameflag"]);
+}
+
+
+&p_nameflag=<?php echo $p_nameflag; ?>
+
+
+var URL= "couponlist.php?customer_id=<?php echo $customer_id_en; ?>&np_custid=<?php echo $np_custid; ?>&INDEX=0&Itype=0&pagenum=1&begintime="+begintime+"&endtime="+endtime+"&p_name="+p_name+"&province="+province+"&city="+city+"&is_nominate="+is_nominate+"&n_p_trade_search="+n_p_trade+"&n_p_trade1_search="+n_p_trade1+"&search_cust_score="+search_cust_score+"&search_count_num="+search_count_num+"&p_nameflag="<?php echo $p_nameflag; ?>;g="+p_nameflag;
+
+
+
+
+
+
+ var p_nameflag = '<?php echo $p_nameflag; ?>';
+	//var URL= "couponlist.php?customer_id=<?php echo $customer_id_en; ?>&np_custid=<?php echo $np_custid; ?>&INDEX=0&Itype=0&pagenum=1&begintime="+begintime+"&endtime="+endtime+"&p_name="+p_name+"&province="+province+"&city="+city+"&is_nominate="+is_nominate+"&n_p_trade_search="+n_p_trade+"&n_p_trade1_search="+n_p_trade1+"&search_cust_score="+search_cust_score+"&search_count_num="+search_count_num;
+	var URL= "couponlist.php?customer_id=<?php echo $customer_id_en; ?>&np_custid=<?php echo $np_custid; ?>&INDEX=0&Itype=0&pagenum=1&begintime="+begintime+"&endtime="+endtime+"&p_name="+p_name+"&province="+province+"&city="+city+"&is_nominate="+is_nominate+"&n_p_trade_search="+n_p_trade+"&n_p_trade1_search="+n_p_trade1+"&search_cust_score="+search_cust_score+"&47num="+search_count_num+"&p_nameflag="+p_nameflag;
+	
+---------------------------------------------------------------------------------------
+20170915
+
+协议支付
+
+4.1
+接口实现说明
+序号
+接口类型
+实现方式
+1
+网上签约
+可选
+2
+网上
+修改支付限额
+可选
+3
+柜
+台
+签约
+必做
+4
+柜台解约
+必做
+5
+网上
+解约
+可选
+6
+客户身份信息验证
+可选
+7
+支付
+/
+申购
+/
+认购
+必做
+8
+提现
+可选
+9
+单笔退货
+可选
+10
+支付限额查询
+可选
+12
+单笔交易查询
+必做
+13
+签约对账
+必做
+14
+清算对帐
+必做
+
+
+
+网上支付业务在执行中需要2017满足以下约束条件：
+?
+网上支付必须由客户请求，从
+商户
+发起。
+?
+网上支付时的资金只能从
+协议支付
+签约时确定的签约银行卡账户中支出，用于同一客户
+的
+支付、
+基金申购和认购
+。
+?
+网上支付时客户在签约银行卡账户中的资金只能转移到
+商户
+指定的清算账户中。
+?
+银行与
+商户
+需要保存
+协议支付
+相关报文的日志作为解决资金清算不一致的依据。
+
+---------------------------------------------------------------------------------------
+201709118
+
+协议支付
+
+1.
+商户需要申请开通测试IP和端口，待银行网络处开通后方可进行支付接入测试。  ----- 看看现在有哪个服务器可以用.
+
+
+2.
+周四开通一次
+
+
+3.
+yuliang@cebbank.com 邮件中将申请的IP和端口列全。
+
+
+4.
+测试的证书是直接提供给商户的，商户既不用自行下载，也不用将公钥导出上传。
+
+
+
+5.
+7.5
+应用部署
+
+
+接参地址
+
+localhost/servlet/ReceiveServlet
+
+
+
+约应答报文
+T
+SRes
+（
+Teller
+Sign Re
+sponse
+）
+商户返回给给银行的应答。
+中文域名
+字段名
+类型
+是否必输
+说明
+交易代码
+transId
+Char(10)
+是
+T
+SRes
+商户号
+merId
+C
+har(12)
+是
+协议
+号
+signNo
+char(45)
+是
+
+------------------------------------------------------------------
+20170919
+
+
+人性化查看磁盘空间
+
+df -lh
+
+
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# rpm -qa|grep vsftpd
+vsftpd-2.2.2-21.el6.x86_64
+
+
+Apache都装着呢
+http://47.93.11.60/
+
+
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# ps -aux
+
+root      2058  0.0  0.0  52128   836 ?        Ss   May20   0:01 /usr/sbin/vsftpd /etc/vsftpd/vsf
+
+
+把项目原型放入到公网中去
+
+zfshlm
+
+查询结果：
+md5(zfshlm,32) = 155e7ac5857fb33bb5d9430ef3be1699
+md5(zfshlm,16) = 857fb33bb5d9430e
+
+
+xmyx
+
+查询结果：  
+md5(xmyx,32) = 60eb90b186de56ef6b7abd35277a6fd1
+md5(xmyx,16) = 86de56ef6b7abd35
+
+
+//具体的访问地址
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/
+
+
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/js
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/zf
+
+----------------------------------------------------------------------------
+20170920
+
+Linux FTP服务端和客户端搭建
+http://www.imooc.com/article/16244
+
+ps -ef |grep vsftpd
+查一下系统有没有安装vsftpd这个服务器，如果出现如下图所示的界面说明没有安装。
+
+
+回到家目录
+Linux使用cd如何回到上一目录和根目录呢
+回到上一目录
+cd ..
+回到根目录
+cd /
+
+然你也可以使用cd ~也能回到家目录
+cd ~
+
+启动
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# service vsftpd start
+Starting vsftpd for vsftpd:                                [FAILED]
+
+重启
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# service vsftpd restart
+
+
+怎么保存退出vi编辑
+https://zhidao.baidu.com/question/441713655.html
+
+
+保存命令
+
+按ESC键 跳到命令模式，然后：
+
+:w   保存文件但不退出vi
+:w file 将修改另外保存到file中，不退出vi
+:w!   强制保存，不推出vi
+:wq  保存文件并退出vi
+:wq! 强制保存文件，并退出vi
+q:  不保存文件，退出vi
+:q! 不保存文件，强制退出vi
+:e! 放弃所有修改，从上次保存文件开始再编辑
+
+
+
+tail  /etc/vsftpd/vsftpd.conf
+
+
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# vi /etc/vsftpd/user_list
+
+# vsftpd userlist
+# If userlist_deny=NO, only allow users in this file
+# If userlist_deny=YES (default), never allow users in this file, and
+# do not even prompt for a password.
+# Note that the default vsftpd pam config also checks /etc/vsftpd/ftpusers
+# for users that are denied.
+root
+bin
+daemon
+adm
+lp
+sync
+shutdown
+halt
+mail
+news
+uucp
+operator
+games
+nobody
+~                                                                                                
+~                                                                                                
+~                                                                                                
+~                                                                                                
+"/etc/vsftpd/user_list" 20L, 361C
+
+
+
+创建用户权限
+
+http://www.cnblogs.com/shenxiaolin/p/5723962.html
+
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# adduser -s /bin/false -d /var/ftp/ftp2 ftp2
+
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# passwd ftp2
+
+用户ftp2
+密码:1qaz2wsx
+
+
+（1）查看主配置文件的默认配置：
+
+（使用：cat /etc/vsftpd/vsftpd.conf |grep -v '^#';）
+
+
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# cat /etc/vsftpd/vsftpd.conf
+
+
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# vim /etc/vsftpd/vsftpd.conf
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# vim /etc/vsftpd/chroot_list
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# vim /etc/vsftpd/user_list
+
+重启
+service vsftpd restart
+
+清屏
+clear
+
+adduser -s /bin/false -d /var/ftp/ftp2 ftp2
+
+
+查看用户组
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# cat /etc/group
+
+
+-----------------------------------------------------
+20170921
+
+添加一个用户组,组名sexy
+
+groupadd sexy
+
+clear
+
+cat /etc/group
+
+修改用户组名称sexy -> market
+groupmod -n market sexy
+
+
+修改组编号
+groupmod -g 668 market
+
+创建组名时同时自定义组编号
+groupadd -g 888 boss
+
+-----------------------------------------------
+#创建用户组
+
+groupadd sexy
+
+#清屏
+clear
+
+#查看配置文件
+cat /etc/group
+
+#改用户组名称
+#            新    旧
+groupmod -n market sexy
+
+
+#更改组编号
+         组编号  组名称
+groupmod -g 668 market
+
+
+#查看配置文件
+cat /etc/group
+
+
+#删除用户组
+groupdel market 
+
+
+#创建用户组
+groupadd sexy
+
+#添加加sdf到sexy用户组中
+useradd -g sexy sdf
+useradd -g sexy jzmb
+
+#看password文件
+cat /etc/passwd
+
+#查看home目录
+ll /home
+
+
+#清除账户密码 --这样可以无密码登陆
+
+passwd -d sdf
+
+#设置密码
+passwd sdf
+
+sdf
+
+
+#清除账户密码 --这样可以无密码登陆
+
+passwd -d ftp2
+
+#设置密码
+passwd ftp2
+
+ftp2
+
+ftp2依然是不能用的
+
+用sdf当用户试一下
+
+
+
+删掉其他用户，加入root用户
+
+vi /etc/vsftpd/user_list
+root
+sdf
+
+
+步骤:
+1.vsftpd 跑起来
+
+2.新建用户,把新建的用户加入到vsftpd中
+
+3.进行用户权限配置
+
+4.修改端口
+
+20170921
+
+收支明细
+
+http://www.zfshlm.com/weixin/plat/app/index.php/nowpay/manager.html
+
+
+http://www.zfshlm.com/weixin/plat/app/index.php/nowpay/moneyclogslist.html
+
+
+
+http://www.zfshlm.com/weixin/plat/app/index.php/nowpay/orderlist.html
+
+
+对数函数
+
+http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&ie=utf-8&word=%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0
+
+
+对数函数
+http://baidu.wasu.cn/watch/04432808353425021582.html?page=videoMultiNeed
+-----------------------------------------------------
+
+20170922
+
+它是杠杆，你是支点”
+
+ 
+
+其实所谓的杠杆借力，必须具备四个基本的要素：
+1、杠杆（空头支票）
+2、支点（店员）
+3、杠杆的一端（帅哥）
+4、杠杆的另一端（美女）
+看完这四个基本的要素，你是否会拿起笔在纸上画画？你是否会悟到什么？
+你没有想到的事，别人已经想到了，你有何感想？
+
+
+62368
+
+cd /etc/vsftpd
+
+更改前备份
+[root@iZ2ze1gv1fi5l6qzong042Z vsftpd]# cp vsftpd.conf vsftpd.conf.20170922bak
+
+
+[root@iZ2ze1gv1fi5l6qzong042Z vsftpd]# vim vsftpd.conf
+
+1.编辑 /etc/vsftpd/vsftpd.conf 文件，在该配置文件中添加此行：listen_port=801
+2.编辑 /etc/services 文件，将其中的 ftp 21/tcp 改为 ftp 801/tcp , ftp
+21/udp
+改为 ftp 801/udp
+3.执行 /etc/init.d/vsftpd restart 重新启动 vsftpd 服务。启动完成后可以使
+用 netstat -ntpl | grep vsftpd 命令可以查看到系统现
+监听的 vsftpd 的端口为 801
+4.使用 lftp 192.168.0.1:801(192.168.0.1 是 vsftpd 服务器的地址 )，这样既
+可以访问到 ftp 服务器了。
+
+cd ~
+
+cp services services.20170922bak
+
+vim services
+
+#重启
+service vsftpd restart
+
+易尚
+
+<li><a href="orderlist?o_status=1&o_type=1&refund=1" target="content-iframe"><span class="am-icon-file-text-o am-icon-fw"></span> 退款专用</a></li>
+
+
+<!--  推款专用 -->
+<if condition='$se.refund eq 1'>
+	 <a style="cursor:pointer;" class="refund" customer_id="{$vo.custid}"  batchcode="{$vo.order_platform}"  paytype="{$vo.paytype}" n_p_custid="{$vo.n_p_custid}" title="退款" >
+		<img src="/weixinpl/common/images_V6.0/operating_icon/icon27.png" class="divshadow" style="height:20px;width:20px"></a> 
+</if>
+
+
+<if condition='$se.o_status eq 1 && $se.refund neq 1'> 	  
+	  selectWaitPay(); 
+</if>
+
+
+<!-- 不是退款的情况下 -->
+<if condition='$se.refund neq 1'>
+	<a style="cursor:pointer;" onclick="Payload(this,'{$vo.n_p_custid}',1)" title="详情">
+		<img src="/weixinpl/common/images_V6.0/operating_icon/icon11.png" class="divshadow" style="height:20px;width:20px"></a>
+</if>
+
+
+<li><a href="orderlist?o_status=1&o_type=1&refund=1" target="content-iframe"><span class="am-icon-file-text-o am-icon-fw"></span> 退款专用</a></li>
+
+<!-- 不是退款的情况下 -->
+<if condition='$se.refund neq 1'>
+	<th width="3%"><input id="ck_all"  type="checkbox"></th>
+</if>
+------------------------------------------------------------------------------
+20170925
+
+如何判断一个用户是否关注公众号
+https://www.baidu.com/s?wd=%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E6%98%AF%E5%90%A6%E5%85%B3%E6%B3%A8%E5%85%AC%E4%BC%97%E5%8F%B7&rsv_spt=1&rsv_iqid=0x8dc46f8100005738&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=12&rsv_sug1=8&rsv_sug7=100
+
+
+微信公众号获取一键关注链接
+
+http://jingyan.baidu.com/article/e75057f2f5ecf9ebc91a89f3.html
+
+判断微信用户是否关注了公众号
+http://blog.csdn.net/qq_23842683/article/details/53888927
+
+
+【微信公众号】验证用户OpenID是否关注某个公众号
+http://www.cnblogs.com/jhli/p/5915592.html
+
+
+
+php判断用户是否关注微信公众号
+
+http://www.jb51.net/article/89093.htm
+
+
+微信公众号判断用户是否已关注php代码解析
+http://www.thinkphp.cn/topic/45550.html
+
+
+php判断用户是否关注微信公众号
+https://www.baidu.com/s?wd=php%E5%88%A4%E6%96%AD%E7%94%A8%E6%88%B7%E6%98%AF%E5%90%A6%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7&rsv_spt=1&rsv_iqid=0xd17311c400025cfa&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_n=2&rsv_sug3=1
+
+
+
+
+微信公众号一键关注生成器_一键关注源码_一键关注链接_微信一键关注
+http://www.tpy10.net/
+
+http://www.tpy10.net/create.php?name=zhifushlm
+
+http://dwz.cn/6yfc5H
+
+
+
+一.判断用户是否关注公众号
+
+二.公众号的链接
+  
+   至富
+   https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5NjU5ODEzMw==&scene=124#wechat_redirect
+
+
+三.JS和Iframe的组合使用,还有定时器
+   iframe显示指定区域
+   
+四.定时扫描别忘了用定时器
+
+	定时器检测3000毫秒(3秒),是否关注的微信公众帐号
+--------------------------------------------------
+20170926
+
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/cashplatform/discount_order.php?n_p_custid=681&n_p_cashierid=0&weixin_openid=odRh-xJdQA545L-NNXCkJuyWI0lg&custid=41&n_p_userid=198155&user_id=202050
+
+E:\weixin_platform\weixinpl\back_nowpaySystem\cashplatform\discount_order.php  
+
+//这里存的我想要的信息
+E:\weixin_platform\weixinpl\back_nowpaySystem\fuction.php
+
+Util
+//具体的使用例子
+E:\weixin_platform\weixinpl\back_nowpaySystem\cashplatform\order_pay.php
+
+501
+
+obtion_cust
+
+$cust=obtion_cust($customer_id);
+
+//我想要的东西
+Array
+array(5) { 
+	["keyid"]=> string(3) "725" 
+	["appid"]=> string(18) "wxaf034ee5c10a4dfc" 
+	["appsecret"]=> string(32) "8a4ab31b127c8d7fe573f4140bdf8251" 
+	["access_token"]=> string(117) "wUE2T78vvzdBAdS4xY6doQr1VLRRcyPtuVz4QPSTspC-m9-fPfdcNBhLqILCSV2qLq5TLusNP5O_eqYNPfEjEqOQNT3Ea0q6AWkKyVfWJyEPXGgAEAJRA" 
+	["is_oauth"]=> string(1) "1" 
+}
+
+
+:https://api.weixin.qq.com/cgi-bin/user/info?access_token=LW249NSc3eFC-AkmOnvfcFm6GYSQah7eYNi_ohKMqSOFbjPDvAw3rDm09DssgYYDcy8OVhjCrsjBT-SBYFlk8RxkSL53JV2D0jngd1NrleFSco5kQynnBCQ5TNM6NWZ8XHAbACARBU&openid=odRh-xK_pRgfHAffz0cyWzSJ6Evk
+
+
+$util = new Util();
+$json = $util->httpGet_a($order_url);
+
+
+{"subscribe":1,"openid":"odRh-xK_pRgfHAffz0cyWzSJ6Evk","nickname":"关精博","sex":1,"language":"zh_CN","city":"大庆","province":"黑龙江","country":"中国","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/XEqZsm3DvsqXqRlibfAPEB3oQ7CpnQmLCib5q8LFsGjkIiajzpkrGw60FSib9FFFToib7zaRvLeKsEomjGj1EoReJffV5DzNkwkic4\/0","subscribe_time":1506307521,"remark":"","groupid":0,"tagid_list":[]}
+
+
+//可以实现功能了
+
+<?php 
+	    $cust=obtion_cust($customer_id);//获取商家公众号唯一信息,返回值是不是数组
+	   
+	   
+	    //echo $cust;
+	    //var_dump($cust);
+	    //判断用户是否,是否关注过微信公众账号
+    	//$access_token = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=".$cust["appid"]."&secret=".$cust["appsecret"];
+    	//$access_msg = json_decode(file_get_contents($access_token));
+    	//echo "access_msg: ".$access_msg;
+    	
+    	
+    	//$token = $access_msg->access_token;
+	    $token = $cust["access_token"];
+	    //echo "token:::".$token."<br>";
+    	$subscribe_msg = "https://api.weixin.qq.com/cgi-bin/user/info?access_token=".$token."&openid=".$openid;
+    	
+    	//echo "subscribe_msg:::".$subscribe_msg;
+    	$util = new Util();
+    	$json = $util ->httpGet($subscribe_msg);
+    	//echo $json;
+    	
+    	//$subscribe = json_decode(file_get_contents($subscribe_msg));
+    	
+    	$subscribe = json_decode($json);
+    	$gzxx = $subscribe->subscribe;
+    	
+    	if($gzxx === 1){
+    	    echo "已关注";
+    	}else{
+    	    echo "未关注";  
+    	}
+	?>
+	
+	http://mp.weixin.qq.com/s/2wjNUqiwO5nZ0PFAGl4uXg
+
+	//至富公众号的二维码的解析结果	
+	http://weixin.qq.com/q/023MOY4gRod-410000M07r
+	
+-----------------------------------------------------------
+jquery attr删除属性值
+
+https://www.baidu.com/s?wd=jquery%20attr%E5%88%A0%E9%99%A4%E5%B1%9E%E6%80%A7%E5%80%BC&rsv_spt=1&rsv_iqid=0x81af17a600001674&issp=1&f=3&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=14&rsv_sug1=12&rsv_sug7=101&rsv_t=6f5a4VHgOxQpAq%2B%2FbaSgPzC6vfWcx202Wh0ZbvK0%2BLSIVXG0TpHrNTNkmJNr4vDzPQRD0Q&rsv_sug2=1&prefixsug=jquery%2520attr%25E5%2588%25A0%25E9%2599%25A4%25E5%25B1%259E%25E6%2580%25A7&rsp=0&inputT=14335&rsv_sug4=15596
+
+	
+----------------------------------------------------------------------------------	
+	
+jQuery .attr()和.removeAttr()方法操作元素属性示例
+
+http://www.jb51.net/article/39801.htm
+
+
+359
+
+450
+
+1.php获得关注信息,得变成ajax方式
+
+weixin_follow_ajax.php
+
+2.根据第一次封装到js一个函数里.
+
+3.定时器定时运行这个函数
+
+//var getWeiXinFollowToken  = <?php echo obtion_cust($customer_id)["access_token"]; ?>;
+    	var getWeiXinFollowToken  = <?php echo obtion_cust($customer_id)["access_token"]; ?>;
+
+-----------------------------------------------------------------
+20170927
+		
+C++环境
+
+<script>
+	function get_pay_status(){
+		console.log("定时器输出");
+		//ajax
+		
+		
+	}
+	window.setInterval("get_pay_status()",2000);
+</script>
+
+
+<script type="text/javascript">
+		//微信关注检测
+		var num=0;
+		function weixinFollow(){
+			document.getElementById("con").value=num;;
+			num=num+1;
+
+			//在这里做控制
+			//1.检测用户是否关注过公众号
+			//2.如没关注过,让用户去关注
+		}
+	
+		window.setInterval("weixinFollow()",4000);
+	</script>
+	<p id="con">11111111111111111</p>
+	
+这是好使的
+
+<script type="text/javascript">
+		var attime;
+		function clock()
+		{
+			var time = new Date();
+			attime = time.getHours()+":"+time.getMinutes()+":"+time.getSeconds();
+			document.getElementById("clock").value = attime;
+		}
+		window.setInterval("clock()",100);
+	</script>
+	<input type="text"  id="clock" size="50" />	
+	
+显示只执行一次
+
+
+iframe居中显示
+
+
+<div class="bigbox01">
+	<p class="p1"><?php echo $cust['cust_name'];?></p>
+	<div class="smallbox">
+		<p class="yh">
+			<span class="yhb kyh select">可优惠</span>
+			<!--<span class="yhb bkyh" id="yhb">不可优惠</span>-->
+		</p>
+		<div class="littlebox01">
+			<span>消费总金额(元)：</span>
+			<input type="text" id="xfje" placeholder="请询问服务员后输入">
+		</div>
+	</div>
+</div>
+
+20171001
+
+10 9 8 7 6 5 4 3 2 1
+
+1 
+
+4  = 4-1
+
+4 3
+
+
+
+//将arr[l...mid]和arr[mid+1...r]两部分进行归并
+template<typename T>
+void __merge(T arr[],int l,int mid,int r){
+
+
+	//* VS不支持动态长度数组, 即不能使用 T aux[r-l+1]的方式申请aux的空间
+	//* 使用VS的同学, 请使用new的方式申请aux空间
+	//* 使用new申请空间, 不要忘了在__merge函数的最后, delete掉申请的空间:)
+	//T aux[r - l + 1];
+	T *aux = new T[r-l+1];
+
+
+
+	for (int i = l; i <= r; i++)
+	{
+		aux[i - 1] = arr[i];
+	}
+	int i = l, j = mid + 1;
+	for (int k = l; k <= r; k++)
+	{
+		if(i>mid){
+			arr[k] = aux[j - l];
+			j++;
+		}
+		else if (j > r){
+			arr[k] = aux[i-l];
+			i++;
+		}
+		//上面为防止数组越界
+		else if (aux[i-l]<aux[j-l]){
+			arr[k] = aux[i - l];
+			i++;
+		}
+		else{
+			arr[k] = aux[j - l];
+			j++;
+		}
+	}
+
+	delete[] aux;
+}
+
+20171004
+
+template<typename T>
+void insertionSort(T arr[], int l,int r){
+	//第一个位置不用考虑
+	for (int i = l+1; i < r; i++)
+	{
+		//寻找元素arr[i]合适的插入位置
+		T e = arr[i];
+		int j; //j保存元素e应该插入的位置
+		for (j = i; j > 0 && arr[j - 1] > e; j--)
+		{
+			arr[j] = arr[j - 1];
+		}
+		arr[j] = e;
+	}
+	return;
+}
+
+------------------------------------------------------------
+/*
+	int n = 10000;
+	int *arr = SortTestHelper::generateNearlyOrderedArray(n,10);
+	int *arr2 = SortTestHelper::copyIntArray(arr,n);
+
+	SortTestHelper::testSort("Inserttion Sort",insertionSort,arr,n);
+	SortTestHelper::testSort("Selection Sort",selectionSort,arr2,n);
+
+	delete[] arr;
+	delete[] arr2;
+	*/
+
+	int n = 50000;
+	//int *arr = SortTestHelper::generateNearlyOrderedArray(n, 10);
+	int *arr = SortTestHelper::generateRandomArray(n,0,n);
+	int *arr2 = SortTestHelper::copyIntArray(arr, n);
+
+	SortTestHelper::testSort("Inserttion Sort", insertionSort, arr, n);
+	SortTestHelper::testSort("Merge Sort", mergeSort, arr2, n);
+
+	delete[] arr;
+	delete[] arr2;
+
+	cout << endl;
+
+
+	int swapTimes = 10;
+
+	cout << "Test for nearly ordered array, size = " << n << ", swap time = " << swapTimes << endl;
+	arr = SortTestHelper::generateNearlyOrderedArray(n, swapTimes);
+	arr2 = SortTestHelper::copyIntArray(arr, n);
+
+	SortTestHelper::testSort("Insertion Sort", insertionSort, arr, n);
+	SortTestHelper::testSort("Merge Sort", mergeSort, arr2, n);
+
+	delete[] arr;
+	delete[] arr2;
+----------------------------------------------------------
+
+#include<iostream>
+#include<algorithm>
+#include<string>
+#include "Student.h"
+
+#include "SortTestHelper.h"
+#include "SelectionSort.h"
+#include "InsertionSort.h"
+#include "MergeSort.h"
+#include "mergeSortBU.h"
+
+using namespace std;
+
+
+
+int main(){
+	int n = 1000000;
+
+	// 测试1 一般性测试
+	cout << "Test for random array, size = " << n << ", random range [0, " << n << "]" << endl;
+	int* arr1 = SortTestHelper::generateRandomArray(n, 0, n);
+	int* arr2 = SortTestHelper::copyIntArray(arr1, n);
+
+	SortTestHelper::testSort("Merge Sort", mergeSort, arr1, n);
+	SortTestHelper::testSort("Merge Sort Bottom Up", mergeSortBU, arr2, n);
+
+	delete[] arr1;
+	delete[] arr2;
+
+	cout << endl;
+
+
+	// 测试2 测试近乎有序的数组
+	int swapTimes = 100;
+	cout << "Test for nearly ordered array, size = " << n << ", swap time = " << swapTimes << endl;
+	arr1 = SortTestHelper::generateNearlyOrderedArray(n, swapTimes);
+	arr2 = SortTestHelper::copyIntArray(arr1, n);
+
+	SortTestHelper::testSort("Merge Sort", mergeSort, arr1, n);
+	SortTestHelper::testSort("Merge Sort Bottom Up", mergeSortBU, arr2, n);
+
+	delete[] arr1;
+	delete[] arr2;
+
+	return 0;
+}
+
+20171004
+
+//重点精力用在quickSort排序上(背下来,会写)
+
+
+20171005
+
+
+int __quickSort2(T arr[],int l,int r){
+	swap(arr[l],arr[rand()%(r-l+1)+l]);
+	T v = arr[l];
+
+	//arr[l+1....i) <= v; arr(j....r] >= v
+	int i=l+1, j=r;
+	while (true){
+		while (i<=r && arr[i]<v)
+		{
+			i++;
+		}
+		while (j>=l && arr[j]>v)
+		{
+			j--;
+		}
+		if (i > j){
+			break;
+		}
+		swap(arr[i],arr[j]);
+		i++;
+		j--;
+	}
+	swap(arr[l],arr[j]);
+	return j;
+}
+-------------------------------------------------------------
+20171006
+
+o(nlogn)
+
+逆序对
+
+双重循环 o(n^2)
+
+递归(o(nlogn))
+
+
+parent(i) =  i/2
+left child(i) = 2 * i
+right child(i) = 2*i + 1
+
+
+
+
+
+玖富万卡
+https://wanka.9fbank.com/actives/pc-register4.html?utm_source=baidupzPCa137e0e50b106f6fb421a44640f833df&utm_medium=cpt&utm_campaign=wangye1&utm_content=&utm_term=
+
+
+13936931626
+
+1982A6529  ---> 1982A629
+
+866871
+
+
+13936931626服务密码10086
+
+服务密码: 866871
+
+
+20171007
+
+
+
+
+Item extractMax(){
+		assert(count > 0);
+
+		Item ret = data[1];
+
+		swap(data[1],data[count]);
+		count--;
+		shiftDown(1);
+
+		return ret;
+	}
+
+
+void shiftDown(int k){
+		while (2*k <= count){ //有左孩子,在完全2叉树
+			int j = 2 * k; 
+			//在此轮循环中,data[k]
+			//和data[j]交换位置
+
+			//有没有右孩子
+			if (j+1 <= coun && data[j+1] > data[j])
+			{
+				j += 1;
+			}
+
+			//父节点比子节点大,不用交换
+			if (data[k] >= data[j])
+			{
+				break;
+			}
+
+			swap(data[k],data[j]);
+			k = j;
+
+		}
+	}
+
+	
+	
+	void shiftDown(int k){
+		while (2 * k <= count){
+			int j = 2 * k; // 在此轮循环中,data[k]和data[j]交换位置
+			if (j + 1 <= count && data[j + 1] > data[j])
+				j++;
+			// data[j] 是 data[2*k]和data[2*k+1]中的最大值
+
+			if (data[k] >= data[j]) break;
+			swap(data[k], data[j]);
+			k = j;
+		}
+	}
+	
+	
+	
+	int main(){
+	MaxHeap<int> maxheap = MaxHeap<int>(100);
+	//cout << maxheap.size()<< endl;
+
+	srand(time(NULL));
+	for (int i = 0; i < 50; i++)
+	{
+		maxheap.insert(rand()%100);
+	}
+	//maxheap.testPrint();
+
+	while (!maxheap.isEmpty())
+	{
+		cout << maxheap.extractMax() << " ";
+	}
+	cout << endl;
+
+	return 0;
+}
+
+---------------------------------------------------------
+
+20171007
+
+
+	int n = 1000000;
+
+	// 测试1 一般性测试
+	cout << "Test for random array, size = " << n << ", random range [0, " << n << "]" << endl;
+	int* arr1 = SortTestHelper::generateRandomArray(n, 0, n);
+	int* arr2 = SortTestHelper::copyIntArray(arr1, n);
+	int* arr3 = SortTestHelper::copyIntArray(arr1, n);
+	int* arr4 = SortTestHelper::copyIntArray(arr1, n);
+	int* arr5 = SortTestHelper::copyIntArray(arr1, n);
+	
+
+	SortTestHelper::testSort("Merge Sort", mergeSort,arr1,n);
+	SortTestHelper::testSort("Quick Sort", quickSort, arr2, n);
+	SortTestHelper::testSort("Heap Sort 1", heapSort1, arr3, n);
+	SortTestHelper::testSort("Heap Sort 2", heapSort2, arr4, n);
+	SortTestHelper::testSort("heapSort  :", heapSort, arr5, n);
+
+	delete[] arr1;
+	delete[] arr2;
+	delete[] arr3;
+	delete[] arr4;
+	delete[] arr5;
+
+	// 测试2 测试近乎有序的数组
+	int swapTimes = 100;
+	cout << "Test for nearly ordered array, size = " << n << ", swap time = " << swapTimes << endl;
+	arr1 = SortTestHelper::generateNearlyOrderedArray(n, swapTimes);
+	arr2 = SortTestHelper::copyIntArray(arr1, n);
+	arr3 = SortTestHelper::copyIntArray(arr1, n);
+	arr4 = SortTestHelper::copyIntArray(arr1, n);
+	arr5 = SortTestHelper::copyIntArray(arr1, n);
+
+	SortTestHelper::testSort("Merge Sort", mergeSort, arr1, n);
+	SortTestHelper::testSort("Quick Sort", quickSort, arr2, n);
+	SortTestHelper::testSort("Heap Sort 1", heapSort1, arr3, n);
+	SortTestHelper::testSort("Heap Sort 2", heapSort2, arr4, n);
+	SortTestHelper::testSort("heapSort  :", heapSort, arr5, n);
+
+	delete[] arr1;
+	delete[] arr2;
+	delete[] arr3;
+	delete[] arr4;
+	delete[] arr5;
+
+	// 测试3 测试存在包含大量相同元素的数组
+	cout << "Test for random array, size = " << n << ", random range [0,10]" << endl;
+	arr1 = SortTestHelper::generateRandomArray(n, 0, 10);
+	arr2 = SortTestHelper::copyIntArray(arr1, n);
+	arr3 = SortTestHelper::copyIntArray(arr1, n);
+	arr4 = SortTestHelper::copyIntArray(arr1, n);
+	arr5 = SortTestHelper::copyIntArray(arr1, n);
+
+
+	SortTestHelper::testSort("Merge Sort", mergeSort, arr1, n);
+	// 这种情况下, 普通的QuickSort退化为O(n^2)的算法, 不做测试
+	//SortTestHelper::testSort("Quick Sort", quickSort, arr2, n);
+	SortTestHelper::testSort("Quick Sort 3 way", quickSort2, arr2, n);
+	SortTestHelper::testSort("Heap Sort 1", heapSort1, arr3, n);
+	SortTestHelper::testSort("Heap Sort 2", heapSort2, arr4, n);
+	SortTestHelper::testSort("heapSort  :", heapSort, arr5, n);
+
+	delete[] arr1;
+	delete[] arr2;
+	delete[] arr3;
+	delete[] arr4;
+	delete[] arr5;
+	
+	
+百度钱包
+
+https://www.baifubao.com/fastpay/0/cardmanager/0/add/0
+13936931626
+
+支付密码
+866871	(不是这个)
+	
+20171010 周二
+
+鼠标悬浮效果
+
+<a href="card_member.php?customer_id=BzVQYw==&amp;card_id=22">5328</a>	
+
+
+<a>会员列表<span class="WSY_preview1">示例展示<span>
+
+
+E:\weixin_platform\weixinpl\card_member.php
+
+<li class="WSY_qrcord"><img src="WeixinManager/qrsbig/1/20170221034004_0.jpg"></li>
+
+.WSY_qrcord:hover img{display:block;}
+
+
+
+深度学习框架
+Tensorflow
+
+------------------------------------------------------------------------
+20171011
+
+6-3没有例子
+
+把之前代码跑起来
+
+6-4
+
+6-5
+
+6-6
+
+7-1图论基础
+
+
+app 微信接口
+https://www.baidu.com/s?wd=app%20%E5%BE%AE%E4%BF%A1%E6%8E%A5%E5%8F%A3&rsv_spt=1&rsv_iqid=0xaff4ab1a00001bef&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=9&rsv_sug1=8&rsv_sug7=101
+
+
+第三方App接入微信登录 解读 - 南极山 - 博客园
+
+http://www.cnblogs.com/benwu/articles/5705604.html
+
+
+jquery红包素材
+
+https://www.baidu.com/s?wd=jquery%E7%BA%A2%E5%8C%85%E7%B4%A0%E6%9D%90&rsv_spt=1&rsv_iqid=0xb4332e5f0000d387&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=98012088_5_dg&ch=12&rsv_enter=1&oq=%25E7%25BA%25A2%25E5%258C%2585%25E7%25B4%25A0%25E6%259D%2590&rsv_t=a109jRUerEzm37K3LFTV3TdPixLOm3V5fwlLyBn3rWCuchAhSq7yqoEOAaqY%2F8Ekn%2FZhkw&rsv_sug3=13&rsv_sug1=8&rsv_sug7=100&rsv_pq=db02b08c0000af5a&rsv_sug2=0&inputT=24868&rsv_sug4=25784
+
+jquery css3点击红包摇一摇抽奖代码
+
+http://www.17sucai.com/pins/13571.html
+
+
+http://www.17sucai.com/pins/demoshow/13571
+
+
+各种红包素材
+
+http://www.17sucai.com/pins/tag/9389.html
+
+
+当前位置 : 代码>html5 css3>html5实例>背景动画
+
+http://www.17sucai.com/pins/tag/317.html
+
+
+
+
+手机二维码预览
+CSS3带背景动画的登录框表单代码
+
+http://www.17sucai.com/pins/demoshow/11532
+
+
+
+手机二维码预览
+div css3 hover transform属性5种鼠标悬停图片背景动画效果
+
+
+http://www.17sucai.com/pins/demoshow/2494
+
+
+
+当前位置 : 代码>html5 css3>html5实例>背景动画
+ 
+http://www.17sucai.com/pins/tag/317.html?p=2
+
+
+简单的html5手机拆红包摇奖游戏代码
+
+http://www.17sucai.com/pins/13135.html
+
+
+当前位置 : 代码>html5 css3>html5实例>红包
+
+http://www.17sucai.com/pins/tag/9389.html
+
+第三方App接入微信登录 解读 
+http://www.cnblogs.com/benwu/articles/5705604.html
+
+
+
+20171012
+
+掌握了解的技术栈
+
+技术,经验,业务
+
+项目经验
+
+java php 
+
+算法
+
+本人特点(职场环境的原因):小公司,全流程
+
+github需要熟练使用
+
+
+
+int main(){
+
+	int N = 20;
+	int M = 100;
+
+	srand(time(NULL));
+
+
+	// Sparse Graph
+	SparseGraph g1(N, false);
+	for (int i = 0; i < M; i++){
+		int a = rand() % N;
+		int b = rand() % N;
+		g1.addEdge(a, b);
+	}
+
+	// O(E)
+	for (int v = 0; v < N; v++){
+		cout << v << " : ";
+		SparseGraph::adjIterator adj(g1, v);
+		for (int w = adj.begin(); !adj.end(); w = adj.next())
+			cout << w << " ";
+		cout << endl;
+	}
+
+	cout << endl;
+
+
+	// Dense Graph
+	DenseGraph g2(N, false);
+	for (int i = 0; i < M; i++){
+		int a = rand() % N;
+		int b = rand() % N;
+		g2.addEdge(a, b);
+	}
+
+	// O(V^2)
+	for (int v = 0; v < N; v++){
+		cout << v << " : ";
+		DenseGraph::adjIterator adj(g2, v);
+		for (int w = adj.begin(); !adj.end(); w = adj.next())
+			cout << w << " ";
+		cout << endl;
+	}
+
+	return 0;
+}
+
+20171013
+
+7-5
+
+寻路
+1.深度优先遍历
+2.从结果到目标,记一下.
+3.打印出来
+
+
+http://jobs.zhaopin.com/447149232250381.htm?ssidkey=y&ss=201&ff=03&sg=d86624d6751c4ef38022d6a031f53b43&so=1&uid=630808186
+
+岗位职责：
+
+  1、熟悉面向对象，具有良好的编程风格习惯，熟悉软件开发流程熟悉MVC,有在MVC模式下进行过大型项目开发的经验。
+    2、熟悉使用 Tomcat 能部署Tomcat分布式环境。
+    3、熟悉分布式、Nginx配置使用、缓存（redis）、消息队列(RabbitMQ)、能独立部署应用环境。
+    4、熟悉 httpclient、shiro、sso技术。
+    5、熟悉 流行框架  SSM（Spring 、mybatis、SptringMVC  ）。
+    6、使用过 restful 架构风格。
+    7、熟悉JQuery等Javascript框架，进行简单的前端逻辑 。
+    8、了解 HTML/HTML5、CSS/CSS3 。
+    9、熟悉Mysql数据库，mysql基础优化、主从复制、读写分离。
+    10、熟悉liunx系统 能在liunx上搭建JAVA分布式项目的运行环境。
+    11、使用过 GIT、SVN 等版本控制系统。
+
+任职要求：
+
+1、有电商项目、医院项目、具有大数据量、高负载、高并发系统的开发经验优先。
+
+2、本科以上学历，至少3年以上实际开发经验。
+
+
+工作地址：
+黑龙江佳木斯前进区滨江东路389号 
+
+
+最小生成树
+
+--------------------------------------------------------------------------------
+20171016
+
+
+ElasticSearch入门
+
+
+阿里云服务器价格表
+
+https://jingyan.baidu.com/article/cd4c29790a332c756f6e6070.html
+
+
+
+// 测试我们的Dijkstra最短路径算法
+int main() {
+
+    string filename = "testG1.txt";
+    int V = 5;
+
+    SparseGraph<int> g = SparseGraph<int>(V, true);
+    // Dijkstra最短路径算法同样适用于有向图
+    //SparseGraph<int> g = SparseGraph<int>(V, false);
+    ReadGraph<SparseGraph<int>, int> readGraph(g, filename);
+
+    cout<<"Test Dijkstra:"<<endl<<endl;
+    Dijkstra<SparseGraph<int>, int> dij(g,0);
+    for( int i = 0 ; i < V ; i ++ ){
+        if(dij.hasPathTo(i)){
+            cout<<"Shortest Path to "<<i<<" : "<<dij.shortestPathTo(i)<<endl;
+            dij.showPath(i);
+        }
+        else
+            cout<<"No Path to "<<i<<endl;
+
+        cout<<"----------"<<endl;
+    }
+
+    return 0;
+}
+
+20171017
+09-Shortest-Path
+08-Minimum-Span-Trees
+07-Graph-Basics
+06-Union-Find
+05-Binary-Search-Tree
+04-Heap
+03-Sorting-Advance
+02-Sorting-Basic
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	cout << "Hello World!" << endl;
+	return 0;
+}
+
+20171018
+
+本人10年工作经验，8年软件开发(java .net软件工程师)做过的软件项目包含，公安(情报类软件)、电力(电力类财务软件)、金融（金融类CRM和p2p网贷）、接触过石油项目，2年技术支持(涉密信息安全),会驾驶B2驾照2年经验家在大庆比较熟悉大庆路况。
+
+
+本人10年以上工作经验，现就任互联网公司,职务为系统工程师,技术类管理工作,负责公司新软件的技术选型与设计,其它部门的需求对接,关键性核心模块开发,保证原有系统稳定运行等;8年软件开发(java .net软件工程师)做过的软件项目包含，公安(情报类软件)、电力(电力类财务软件)、金融（金融类CRM和p2p网贷）、接触过石油项目，2年技术支持(涉密信息安全),会驾驶B2驾照。
+
+
+20171018
+
+
+vertex
+顶点
+
+045902498591
+
+20171019
+公司充值
+
+20171020
+
+东方航空
+
+https://easternmiles.ceair.com/mpf/#/home/index
+https://easternmiles.ceair.com/mpf/#/sign/forget?request_locale=zh_CN
+
+13936931626
+密码
+ 
+19820629
+
+20171023
+
+Document document = reader.read(new File("src/res/books.xml"));
+
+20171024
+
+ceb_merchant.properties
+
+log4jMerchant_dev.properties
+
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: C:\bankpay\cert4test\cebmerchant.jks (系统找不到指定的路径。)
+
+
+20171026
+
+卡拉卡7.5万额度真的吗?
+用户名:
+13936931626
+
+登陆密码:
+1682629AB
+
+支付密码:
+866871
+
+-----------------------
+阳光银行
+关精博
+gj....6
+
+1682629AB
+
+-----------------------------
+20171027
+
+CN=041@82000006688@2000006688@00000003
+
+
+20171030
+
+根据一个数组直接构造堆,忘了
+
+600405 动力源要来机会了
+601216 君正集团要来机会
+
+20171101
+50
+
+6
+
+44
+-----------------------------
+20171102
+
+<div class="huiyuan" style="border-bottom:1px solid #eee;">
+	<p class="hy">无会员卡(请申领会员卡)<span><?php if($discount < 100 & $discount >1){ ?>(<?php  echo $discount/10;?>折)<?php } else {echo "无折扣";} ?></span></p>
+	<div class="anniu">
+		<a href="javascript:show_card('<?php echo $customerid;?>','<?php echo $userid;?>','<?php echo $card_id;?>')"  style="display: inline-block;float: right;color:red;">申请会员卡</a>
+	</div>
+</div>
+
+function show_card(customer_id_en,user_id,card_id){
+    location.href = "../../card/show_card.php?customer_id="+customer_id_en+"&user_id=<?php echo $userid; ?>&card_id="+card_id+"";
+}
+
+          var src = "../../card/show_card.php?customer_id="+customerid+"&user_id="+user_id+"&card_id="+card_id+"";
+
+
+457
+
+99
+
+113
+
+
+var src = "http://www.zfshlm.com/index/images/zfewm.png";
+
+
+20171103
+
+	//cout << "l:" << l << "  ";
+	//cout << "r:" << r << "  ";
+	//cout << "mid:" << mid << endl;
+
+20171114
+
+  二区是什么学校
+  26 -- 27 万
+  
+  62
+  
+  东新一小  44中
+  
+20171119
+
+从数组中一个个取出元素,并去掉这个元素在数组中.  
+
+
+
+function Set() {
+this.values = {};//集合数据保存对象的属性值
+this.length = 0; //集合中值的个数
+this.add.apply(this, arguments);//把所有的参数添加到集合
+};
+//集合中添加元素
+Set.prototype.add = function () {
+for (var i = 0, len = arguments.length; i < len; i++) {
+var val = arguments[i];
+var str = Set._valToStr(val);//转换为字符串
+if (!this.values.hasOwnProperty(str)) { //如果不在集合中,将字符串和值对应起来,集合中的长度+1
+this.values[str] = val;
+this.length++;
+}
+}
+};
+//获取值
+Set.prototype.get = function (index) {
+if (isNaN(parseFloat(index)) || !isFinite(index) || index >= this.length)
+return undefined;
+for (var s in this.values) { //集合中所有的字符串
+if (this.values.hasOwnProperty(s)) {
+if (index == 0)
+return this.values[s];
+index–;
+}
+}
+return this;//支持链式调用
+};
+//集合中删除元素
+Set.prototype.remove = function () {
+for (var i = 0, len = arguments.length ; i < len; i++) {
+var str = Set._valToStr(arguments[i]);
+if (this.values.hasOwnProperty(str)) {
+delete this.values[str];
+this.length–;
+}
+}
+return this;//返回this为了支持链式调用
+};
+//是否包含某个值
+Set.prototype.contains = function (value) {
+return this.values.hasOwnProperty(Set._valToStr(value));
+};
+//返回集合的长度
+Set.prototype.size = function () {
+return this.length;
+};
+//在指定的上下文遍历集合中的所有元素
+Set.prototype.foreach = function (f, context) {
+for (var s in this.values) { //集合中所有的字符串
+if (this.values.hasOwnProperty(s)) { //去掉继承而来的属性
+f.call(context, this.values[s]);
+}
+}
+};
+//比较两个Set是否相等
+Set.prototype.equals = function (that) {
+if (this == that)
+return true;
+//如果that 对象不是一个集合,它和this不相等,使用instanceof 使这个方法可以应用于Set的任何子类
+//注意null和undefined两个值是无法用于instanceof 运算的
+if (!(that instanceof Set))
+return false;
+if (this.size() != that.size())
+return false;
+try {
+this.foreach(function (v) { if (!(that.contains(v))) throw false; });
+}
+catch (e) {
+if (e === false)
+return false;
+throw e;
+}
+};
+//私有函数(通常使用_开始),用来将任意js的值和字符串对应
+Set._valToStr = function (value) {
+switch (value) {
+case undefined:
+return “undefined”;
+case null:
+return “null”;
+case true:
+return “true”;
+case false:
+return “false”;
+default:
+switch (typeof value) {
+case “number”: //数字带有number前缀
+return “number” + value;
+case “string”://字符串带有string前缀
+return “string” + value;
+default:
+return “@” + objectId(value);
+}
+}
+//对任意对象,都返回一个字符串,针对不同的对象,此函数返回不同的字符串,对于同一个对象多次调用,总是返回相同的字符串
+//为了做到这一点,给对象o创建一个属性,在ES5中这个属性不可枚举且是只读的
+function objectId(o) {
+var prop = “|objectid|”;//私有属性,存放id
+if (!o.hasOwnProperty(prop)) {
+o[prop] = Set._valToStr.next++;
+}
+return o[prop];
+};
+};
+Set._valToStr.next = 0;//初始化id的值
+
+
+------------------
+
+var set = new Set();
+set.add(true);
+set.add(false);
+set.add(true);
+set.add(false);
+set.add(1);
+set.add(null);
+console.log(set.size());
+console.log();
+console.log(set.get(5));
+console.log();
+for (var i = 0; i < set.size(); i++) {
+	console.log(set.get(i));
+}
+console.log();
+set.foreach(console.log,document);
+
+javascript set
+
+js笔记三:Set
+
+http://blog.csdn.net/zdhsoft/article/details/54343212
+
+Set 对象 (JavaScript)
+
+https://msdn.microsoft.com/library/dn251547(v=vs.94).aspx
+
+20171121
+
+
+
+
+#include<iostream>
+
+using namespace std;
+
+
+
+class Solution{
+
+
+	
+public:
+
+		
+};
+
+int main(){
+	
+	return 0;
+}
+s
+-------------------------------------
+20171203
+
+linux计划任务
+
+天空之眼 英语 2017 战争 /悬疑 /剧情 8.5 
+http://v.baidu.com/movie/126554.htm?frp=browse
+
+
+http://www.iqiyi.com/v_19rrag0r6s.html?vfm=bdvcsplld&frp=v.baidu.com%2Fmovie_intro%2F&kwid=126554
+
+20171208
+
+qr二维码常用容错级别
+
+https://zhidao.baidu.com/question/1733133529549693027.html
+
+
+qr二维码常用容错级别
+
+https://www.baidu.com/s?wd=qr%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%B8%B8%E7%94%A8%E5%AE%B9%E9%94%99%E7%BA%A7%E5%88%AB&rsv_spt=1&rsv_iqid=0xe7a9ea3e00014865&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=40&rsv_sug1=8&rsv_sug7=100&rsv_t=cb28VFTLxc8xRfUdK5qQAuQQyjAMbO0hU6nz322PA4nZddsixgX7OYZshutVMulWSkQS9w
+
+
+二维码详解（QR Code）
+
+https://www.cnblogs.com/sddai/p/5675041.html
+
+
+qrcode 容错级别
+
+https://www.baidu.com/s?wd=qrcode%20%E5%AE%B9%E9%94%99%E7%BA%A7%E5%88%AB&rsf=9&rsp=0&f=1&oq=%E5%BE%AE%E4%BF%A1qr%E7%A0%81%E5%AE%B9%E9%94%99%E7%BA%A7%E5%88%AB&tn=98012088_5_dg&ie=utf-8&ch=12&rsv_idx=2&rsv_pq=ea2c9246000138de&rsv_t=630fgKG1pfxwPkuUuvj8IHa%2FtlLYHBWrOPUiqvZLt5UiP4F7QHXxScUmntq4x5oruWbWbw&rqlang=cn&rs_src=0
+
+二维码的纠错功能原理是？它的容错率有多高？
+
+https://www.zhihu.com/question/21443493
+
+二维码的纠错功能原理是？例如，需要编码的码字数据有100个，并且想对其中的一半，也就是50个码字进行纠错，则计算方法如下。纠错需要相当于码字2倍的符号，因此在这种情况下的数量为50个×2＝100码字。因此，全部码字数量为200个，其中用作纠错的码字为50个，所以计算得出，相对于全部码字的纠错率就是25%。这一比率相当于QR码纠错级别中的“Q”级别。另外，在上述例子当中，也可以认为相对于码字数据的纠错率为50%，但变脏或破损的部位不仅仅局限于码字数据部分，因此，在QR码中，还是用相对于全部码字的比率来描述纠错率。它的容错率有多高？QR码具有“纠错功能”。即使编码变脏或破损，也可自动恢复数据。这一“纠错能力”具备4个级别，用户可根据使用环境选择相应的级别。调高级别，纠错能力也相应提高，但由于数据量会随之增加，编码尺寸也也会变大。
+
+
+二维码的纠错功能原理是？例如，需要编码的码字数据有100个，并且想对其中的一半，也就是50个码字进行纠错，则计算方法如下。纠错需要相当于码字2倍的符号，因此在这种情况下的数量为50个×2＝100码字。因此，全部码字数量为200个，其中用作纠错的码字为50个，所以计算得出，相对于全部码字的纠错率就是25%。这一比率相当于QR码纠错级别中的“Q”级别。另外，在上述例子当中，也可以认为相对于码字数据的纠错率为50%，但变脏或破损的部位不仅仅局限于码字数据部分，因此，在QR码中，还是用相对于全部码字的比率来描述纠错率。它的容错率有多高？QR码具有“纠错功能”。即使编码变脏或破损，也可自动恢复数据。这一“纠错能力”具备4个级别，用户可根据使用环境选择相应的级别。调高级别，纠错能力也相应提高，但由于数据量会随之增加，编码尺寸也也会变大。
+
+作者：阿树
+链接：https://www.zhihu.com/question/21443493/answer/18478377
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+-----------------------------------------------
+20171209
+
+有哪些看完可以让人热血沸腾的动作片推荐？
+
+https://www.zhihu.com/question/27855422
+      
+	  
+学习英语的好电影	  
+	  
+狙击精英：巅峰对决
+
+
+http://m.diaomie.com/tv-yunboplay-id-57525-src-1-num-1.html
+
+好电影
+http://m.diaomie.com/tv-list-id-5-pg-4-order--by--year--letter--area--lang-.html
+
+
+20171210
+
+绿色的手机餐饮预订app页面模板源码
+
+http://www.17sucai.com/pins/27207.html
+
+
+
+基于HUI框架的手机app界面样式模板 --功能挺全的
+
+
+http://www.17sucai.com/pins/26458.html
+
+
+------------------------------------------
+62104
+[root@localhost ~]# passwd
+
+4r6t8i9u7y*&^
+
+
+如果不是以root用户登录的，请先切换到root用户下，
+执行命令：su root
+然后按提示输入root用户的密码。
+英文系统：
+
+[root@localhost ~]# passwd
+Changing password for user root.
+New password:
+Retype new password:
+passwd: all authentication tokens updated successfully.
+中文系统：
+
+[root@localhost /]# passwd
+更改用户 root 的密码 。
+新的 密码：
+重新输入新的 密码：
+passwd： 所有的身份验证令牌已经成功更新。
+
+19
+
+
+5  7.568
+
+20171217
+
+杜江涛
+
+
+300318 博晖创新  5.57
+
+20171221 
+
+php资料地址:
+\\PCOS-1705031334\soft
+
+20171221
+
+mysql访问的地址
+
+http://localhost/phpmyadmin
+
+D:\wamp64\apps\phpmyadmin4.6.4
+
+显示详细信息
+http://localhost/01/01/
+
+composer安装
+
+http://docs.phpcomposer.com
+
+thinkphp官网
+
+http://www.thinkphp.cn
+
+
+我的thinkPHP5
+http://localhost/thinkphp5/public/
+
+-------------------------------------------------------------------
+20171221
+复习资料
+
+快速入门ThinkPHP 5.0--基础篇
+
+ 第1章 课程介绍
+
+    1-1 课程介绍 (06:27)
+
+第2章 thinkphp 5.0 的安装及配置
+
+    2-1 关于MVC (06:51)
+    最近学习
+    2-2 Thinkphp的安装 (15:36)
+		
+		thinkphp官网
+		http://www.thinkphp.cn
+    
+    2-3 Thinkphp目录介绍 (13:45)
+		
+		D:\wamp64\www\thinkphp51\application\index\controller
+		
+		application  应用程序目录
+		             里支持多模块
+					 
+					 index  前台
+					 
+					 admin 	后台
+					 
+					 api	接口
+					 
+					 
+					command.php  控制台配置文件
+
+					common.php   项目的公用配置文件,可以在全局任何地方调用
+					
+					config.php   应用配置文件(admin index模块都会读取这个配置)
+					
+					database.php 数据库配置文件,如果连接数据库需要配置
+					
+					route.php 	 路由配置文件URL进行美化
+					
+					tags.php     应用行为扩展文件(留下许多钩子,通过行为改变框架的执行流程)
+		
+		extend  下载第三方库使用的,修改一下命名空间
+		
+		
+		public  网站的根目录
+				
+				index.php  整个应用的入口文件
+		
+					 
+					 
+		
+	
+	
+    2-4 模块设计 (13:46)
+    2-5 惯例配置 (04:56)
+    2-6 应用配置 (05:44)
+    2-7 扩展配置 (07:43)
+    2-8 场景配置 (05:24)
+    2-9 模块配置 (04:02)
+    2-10 动态配置 (02:35)
+    2-11 config类和config助手函数 (12:36)
+    2-12 环境变量的配置和使用 (17:51)
+
+第3章 URL和路由
+
+    3-1 入口文件 (07:23)
+    3-2 隐藏入口文件 (04:32)
+    3-3 入口文件的绑定 (10:27)
+    3-4 路由 (08:47)
+
+第4章 请求和相应
+
+    4-1 请求对象获取 (03:34)
+    4-2 请求对象参数获取 (17:38)
+    4-3 input助手函数 (17:59)
+    4-4 响应对象 (11:15)
+
+第5章 视图和模板
+
+    5-1 视图view (23:39)
+    5-2 变量输出、赋值和替换 (20:43)
+    5-3 系统变量原生标签 (10:56)
+    5-4 变量输出 调节器 (14:57)
+    5-5 模板循环标签 (18:02)
+    5-6 比较标签 (10:45)
+    5-7 条件判断标签 (15:01)
+    5-8 模板的布局 包含和继承 (27:46)
+
+第6章 课程总结
+
+    6-1 6 课程总结 (05:11) 
+
+
+--------------------------------------------------------------------------------------------	
+	
+快速入门ThinkPHP 5.0 --模型篇
+
+
+快速入门ThinkPHP 5.0 --模型篇
+上次学到 4-1 课程总结
+学习人数 11101
+难度级别 初级
+课程时长 3小时 0分
+综合评分 9.8
+
+简介：一个标准的网站一定离不开数据库的操作，在本套课程中我和你一起来揭开ThinkPHP5 数据操作的神秘面纱，和你一起愉快的使用 ThinkPHP5 操作数据库，让数据库操作变的更愉悦。
+
+    章节
+    评论
+    问答
+    笔记
+
+第1章 课程介绍
+
+    1-1 教程简介 (03:01)
+
+第2章 Thinkphp 5.0 对数据库的操作
+
+    2-1 数据库的连接操作 (10:45)
+    2-2 数据库查询操作 (18:42)
+    2-3 添加数据 (08:54)
+    2-4 数据库更新操作 (10:29)
+    2-5 数据库删除操作 (03:49)
+    2-6 条件构造器 (12:06)
+    2-7 链式操作 (10:40)
+
+第3章 Thinkphp 5.0 的模型
+
+    3-1 什么是模型 (09:16)
+    3-2 使用模型查询数据 (11:38)
+    3-3 使用模型添加数据 (13:52)
+    3-4 使用模型更新数据 (13:14)
+    3-5 使用模型删除数据 (05:09)
+    3-6 模型聚合操作 (07:56)
+    3-7 模型获取器 (06:21)
+    3-8 模型修改器-+自动完成 (11:51)
+    3-9 模型时间戳+软删除 (18:53)
+
+第4章 课程总结
+
+    最近学习
+    4-1 课程总结 (02:21) 
+	
+	
+
