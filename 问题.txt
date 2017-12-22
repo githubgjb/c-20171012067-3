@@ -167,3 +167,28 @@ http://blog.csdn.net/jaimejth/article/details/5669089
 Linux系统下安装lampp集成环境记录
 
 http://blog.csdn.net/underdogs/article/details/54648919
+
+
+------------------------------------------------------------
+
+js在线压缩
+
+https://coding.imooc.com/lesson/133.html#mid=6974
+
+
+图片压缩
+
+tinypng.com
+
+www.jpegmini.com
+
+imageoptim.com
+
+
+nginx
+
+
+重启:
+
+lnmp nginx reload
+
