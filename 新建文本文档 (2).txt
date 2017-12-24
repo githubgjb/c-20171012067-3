@@ -3203,5 +3203,18 @@ http://localhost/thinkphp5/public/
     最近学习
     4-1 课程总结 (02:21) 
 	
+--------------------------------------
+20171224
+
+<?php
+	namespace app\index\controller;
+	use think\Request;
+
+	class Index
+	{  
+		public function index(Request $request){ 
+		
+		}
 	
+	} 	
 
