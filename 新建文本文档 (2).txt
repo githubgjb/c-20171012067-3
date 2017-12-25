@@ -3209,6 +3209,7 @@ http://localhost/thinkphp5/public/
 <?php
 	namespace app\index\controller;
 	use think\Request;
+	use think\Config;
 
 	class Index
 	{  
@@ -3217,4 +3218,27 @@ http://localhost/thinkphp5/public/
 		}
 	
 	} 	
+	
+	
+<?php
+	namespace app\index\controller;
+	use think\Controller;
 
+	class Index	extends Controller
+	{  
+		public function index(){ 
+		
+		}
+	
+	}	
+	
+
+¡¶TP5.0Ñ§Ï°±Ê¼Ç---ÅäÖÃÆª¡·
+http://blog.csdn.net/self_realian/article/details/75045541
+
+
+2066
+
+
+<div>
+</div>
