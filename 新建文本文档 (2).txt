@@ -3397,5 +3397,38 @@ https://jingyan.baidu.com/article/1709ad809d298a4635c4f072.html
 支付的内容放在
 th5/public/weixin/下
 
+index.php入口文件
+
 微信相关配置
 w微信支付\WxpayAPI_php_v3.0.1\lib\WxPay.Config.php
+
+index.php
+修改a标签
+weixin/example/native.php
+
+修改native.php回调地址
+SetNotfiy_url("/index.php/index/weixinpay/notify");
+
+
+修改native.php
+二维码
+<img>标签
+
+src="/weixin/example/qrcode.php?data=<?php echo urlencode($url2);?>"
+
+建立对应的控制器和方法
+/index.php/index/weixinpay/notify
+
+class Weixinpay extends controller{
+	public funciton notify(){
+		//测试
+		//获得对应的流数据
+		$weixinData = file_get_contents("php://input");
+		file_put_contents('/tmp/2.txt',$weixinData,FILE_APPEND);
+	
+	}
+}
+
+数据同步
+linux代码传递
+scp -r imooc_o2o root@139.199.7.29:/var/www/html/imooc_o2o/
