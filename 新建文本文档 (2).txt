@@ -3232,6 +3232,38 @@ http://localhost/thinkphp5/public/
 	
 	}	
 	
+<?php
+	namespace app\index\controller;
+	use think\Controller;
+	use think\Db;
+
+	class Index	extends Controller
+	{  
+		public function index(){ 
+		
+			$db = Db:name('user');
+			
+			dump($res);				
+			
+		}
+	
+	}	
+	
+	
+<?php
+	namespace app\index\controller;
+	use think\Controller;
+	use app\index\model\User;
+
+	class Index	extends Controller
+	{  
+		public function index(){ 
+		
+						
+			
+		}
+	
+	}	
 
 《TP5.0学习笔记---配置篇》
 http://blog.csdn.net/self_realian/article/details/75045541
@@ -3242,3 +3274,128 @@ http://blog.csdn.net/self_realian/article/details/75045541
 
 <div>
 </div>
+
+下一步用这个
+
+RBAC打造通用web管理权限
+
+https://www.imooc.com/learn/799
+
+慕课网(IMOOC)录制课程 www.imooc.com
+
+    RBAC模型实现web权限管理
+    Vagrant打造跨平台可移动开发环境
+
+https://github.com/apanly/mooc
+
+-----------------------------------------------
+目录
+
+1.配置
+	1.1Thinkphp目录介绍
+	1.2模块设计
+	1.3惯例,应用,扩展,场景,模块,动态,环境变量的配置和使用
+	1.4config类和config助手函数
+
+2.Controller控制层
+	2.1入口文件和隐藏入口文件
+	2.2入口文件的绑定
+	2.3路由
+	2.4请求对象获取和请求对象参数获取
+	2.5input助手函数
+	2.6响应对象
+	
+3.View视图层
+	3.1视图view
+	3.2变量输出,赋值和替换
+	3.3系统变量原生标签
+	3.4变量输出 调节器
+	3.5模板循环标签
+	3.6比较标签
+	3.7条件判断标签
+	3.8模板的布局 包含和继承
+	
+4.Model数据模型
+	4.1连接数据库
+	4.2Thinkphp5.0直接对数据库操作
+		4.2.1查询数据
+		4.2.2添加数据
+		4.2.3更新数据
+		4.2.4删除数据
+		4.2.5条件构造器
+		4.2.6链式操作
+	
+	4.3Thinkphp5.0Model对数据库操作
+		4.3.1模型是什么
+		4.3.2模型查询数据 
+	    4.3.3模型添加数据
+	    4.3.4模型更新数据 
+	    4.3.5模型删除数据 
+	    4.3.6模型聚合操作
+	    4.3.7模型获取器
+	    4.3.8模型修改器自动完成
+	    4.3.9模型时间戳软删除	
+	2463
+	
+20171228
+
+开发项目svn路径
+https://PCOS-1705031334:8443/svn/thinkphp5zfshlm	
+
+-------------------------------------------------------------------
+20180102
+
+现有平台微信支付
+
+E:\weixin_platform\weixinpl\common_shop\jiushop\weipay_nowpay.php
+
+JSAPI支付
+
+【微信支付】公众号支付开发者文档
+
+https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=7_7
+
+
+使用的是,公众号支付-->微信内H5调起支付
+
+-----------------------------------------
+微信商户平台
+https://pay.weixin.qq.com/index.php/core/home/login?return_url=%2F
+
+这是T+7的账户
+
+1400641702@1400641702
+
+122420
+
+这是T+1的账户
+1433148602
+
+830270
+------------------------------------
+微信公众帐号
+
+https://mp.weixin.qq.com/cgi-bin/bizlogin?action=validate&lang=zh_CN&account=zhifushlm
+https://mp.weixin.qq.com/cgi-bin/home?t=home/index&lang=zh_CN&token=1290535009
+
+
+zfshlm@163.com
+wanggs2016
+
+
+--------------------------------------------------
+微信公众账号增加管理员
+
+https://www.baidu.com/s?wd=%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E8%B4%A6%E5%8F%B7%E5%A2%9E%E5%8A%A0%E7%AE%A1%E7%90%86%E5%91%98%E6%9D%83%E9%99%90&rsv_spt=1&rsv_iqid=0xeed59019000473b8&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=46&rsv_sug1=41&rsv_sug7=101&rsv_t=b34c1JMgriDOnr4RI3Q8fw0UUT1l2KfjQAKHAUwCBIFfTR7lXMr4KS%2FsUDSdIFCsex0m2A
+
+如何给微信公众号增加管理员账号权限
+
+https://jingyan.baidu.com/article/1709ad809d298a4635c4f072.html
+-------------------------------------------------------------
+20180102
+
+支付的内容放在
+th5/public/weixin/下
+
+微信相关配置
+w微信支付\WxpayAPI_php_v3.0.1\lib\WxPay.Config.php
