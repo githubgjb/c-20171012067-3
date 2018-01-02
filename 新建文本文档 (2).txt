@@ -3432,3 +3432,75 @@ class Weixinpay extends controller{
 数据同步
 linux代码传递
 scp -r imooc_o2o root@139.199.7.29:/var/www/html/imooc_o2o/
+
+
+20180103
+安装
+XAMPP  
+Apache + MariaDB + PHP + perl
+
+官网
+https://www.apachefriends.org/zh_cn/index.html
+
+查看断口占用 :
+cmd
+netstat -ano
+
+然后任务管理器
+-----------------------------------------
+linux下xampp安装
+https://jingyan.baidu.com/article/afd8f4de7976b034e286e90c.html
+
+
+xampp for linux安装教程
+https://www.baidu.com/s?wd=xampp%20for%20linux%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B&rsv_spt=1&rsv_iqid=0xfae8de750002153c&issp=1&f=3&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=1&rsv_sug1=1&rsv_sug7=100&rsv_t=e0d11kZmSwb3kai%2FExiRV%2FNXvffO2wOKh1%2BYyjI5v24yzIWpme2mYtbBif6RWo0ROek4&rsv_sug2=1&prefixsug=XAMPP%2520for%2520Linux%25E5%25AE%2589%25E8%25A3%2585&rsp=0&inputT=1865&rsv_sug4=1865
+
+CentOS下安装XAMPP详细教程
+
+http://blog.csdn.net/hel12he/article/details/49781813
+---------------------------------------------------------
+查看版本
+cmd
+php -v 
+
+--------------------------------------------
+百度BAE
+
+百度开放服务平台:
+http://developer.baidu.com/
+
+
+---------------------------------
+外网映射工具(工发调试)
+
+1.公网可以访问
+2.端口只支持80端口
+
+ngrok可以将内网映射到网上面,
+
+用法:所在目录 8080是你现在的服务端口号
+1.ngrok 8080
+2.ngrok -config ngork.cfg -subdomain example 8080
+帮助文档
+http://www.tunnel.mobi/
+
+下载
+https://natapp.cn/
+
+
+用这个链接：https://natapp.cn
+1.下载自己对应的客户端
+2.注册个账号
+3.按照官网的使用文档使用就OK啦
+
+这个输出ngrok 8080不行，然后输入 ngrok http 8080 成功
+
+
+注册
+https://natapp.cn/register
+
+13936931626
+
+fly123123
+
+1982629AB
