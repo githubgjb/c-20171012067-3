@@ -3432,3 +3432,24 @@ class Weixinpay extends controller{
 数据同步
 linux代码传递
 scp -r imooc_o2o root@139.199.7.29:/var/www/html/imooc_o2o/
+
+
+----------------------------------------
+公网访问
+
+/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/thinkphp51/
+
+
+//th5在现有平台,是跑不起来的
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp51/public/index.php
+
+/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/WxpayAPI_php_v3.0.1/
+微信支付DEMO
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/WxpayAPI_php_v3.0.1/index.php
+
+20180102
+
+/WxpayAPI_php_v3.0.1/index.php
+
+<li style="background-color:#FF7F24"><a href="example/jsapi.php">JSAPI支付本地</a></li>
