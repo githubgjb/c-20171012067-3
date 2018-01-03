@@ -3535,3 +3535,61 @@ https://natapp.cn/article/config_ini
 
 authtoken
 43c66dc747e41a38
+
+
+-------------------------------------------------
+20180103
+
+
+微信支付测试
+http://h2pmzx.natappfree.cc/weixin/index.php
+
+相关配置
+
+select * from weixinpays
+
+$re_weixinpay=M('weixinpays',null,'DB_CONFIG2')->where($c)->find();
+		
+		
+redirect_uri参数错误解决方法 微信公众平台
+https://jingyan.baidu.com/article/91f5db1b3659811c7e05e357.html		
+
+
+微信开发 提示 Redirect_uri参数错误解决方法
+原创 2016年04月30日 16:09:52
+
+    标签：
+    微信
+
+出现这个问题有很多种原因：
+1.没有配置网页授权
+我们可以根据微信的开发者文档http://mp.weixin.qq.com/wiki/17/c0f37d5704f0b64713d5d2c37b468d75.html 网页授权获取用户验证这一章来排除错误原因。如果确定appid等参数值没有出错，那么很大可能就是你的微信公众号后台的网页授权网址没有填写或者填写的不正确。
+2.网页授权的域名跟 Redirect_uri 所指向的页面的域名不一致
+比如：你授权的 域名是 www.test.com
+你网页跳转的 url 是 http://test.com/test
+
+这两个很明显不是在同一个域名下，你需要把 Redirect_uri 设置为：http://www.test.com/test
+
+-----------------------------------------------
+现有平台有关支付的内容
+
+E:\weixin_platform\weixinpl\common_shop\jiushop\weipay_nowpay.php
+
+E:\weixin_platform\weixinpl\common_shop\jiushop\weipay_new\WxPayPubHelper\WxPay.pub.config_nowpay.php
+
+回调
+E:\weixin_platform\weixinpl\common_shop\jiushop\notify_url_nowpay.php
+
+-----------------------------------------------
+Fatal error: Uncaught exception 'WxPayException' with message 'curl出错，错误码:60' in D:\wamp64\www\think
+
+https://www.baidu.com/s?wd=Fatal%20error%3A%20Uncaught%20exception%20%27WxPayException%27%20with%20message%20%27curl%E5%87%BA%E9%94%99%2C%E9%94%99%E8%AF%AF&rsv_spt=1&rsv_iqid=0xbec1f02c0000903e&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_n=2&rsv_sug3=1&rsv_sug2=0&inputT=653&rsv_sug4=655
+
+微信支付 ：curl出错，错误码:60两个问题的解决
+
+http://www.jb51.net/article/92582.htm
+
+微信支付：curl出错，错误码:60
+http://blog.csdn.net/qq_34755805/article/details/51221932
+
+---------------------------------------------------------
