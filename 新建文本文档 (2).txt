@@ -3609,3 +3609,548 @@ http://blog.csdn.net/qq_34755805/article/details/51221932
 
 ---------------------------------------------------------
 
+<<<<<<< HEAD
+
+----------------------------------------------------
+1.
+阿里云盘先在控制台挂载
+
+生产195挂的
+d-2zeeq8l394weqpnefreg
+200GB
+	
+d-2ze6yh0lveneip21lz2w
+40GB
+
+测试60挂的
+d-2zechyp0otf2t4cvj5qa 
+40GB
+
+
+2.
+阿里云linux服务器如何挂载数据盘
+
+https://jingyan.baidu.com/article/90808022d2e9a3fd91c80fe9.html
+
+
+3.登陆,进行,
+查询裁判容量
+df -h
+
+4.关掉vsftpd服务,在问题的62467行
+
+
+5.linux 回到根目录
+ 回到根目录 cd /
+ 回到家目录 cd ~
+
+6.查看当前位置pwd 
+
+
+7.df -h查询挂载点
+   云盘没有挂载
+
+8.进行云盘挂载
+
+阿里云linux服务器如何挂载数据盘   --这个靠谱
+https://jingyan.baidu.com/article/90808022d2e9a3fd91c80fe9.html
+
+普通云盘和SSD云盘添加挂载信息时的注意事项
+https://help.aliyun.com/knowledge_detail/40594.html?spm=5176.11065259.1996646101.searchclickresult.3da1227c9tz0hd
+
+9.xampp
+
+CentOS下安装XAMPP详细教程   ---看这个就行
+
+http://blog.csdn.net/hel12he/article/details/49781813
+
+
+下载地址
+https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/5.6.32/xampp-linux-x64-5.6.32-0-installer.run?from_af=true
+
+
+ 在root的家目录下不好使 ,
+ 建立目录soft,在soft下试一试
+ 好使,多等一会
+ 这是我用的版本
+ wget https://jaist.dl.sourceforge.net/project/xampp/XAMPP%20Linux/7.2.0/xampp-linux-x64-7.2.0-0-installer.run
+  
+  包含的内容有
+ (
+	Includes: Apache 2.4.29,
+	MariaDB 10.1.29,
+	PHP 7.2.0 + SQLite 2.8.17/3.7.17 + multibyte (mbstring) support, 
+	Perl 5.16.3, ProFTPD 1.3.4c, 
+	phpMyAdmin 4.7.6,
+	OpenSSL 1.0.2n, 
+	GD 2.0.35, Freetype2 2.4.8, libpng 1.5.26, gdbm 1.8.3, zlib 1.2.8, 
+	expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, 
+	Webalizer 2.23-05, pdf class 0.11.7, ncurses 5.9, 
+	pdf class 0.11.7, mod_perl 2.0.8-dev, FreeTDS 0.91,
+	gettext 0.18.1.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.21,
+	mcrypt 2.5.8, mhash 0.9.9.9, cUrl 7.45.0, libxslt 1.1.29, libapreq 2.12,
+	FPDF 1.7, ICU4C Library 4.8.1, APR 1.5.2, APR-utils 1.5.4
+ 
+ )
+ 
+----------------------------------
+阿里云Centos7 搭建xampp环境Apache+MySQL+PHP+PERL - 晨风
+http://www.yejianda.cn/seo/913.html
+
+阿里云centos xampp
+https://www.baidu.com/s?wd=%E9%98%BF%E9%87%8C%E4%BA%91centos%20xampp&rsv_spt=1&rsv_iqid=0xa5b05b4300004f1a&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=29&rsv_sug1=31&rsv_sug7=101&rsv_t=6365oo%2BQFvhFc8Jy98%2BJXD5k%2BMHFa8SUgrGeIFTrhtDwK5fyIkwJqPxKaY163CkfPm1nQw
+---------------------------------------
+
+linux下xampp集成包安装配置方法      ----安全配置是用的这个
+http://www.cnblogs.com/ygyg/p/5395207.html 
+
+
+1、先输入xampp控制面板的密码（用户名是xampp）；zfshlmxampp&*()
+
+2、输入phpmyadmin的密码（用户名是pma）zfshlmpma%^&*
+
+3、输入mysql的密码（用户名是root）zfshlmroot!@#$
+
+4、输入ftp密码（用户名是daemon，默认端口21）zfshlmftptest!@#$
+
+
+
+启动xampp：
+
+# /opt/lampp/lampp start
+
+    1
+
+停止xampp：
+
+# /opt/lampp/lampp stop
+
+    1
+
+会遇到权限的问题要更改权限
+chmod a+w -R /opt/lampp
+	
+卸载xampp：
+
+# /opt/lampp/lampp stop
+# rm -rf /opt/lampp
+
+//配置权限
+用 xampp 在ubuntu 下配置php 运行环境 lampp
+https://jingyan.baidu.com/article/066074d66e1141c3c21cb0ce.html
+
+sudo chmod a+w -R /opt/lampp/htdocs
+
+更改文件夹权限。
+
+http://blog.sina.com.cn/s/blog_4ce89f200100xpz7.html
+
+XAMPP报错：Warning: World-writable config file '/opt/lampp/etc/my.cnf' is ignored
+
+
+ 解决方案：
+       zhaofeng@zhaofeng-P61-S3-B3:~$ sudo chmod 755 /opt/lampp/etc/my.cnf
+
+--------------------------------
+数据据还不能访问  --ok权限的问题
+
+--------------------------------------------------
+New XAMPP security concept:错误解决方法
+http://blog.csdn.net/jsship/article/details/43770311
+New XAMPP security concept:错误解决方法
+2015年02月12日 21:07:47
+
+在虚拟机上运行xamp时,通过本机访问虚拟机的xamp服务出现如下的错误提示
+
+
+New XAMPP security concept:
+
+Access to the requested object is only available from the local network.  This setting can be configured in the file "httpd-xampp.conf".
+
+
+使用vim编辑配置文件
+
+vim /opt/lampp/etc/extra/httpd-xampp.conf 
+
+
+在文件末尾
+
+#Require local    <---将这个注释掉,取消只允许本地访问
+   
+ErrorDocument 403 /error/XAMPP_FORBIDDEN.html.var
+
+重启xammp服务
+/opt/lampp/lampp restart
+
+可以实现远程访问了
+
+测试
+http://47.93.11.60/thinkphp51/public/
+------------------------------------------------------------
+求救：linux中，普通用户如何具有home的读写权限
+
+https://zhidao.baidu.com/question/582583505829668605.html
+
+linux中/home是属于root用户的文件夹。且只能由root用户进行读写执行操作，其他用户只有读和执行操作。要使得普通用户有读写权限。需要对/home做如下更改。
+
+1、进入根目录：cd  回车即可
+2、使用文件权限修改命令修改文件权限：
+chmod -R 777 /home
+--------------------------------------------------------
+
+wget https://jaist.dl.sourceforge.net/project/xampp/XAMPP%20Linux/7.2.0/xampp-linux-x64-7.2.0-0-installer.run
+---------------------------------------------
+
+在阿里云服务器上搭建xampp遇到的问题
+https://www.cnblogs.com/jeacy/p/7132394.html
+-------------------------------------------------
+停掉apache服务
+
+linux 下 apache启动、停止、重启命令
+
+http://blog.sina.com.cn/s/blog_70ac6bec01018mqs.html
+
+如果apache安装成为linux的服务的话，可以用以下命令操作：
+
+service httpd start 启动
+
+service httpd restart 重新启动
+
+service httpd stop 停止服务
+
+---------------------------------------------
+
+php版微信公众号接口实现发红包的方法
+
+http://www.jb51.net/article/94722.htm
+
+/*
+**微信红包功能
+*/
+public function sendredpack(){
+ $re_openid = $this->_pg('re_openid');
+  $inputObj = new sendredpack_pub();
+if(!$re_openid){
+  return "微信红包功能,收红包用户不能为空";
+}
+  $inputObj->setParameter('re_openid',$re_openid); //收红包的用户的openid
+  $inputObj->setParameter('send_name',"汽配一号铺"); //红包发送者名称
+  $inputObj->setParameter('total_amount',"100"); //收红包的用户的金额，精确到分
+  $inputObj->setParameter('total_num',"1"); //收红包的个数
+  $inputObj->setParameter('wishing',"恭喜发财，谢谢支持，小小心意"); //收红包的用户的openid
+  $inputObj->setParameter('client_ip',"121.40.157.243"); //调用接口的IP
+  $inputObj->setParameter('act_name',"小邓感恩红包"); //红包主题
+  $inputObj->setParameter('remark',"谢谢大家一路一来的支持"); //备注
+  $response = $inputObj->getResult();
+  return $response;
+}
+
+
+/**
+* 微信发红包接口
+**/
+class sendredpack_pub extends Wxpay_client_pub
+{
+   function __construct() {
+  //设置接口链接
+   $this->url = "https://api.mch.weixin.qq.com/mmpaymkttransfers/sendredpack";
+  //设置curl超时时间
+  $this->curl_timeout = WxPayConf_pub::CURL_TIMEOUT;
+}
+/**
+* 生成接口参数xml
+*/
+function createXml()
+{
+  try
+ {
+  $this->parameters["mch_billno"] = WxPayConf_pub::MCHID.createUnique();//商户订单号
+  $this->parameters["wxappid"] = WxPayConf_pub::APPID;//公众账号ID
+  $this->parameters["mch_id"] = WxPayConf_pub::MCHID;//商户号
+  $this->parameters["nonce_str"] = $this->createNoncestr();//随机字符串
+  $this->parameters["sign"] = $this->getSign($this->parameters);//签名
+  return $this->arrayToXml($this->parameters);
+ }catch (SDKRuntimeException $e) {
+   die($e->errorMessage());
+ }
+}
+/**
+* 作用：获取结果，使用证书通信
+*/
+function getResult()
+{
+  $this->postXmlSSL();
+  $this->result = $this->xmlToArray($this->response);
+  return $this->result;
+}
+}
+
+----------------------------------------------------------------
+接口发放微信企业号红包
+
+http://blog.csdn.net/qq_37380557/article/details/73499591
+
+
+ 
+ 
+微信支付中商户对个人用户付款案例
+http://blog.csdn.net/ppqiaoping/article/details/51967625
+
+微信商户转账到个人
+https://www.baidu.com/s?wd=%E5%BE%AE%E4%BF%A1%E5%95%86%E6%88%B7%E8%BD%AC%E8%B4%A6%E5%88%B0%E4%B8%AA%E4%BA%BA&rsv_spt=1&rsv_iqid=0xb3cd899d0000949c&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=4&rsv_sug1=4&rsv_sug7=100&rsv_t=74c4bZwAm%2B4UEzsvGDJYv0A0I9Vf8hlixTqys1Jl2TZaM%2Fpdi%2FVGbED3wo7ydciMXn%2Fe4A
+
+-------------------------------------------------------------
+20180108  
+
+点结算时,分钱
+
+订单列表
+orderlist.php
+
+/weixin_platform/weixin/plat/app/Tpl/nowpay/orderlist.html
+
+$(".confirm_order").click(function(){
+
+ url: "/weixinpl/back_nowpaySystem/ajax_confirm_order.php",
+
+ 
+ 微信类
+ /weixin_platform/weixinpl/common/com/WechatAuth.class.php
+ 
+ 找体现
+ http://www.zfshlm.com/weixinpl/mshop/my_moneybag.php?customer_id=BzVWZQ==
+ 
+ 
+ 525
+ 
+ function commit(){
+ 
+ 
+ /weixin_platform/weixinpl/mshop/my_alipay.php
+ 
+ switch ($type) {
+  case '1':
+    $pay_name = "微信支付";
+    $pay_img  = './images/info_image/weixin.png';
+    $bind_name= '';
+  break;
+  
+  
+  
+   function commit(){
+        $('.ui-input-text li').text('');
+        $('#ipt').val('');
+        document.getElementById("ipt").innerHTML="";
+    	var customer_id = "<?php echo $customer_id_en;?>";
+		var phone       = $("#phoneNum").val();
+		var name        = $("#realName").val();
+		var account     = $("#account").val();
+		var type        = "<?php echo $type;?>";  
+		
+		
+url 		: 'save_pay_account.php',	
+
+具体支付界面
+http://www.zfshlm.com/weixinpl/mshop/cash.php?customer_id=UWNSYQ==&c_type=0	
+
+
+ url     :   'save_tocash.php',
+ 
+ 
+微信支付
+/weixin_platform/weixinpl/mshop/WeChatPay/weipay_sdk/pay.php 
+
+
+------------------------------------------------------------------
+<a class="nav1 WSY_menu_lefticon" href="http://www.zfshlm.com/weixinpl/back_nowpaySystem/withdrawals/withdrawalslist.php?customer_id=BTcHNA==" target="iframe">提现管理</a>
+
+-------------------------------------------------
+
+<a id="TG_<?php echo $withdrawalsid;?>"  style="cursor:pointer;" title="通过" onclick="open12(0,'<?php echo $withdrawalsid;?>','<?php echo $type; ?>')" >
+						<img src="../../common/images_V6.0/operating_icon/icon23.png" class="divshadow" style="height:20px;width:20px">
+					</a>
+					
+function open12(type,rawalsid,qqq){
+	var str="";
+	if(qqq==1 && type==0){
+		var pagenum=1;
+		window.location.href="../../common_shop/jiushop/send_w_np_byaplay.php?rawalsid="+rawalsid+"&pagenum="+pagenum;
+		return;
+		}
+	if(type==0){
+		str="同意提现";
+		$("#o_input").attr({"placeholder":"线下交易号"});
+	}else if(type==1){
+		$("#o_input").attr({"placeholder":"拒绝备注"});
+		str="拒绝提现";
+	}
+
+	$("#o_head").html(str);
+	$("#o_tpye").val(type);
+	$("#o_input").val("");
+	$("#rawalsid").val(rawalsid);
+	$(".open").css({"display":"block"});
+
+}		
+
+
+window.location.href="../../common_shop/jiushop/send_w_np_byaplay.php?rawalsid="+rawalsid+"&pagenum="+pagenum;
+
+		if(!empty($weixin_fromuser)){
+	//使用打款
+	$reward = round($reward,2);
+	$reward2 = $reward*100; 
+	
+	$sendRedPack = new SendWpay_pub();
+	$sendRedPack->setParameter("partner_trade_no",$batchcode);//商品描述
+	$sendRedPack->setParameter("openid",$weixin_fromuser);//商品描述
+	$sendRedPack->setParameter("re_user_name",$bank_name);//商品描述
+	$sendRedPack->setParameter("amount",$reward2);//商品描述
+	$sendRedPack->setParameter("desc",$remark.":".$reward."元");//商品描述
+	$result = $sendRedPack->postXmlSSL();
+	
+}	
+
+$result = $sendRedPack->postXmlSSL();
+
+//wxpay/bizpayurl
+
+	function __construct() 
+	{
+		//设置接口链接
+		$this->url = "https://api.mch.weixin.qq.com/pay/unifiedorder";
+		//设置curl超时时间
+		$this->curl_timeout = WxPayConf_pub::CURL_TIMEOUT;
+	}
+
+操作微信的关键类
+	
+/weixin_platform/weixin/plat/ThinkPHP/Extend/Vendor/WxPayPubHelper/WxPayPubHelper.php	
+
+
+
+/weixin_platform/1yuan/Application/Home/PayUtil/lib/UnifiedOrderPub.class.php
+
+//设置接口链接
+$this->url = "https://api.mch.weixin.qq.com/pay/unifiedorder";
+
+-----------------------------------------------------------
+20180109
+
+微信
+企业向个人付款接口
+
+https://www.baidu.com/s?wd=%E4%BC%81%E4%B8%9A%E5%90%91%E4%B8%AA%E4%BA%BA%E4%BB%98%E6%AC%BE%E6%8E%A5%E5%8F%A3&rsv_spt=1&rsv_iqid=0x9f53df6d000480e9&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=2&rsv_sug1=1&rsv_sug7=001&rsv_n=2
+
+
+微信企业付款到个人 - 隆冬之夜99 - 博客园
+https://www.cnblogs.com/haizizhu/p/6875856.html
+
+微信公众号开发---微信企业付款给个人    ----这个DEMO不错
+http://blog.csdn.net/qq_21429153/article/details/54891158
+
+------------------------------------------------
+微信现金红包
+https://www.baidu.com/s?wd=%E5%BE%AE%E4%BF%A1%E7%8E%B0%E9%87%91%E7%BA%A2%E5%8C%85&rsv_spt=1&rsv_iqid=0xad3667040004905b&issp=1&f=3&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=98012088_5_dg&ch=12&rsv_enter=0&rsv_t=f52dMkB4RHdcRBRI6fPC%2B%2BUJLQJn0eiYdQiW3PaDZy6mGiPkP41X6V2wzu1e5ecJTmo8Dg&oq=%25E5%25BE%25AE%25E4%25BF%25A1%25E7%258E%25B0%25E9%2587%2591%25E7%25BA%25A2%25E5%258C%2585&rsv_pq=8ad421270005020b&prefixsug=%25E5%25BE%25AE%25E4%25BF%25A1%25E7%258E%25B0%25E9%2587%2591%25E7%25BA%25A2%25E5%258C%2585&rsp=0
+
+
+微信现金红包接口
+https://www.baidu.com/s?wd=%E5%BE%AE%E4%BF%A1%E7%8E%B0%E9%87%91%E7%BA%A2%E5%8C%85%E6%8E%A5%E5%8F%A3&rsv_spt=1&rsv_iqid=0x910c529c000544be&issp=1&f=3&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=2&rsv_sug1=2&rsv_sug7=101&rsv_t=e439tXAJtSWaVQXM44fW0uT1pkHZYuv00uCjSwWUBaxHZeOcYD8IZbwUHbQ5i2IVi1FLXQ&rsv_sug2=1&prefixsug=%25E5%25BE%25AE%25E4%25BF%25A1%25E7%258E%25B0%25E9%2587%2591%25E7%25BA%25A2%25E5%258C%2585&rsp=1&inputT=2007&rsv_sug4=2186&rsv_sug=1
+
+微信现金红包/企业付款
+http://qydev.weixin.qq.com/wiki/index.php?title=%E5%BE%AE%E4%BF%A1%E7%8E%B0%E9%87%91%E7%BA%A2%E5%8C%85/%E4%BC%81%E4%B8%9A%E4%BB%98%E6%AC%BE
+
+微信支付现金红包接口
+
+https://www.cnblogs.com/txw1958/p/weixin-redpackets.html
+
+调用微信公众号现金红包接口给用户发送红包
+https://www.cnblogs.com/linJie1930906722/p/5679532.html
+
+20180109
+
+HTTP_RAW_POST_DATA
+https://www.baidu.com/s?wd=HTTP_RAW_POST_DATA&rsv_spt=1&rsv_iqid=0xa9663bd5000368bf&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=2&rsv_sug1=1&rsv_sug7=001&rsv_n=2
+
+$_POST 、$HTTP_RAW_POST_DATA、php://input三者之间的区别
+http://blog.csdn.net/kexiaoling/article/details/51858909
+
+说说$POST 、$HTTP_RAW_POST_DATA、php://input三者之间的区别 
+https://segmentfault.com/a/1190000003707728
+
+
+---------------------------------
+20180110
+商家收款
+
+二维码
+
+cust_qrcode.html
+
+<img alt="Scan me!" style="display: block;" src="data:image/png;base64,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">
+
+<script>
+	qrcode();
+	function qrcode(){
+		$("#qr").html("");
+		var H_HOST=window.location.host;
+		var n_p_custid=$("#n_p_custid").val();
+		var n_p_cashierid=0;
+		var weixin_openid=$("#weixin_o").val();
+		var custid=$("#custid").val();
+		var n_p_userid=$("#userid").val();
+		
+		var ho_url="http://"+H_HOST+"/weixinpl/back_nowpaySystem/cashplatform/cust_pay_link.php?n_p_custid="+n_p_custid+"&n_p_cashierid="+n_p_cashierid+"&weixin_openid="+weixin_openid+"&custid="+custid+"&n_p_userid="+n_p_userid;
+		$(".sk_header").html(ho_url);
+		var qrcode = new QRCode("qr", {
+			text:ho_url,
+			width: 263.5,
+			height: 263.5,
+			colorDark : "#000000",   
+			colorLight : "#ffffff",
+			correctLevel : QRCode.CorrectLevel.L
+		});
+	}
+</script>
+
+
+网页语音播报
+
+网页语音播报
+https://www.baidu.com/s?wd=%E7%BD%91%E9%A1%B5%E8%AF%AD%E9%9F%B3%E6%92%AD%E6%8A%A5&rsv_spt=1&rsv_iqid=0xf95c14da00026ceb&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=2&rsv_sug1=1&rsv_sug7=001&rsv_n=2
+
+JQuery插件制作：[2]语音播报jspeech
+https://jingyan.baidu.com/article/948f592401f472d80ff5f9bd.html
+
+图标下载
+https://www.easyicon.net/
+
+
+网页语音播报
+https://www.baidu.com/s?wd=%E7%BD%91%E9%A1%B5%E8%AF%AD%E9%9F%B3%E6%92%AD%E6%8A%A5&rsv_spt=1&rsv_iqid=0xf95c14da00026ceb&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=2&rsv_sug1=1&rsv_sug7=001&rsv_n=2
+http://tts.baidu.com/text2audio
+https://www.baidu.com/s?wd=http%3A%2F%2Ftts.baidu.com%2Ftext2audio&pn=10&oq=http%3A%2F%2Ftts.baidu.com%2Ftext2audio&tn=98012088_5_dg&ie=utf-8&ch=12&usm=1&rsv_idx=2&rsv_pq=ed38ae2800000551&rsv_t=1159KJwhG6y5houUoblgUcPTnu9CRZdxkNRrJM2JUH%2F17deQaC9sMYQtUHURyhYjfKuy4w&rsv_page=1
+
+
+百度文字转语音免费接口使用实例
+http://blog.csdn.net/starrykey/article/details/52214670
+
+百度语音合成-开发文档
+http://yuyin.baidu.com/docs/tts/136
+
+<script type="text/javascript">  
+var zhText = "测试百度文字转语音接口 - 卡卡测速网 www.webkaka.com";  
+zhText = encodeURI(zhText);  
+document.write("<audio autoplay=\"autoplay\">");  
+document.write("<source src=\"http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=2&text="+ zhText +"\" type=\"audio/mpeg\">");  
+document.write("<embed height=\"0\" width=\"0\" src=\"http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=2&text="+ zhText +"\">");  
+document.write("</audio>");  
+</script>  
+=======
+阿里云部署Java网站和微信开发调试心得技巧(上)
+http://www.imooc.com/article/20583
+
+阿里云部署Java网站和微信开发调试心得技巧(下) 
+http://www.imooc.com/article/20584
+
+>>>>>>> 1abad5154b8936bb14326cdcdddfd18604fb4b30
