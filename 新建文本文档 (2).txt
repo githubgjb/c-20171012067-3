@@ -4146,6 +4146,9 @@ document.write("<source src=\"http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&sp
 document.write("<embed height=\"0\" width=\"0\" src=\"http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=2&text="+ zhText +"\">");  
 document.write("</audio>");  
 </script>  
+
+
+
 =======
 阿里云部署Java网站和微信开发调试心得技巧(上)
 http://www.imooc.com/article/20583
