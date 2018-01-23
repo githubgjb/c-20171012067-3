@@ -1,0 +1,64 @@
+http://www.nbdaili.com/
+
+http://5he5.com/
+
+国外搜索引擎大全
+2009/02/22 17:03   [社会娱乐 ]  下面的这些国外搜索引擎主要服务都提供搜索和分类两类信息，虽然都有各自的着重点。 
+
+1. AOL Search
+http://search.aol.com/   
+通过AOL Search，美国在线AOL的用户可以从一个地方搜索整个网络和AOL自己的信息内容。上面列出的“对外”版本不包括AOL本身的内容。他们的分类目录和其中的站点信息来自Open Directory（见下），Inktomi （见下）提供机器搜索的结果（crawler-based results），作为分类目录的补 充。在1999年10月AOL Search发布之前，AOL使用的是由Excite支持的AOL NetFind。
+2. AltaVista
+http://www.altavista.com/
+根据检索的页面数，AltaVista一直都是互联网上最大的搜索引擎之一。它全面的覆盖度和提供的各种 高级搜索命令使它成为网上搜索者的最爱之一。它也开发了许多针对初级用户的功能，例如“Ask AltaVista”——来自Ask Jeeves（见下）。AltaVista使用的分类目录主要来自Open Directory。AltaVista于1995年12月开始运行，最初由Digital拥有，然后1998年Digital被Compaq购买后，AltaVista由Compaq负责，接着它成为一家独立的公司，现在由CMGI集团控制。
+3. Ask Jeeves
+http://www.askjeeves.com/
+Ask Jeeves是一种人工的搜索服务，目标在于指向到回答你所提问题的具体页面。如果它在自己的数据库中没有找到相关答案，它会提供从其他各个搜索引擎中找到的页面。该服务于1997年四月中旬开始其 beta测试，于1997年6月1日完全开始运作。Ask Jeeves的结果也出现在AltaVista中（见上）。
+4. Direct Hit
+http://www.directhit.com/
+Direct Hit主要与其他搜索引擎合作，提炼他们的搜索结果来提供服务。它的提炼是通过监测用户对他们自己的搜索结果的点击情况来实现，那些获得更多用户点击的站点会在Direct Hit的排名中升到较高的位置。因此，这种服务又称为“流行度引擎”。Direct Hit的技术目前在HotBot获得很好的应用，它同时也提炼Lycos的搜索结果，在LookSmart和MSN Search中也是一个选项。另外Direct Hit公司本身也检索（crawls）网络以优化它自己的数据库，这些通过上面的链接可以查看到。
+5. Excite
+http://www.excite.com/
+Excite是互联网上最流行的搜索服务之一，它有一个中等规模的检索页面，而且在合适的情况下，在其搜索结果中会整合一些非网络的资料，比如公司信息和体育比赛结果等。Excite于1995年下半年开始提供服务，成长的非常迅速并吞并了两个竞争者，1996年7月吞并Magellan，1996年11月收购 WebCrawler，这两家公司目前仍作为独立的服务在运作。
+6. FAST Search
+http://www.alltheweb.com/
+以前称为“All The Web”，FAST Search的目标是检索整个网络。它是第一个检索页面突破2亿的搜索引擎，FAST Search背后的这家挪威公司也支持着Lycos的MP3搜索引擎。FAST Search于1999年5月推出。
+7. Go/Infoseek
+http://www.go.com/
+Go是一个由Infoseek和Disney共同推出的门户站点，它提供了门户站点的特色如个性化定制、免费邮件等，同时它也将以前的InfoSeek搜索服务整合在其中。信息搜索者会发现GO搜索引擎对于很多一般的查询都能给出高质量的结果，这要归功于它独特的ESP搜索算法。它同时也有一个非常棒的人工编辑分类目录。Go是1999年元月正式推出，它和下面介绍的GoTo没有关系。先前的Infoseek服务是1995年初开始的。
+8. GoTo
+http://www.goto.com/
+和其他主要搜索引擎不同，GoTo出售它的主要目录上的排名。一家公司可以通过付费提高自己在搜索结果中的排名，GoTo认为这样可以增强搜索结果的相关性。GoTo引擎的免费搜索结果来自Inktomi。GoTo于1997发布，整合了先前Colorado大学开发的World Wide Web Worm。它于1998年2月转移到现在的这种付费排名模式，紧接着用Inktomi代替了WWW Worm提供免费搜索。GoTo和前面提到的Go（Infoseek）无关。
+9. Google
+http://www.google.com/
+Google是一家非常强调链接广泛度（link popularity）的搜索引擎，链接广泛度在其搜索结果的排名算法中份量很重。这对于在查询一些很一般的词时（比如“汽车”“旅游”等）非常好，可以得到比较有价值的结果，因为一般好的站点，人们链接的就多。
+10. HotBot
+http://www.hotbot.com/
+和AltaVista一样，HotBot也是因为它庞大的检索页面和许多的高级搜索特色成为搜索者喜爱的引擎。在多数情况下，HotBot 搜索结果的第一页来自Direct Hit服务（见上），后面的结果则来自Inktomi——它被许多搜索服务采用。HotBot的目录信息来自Open Directory（见下）。HotBot是Wired公司为进入搜索引擎市场于1996年5月发布的，Lycos在1998年10月买下了Wired Digital公司，但HotBot仍作为一个独立的搜索服务在运作。
+11. Iwon
+http://www.iwon.com
+该公司的背景是全美电视网络CBS，iWon的分类目录由Inktomi自动生成，Inktomi也提供传统的机器搜索结果。在整个运作上，iWon与其他主要服务商都不同，它采用一种每天、每周和每月发布奖金的商业模式。1999年秋季开始正式运作。
+12. Inktomi
+http://www.inktomi.com/
+最初，在加州大学伯克利分校有一个Inktomi搜索引擎。然后，开发人员使用相同的名字创立了自己的公司，并建立了一个新数据库，开始仅仅用来支持HotBot，现在Inktomi的检索数据库也同时支持着其他一些搜索服务。这些引擎服务都使用Inktomi同样的数据源，只是查询结果有所不同。对于一般用户无法直接查询Inktomi的数据库，它只对其合作伙伴开放，同时各家引擎在调用Inktomi的数据时采用了各自的算法和命令。
+13. LookSmart
+http://www.looksmart.com/
+LookSmart是一个人工编辑的网站目录。除了本身是一个独立的服务外，LookSmart也为MSN Search、Excite和其他一些合作伙伴提供分类目录的内容。当LookSmart本身的数据库没有找到结果时，它使用AltaVista提供的搜索结果。LookSmart于1996年10月独立发布，接着由读者文摘（Reader''s Digest）管理了一年，然后公司管理层又买回公司的控制权。
+14. Lycos
+http://www.lycos.com/
+Lycos最初是一家搜索引擎，自己检索（Spider）网络。然后1999四月，它转向类似于雅虎的分类目录模式，它的主要分类信息来自于Open Directory，其次的结果来自Direct Hit或Lycos自身的数据。1998年10月，Lycos收购了其竞争对手HotBot，不过HotBot继续独立运作。
+15. MSN Search
+http://search.msn.com/
+微软的MSN Search搜索服务是由LookSmart支持的一个分类目录，其他的搜索结果来自AltaVista，同时还整合了RealNames和Direct Hit的数据。MSN Search为Internet Explorer 5的用户提供了一种保存以前查询结果的独特方法。
+16. Netscape Search
+http://search.netscape.com/
+Netscape Search的结果主要来自Open Directory和Netscape自己的“Smart Browsing”数据库，它在查询“正式”网站方面做得很好。其次的搜索结果来自于Google。在Netscape的Netcenter 门户站点上，也整合了其他许多的搜索引擎。
+17. Northern Light
+http://www.northernlight.com/
+Northern Light是另一家网上研究人员喜爱的搜索引擎，它拥有互联网上最大之一的检索数据库，同时有按照主题归类文档的能力。Northern Light还拥有大量“特别的”文件数据，这些数据一般的搜索机器人（search engine spiders）很难检索到，这些特殊的文件来自很多数据源，包括新闻专线，杂志和内部数据库，查询这些文件是免费的，但是想阅读它们需要付费，最高收费$4，当然对于一般的公用信息不需付费。Northern Light于1997年8月开始对外服务。
+18. Open Directory
+http://dmoz.org/
+The Open Directory使用义务编辑来分类网站，最初叫着NewHoo，1998年6月开始，1998年12月被Netscape收购，该公司保证任何人只要遵守一个开放许可协议，就能使用该目录的信息内容。Netscape本身是第一个许可协议，Lycos和AOL Search充分的使用了Open Directory的数据，同时AltaVista和HotBot也在他们的搜索结果中整合了Open Directory的结果。
+19. RealNames
+http://www.realnames.com/
+RealNames系统比现有网站地址系统更方便的一个变通选择 
