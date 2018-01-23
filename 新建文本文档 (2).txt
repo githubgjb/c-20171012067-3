@@ -4542,3 +4542,26 @@ https://www.cnblogs.com/client-server/p/5606260.html
 :set ff=unix #将文件格式转为unix格式
 
 
+---------------------------------------------------------------
+20180120
+
+select acount,isremainder,phone from sms_settings
+
+acount 	isremainder 短信剩余条数提醒	phone 	
+6711 	1 	13555525099
+
+
+
+SELECT weixin_name FROM weixin_baseinfos
+
+
+weixin_name 	
+至富生活
+
+
+SELECT sms_account,sms_password FROM sms_config WHERE isvalid=true limit 1
+
+
+sms_account 账号	sms_password 码密 	
+zhifushenghuo 	888888
+
