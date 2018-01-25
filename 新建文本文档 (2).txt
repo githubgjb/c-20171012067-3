@@ -4565,3 +4565,51 @@ SELECT sms_account,sms_password FROM sms_config WHERE isvalid=true limit 1
 sms_account 账号	sms_password 码密 	
 zhifushenghuo 	888888
 
+----------------------------------------------------------------
+20180125
+要学习的课程
+
+前端跳槽面试必备技巧
+https://coding.imooc.com/class/129.html
+
+全面系统讲解CSS 工作应用+面试一步搞定
+https://coding.imooc.com/class/164.html
+
+BAT大咖助力 全面升级Android面试
+https://coding.imooc.com/class/101.html
+
+Android高级面试 10大开源框架源码解析
+https://coding.imooc.com/class/157.html
+
+Android通用框架设计与完整电商APP开发
+https://coding.imooc.com/class/116.html    
+
+Android面试解密-Layout_weight
+https://www.imooc.com/learn/525
+
+Android面试常客Handler详解 
+https://www.imooc.com/learn/267
+
+Android必学-异步加载
+https://www.imooc.com/learn/406
+
+Android面试解密-自定义View
+https://www.imooc.com/learn/579
+
+LoadRunner 工具使用 企业级性能测试实战
+https://coding.imooc.com/class/127.html
+
+专为初学者打造的软件测试入门的首选课堂
+https://coding.imooc.com/class/173.html
+
+前端JavaScript面试技巧                       ---已学
+https://coding.imooc.com/class/chapter/115.html#Anchor
+
+360大牛带你横扫PHP职场 全面解读PHP面试       ---已学
+https://coding.imooc.com/class/133.html
+
+玩转算法面试 leetcode题库分门别类详细解析    ---已学
+https://coding.imooc.com/class/82.html
+
+Google面试官亲授 升级Java面试                ---已学
+https://coding.imooc.com/class/package/132.html#Anchor
