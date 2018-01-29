@@ -4605,6 +4605,7 @@ https://coding.imooc.com/class/173.html
 前端JavaScript面试技巧                       ---已学
 https://coding.imooc.com/class/chapter/115.html#Anchor
 
+
 360大牛带你横扫PHP职场 全面解读PHP面试       ---已学
 https://coding.imooc.com/class/133.html
 
@@ -4613,3 +4614,182 @@ https://coding.imooc.com/class/82.html
 
 Google面试官亲授 升级Java面试                ---已学
 https://coding.imooc.com/class/package/132.html#Anchor
+
+
+-----------------------------------------------------------------
+20180126
+老版软件客户首页
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/cashplatform/T_IndustryDiversionA.php?customer_id=41&latitude=46.56182&longitude=125.13415&Pname=%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81&Cname=%E5%A4%A7%E5%BA%86%E5%B8%82&Aname=%E5%A4%A7%E5%BA%86%E5%B8%82
+
+$("#mainDiv").scroll(function() {
+	var intY = $(this).scrollTop();
+	if (is_wc) return;
+
+	var containerHeight = $("#mainDiv").height();
+	var height = document.getElementById("mainDiv").scrollHeight - 100;
+	if (intY+containerHeight-15>height) searchData();
+});
+
+
+<div id="mainDiv" class="main-area">
+	<!--div class="menu-gallery">
+		<div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{&quot;directionNav&quot;:false}' data-am-flexslider="{slideshow: false}">
+		  <ul class="am-slides">
+		  <?php	echo $IndustryDiversion->showMenu(); ?>
+
+		  </ul>
+		</div>
+	</div-->
+
+	<div id="slideBox" class="slideBox" <?php if($menuData["count"]<=0){ ?>style="display:none;"<?php } ?> >
+		<div class="bd">
+			<?php echo $menuData["menuContent"]; ?>
+		</div>
+
+		<div class="hd" style="bottom:-3px">
+			<ul></ul>
+		</div>
+	</div>
+
+	<div class="hotShop">
+		<div class="hot_link">
+			<img src="./images/shouyin01.png">
+			<p class="p01"></p>
+			<p class="p02">附近热门商家</p>
+			<img src="./images/shouyin01.png">
+		</div>
+
+	  <div id="shopList">
+
+	  </div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="foot" style="display:none;">
+		<div class="foot_img"><span class="note">到底啦！</span>
+		</div>
+	</div>
+</div>
+
+
+function searchDataAddr(type,name) {
+		//content = "";
+		pcontent = "";
+		ccontent = "";
+
+		var arrArea;
+		if(type == 0){
+/* 			$(".areaTitle").find("span").html("全部");
+			arrArea = new PCAS('','','','','','',3); */
+			pcontent += '<?php $IndustryDiversion->showProvince(); ?>';
+			$("#areaList").html(pcontent);
+		}
+		else{
+			/* $(".areaTitle").find("span").html(name);
+			arrArea = new PCAS('','','',name,'','',4); */
+			$.ajax({
+				type: "post",
+				url: "ajax_showcity.php",
+				dataType: "json",
+				data: {province: name},
+				success: function (date) {
+					if(date.result==1){
+						ccontent += date.msg;
+						$("#areaList").html(ccontent);
+							//点击一个地区
+							chioceArea(type);
+                    }
+				}
+
+			});
+
+		}
+
+/* 		for(i=0; i < arrArea.length; i++){
+			content += '<li class="itemWrapper">';
+			content += '	<div class="area-info" area-id="'+(i+1)+'">';
+			content += '		<span>'+arrArea[i]+'</span>';
+			content += '		<img class="arrow" src="./images/arrow_right_gray2.png">';
+			content += '	</div>';
+			content += '	<div class="clear"></div>';
+			content += '</li>';
+		}
+
+		$("#areaList").html(content); */
+
+		//点击一个地区
+		chioceArea(type);
+    }
+---------------------------------------------------------------
+20180129
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/timedTaskPayForMember
+
+php.exe index.php Home/Index/index	
+
+cd /opt/www/
+
+/opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/test.php
+
+/opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/index.php
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/test
+
+
+ok成功
+/opt/lampp/bin/php /opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/test.php
+
+/opt/lampp/bin/php /opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/index.php Home/Index/timedTaskPayForMember
+
+/opt/lampp/bin/php /opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/index.php Home/Index/test
+
+/opt/lampp/bin/php /opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/index.php
+
+curl http://www.baidu.com
+
+curl http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/test
+
+好使
+curl http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/timedTaskPayForMember
+
+------------------------------------------------------------------------------------------------------
+guanjingbo
+
+888888
+
+关精博分公司
+
+1.查询商家没有,要去掉
+
+2.正式环境,取消掉调试模式
+
+3.ios下载,Android下载,隐藏掉
+
+4.用户关注后,会员列没有,会员编号.
+
+5.会员列表,按加入时间desc排序
+
+6.会员查询
+
+7.商铺改成商户
+
+8.商铺加上初始密码888888      ----手机的事
+
+9.任何添加,或修改,加个样式,等待中.....的样式.客户样式
+
+
+
+19
+19
+
+
+gsh
+
+888888
+
+
+gsp
+
+888888
+
+
+
