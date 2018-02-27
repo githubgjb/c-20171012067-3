@@ -4605,6 +4605,7 @@ https://coding.imooc.com/class/173.html
 前端JavaScript面试技巧                       ---已学
 https://coding.imooc.com/class/chapter/115.html#Anchor
 
+
 360大牛带你横扫PHP职场 全面解读PHP面试       ---已学
 https://coding.imooc.com/class/133.html
 
@@ -4613,3 +4614,523 @@ https://coding.imooc.com/class/82.html
 
 Google面试官亲授 升级Java面试                ---已学
 https://coding.imooc.com/class/package/132.html#Anchor
+
+
+-----------------------------------------------------------------
+20180126
+老版软件客户首页
+http://www.zfshlm.com/weixinpl/back_nowpaySystem/cashplatform/T_IndustryDiversionA.php?customer_id=41&latitude=46.56182&longitude=125.13415&Pname=%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81&Cname=%E5%A4%A7%E5%BA%86%E5%B8%82&Aname=%E5%A4%A7%E5%BA%86%E5%B8%82
+
+$("#mainDiv").scroll(function() {
+	var intY = $(this).scrollTop();
+	if (is_wc) return;
+
+	var containerHeight = $("#mainDiv").height();
+	var height = document.getElementById("mainDiv").scrollHeight - 100;
+	if (intY+containerHeight-15>height) searchData();
+});
+
+
+<div id="mainDiv" class="main-area">
+	<!--div class="menu-gallery">
+		<div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{&quot;directionNav&quot;:false}' data-am-flexslider="{slideshow: false}">
+		  <ul class="am-slides">
+		  <?php	echo $IndustryDiversion->showMenu(); ?>
+
+		  </ul>
+		</div>
+	</div-->
+
+	<div id="slideBox" class="slideBox" <?php if($menuData["count"]<=0){ ?>style="display:none;"<?php } ?> >
+		<div class="bd">
+			<?php echo $menuData["menuContent"]; ?>
+		</div>
+
+		<div class="hd" style="bottom:-3px">
+			<ul></ul>
+		</div>
+	</div>
+
+	<div class="hotShop">
+		<div class="hot_link">
+			<img src="./images/shouyin01.png">
+			<p class="p01"></p>
+			<p class="p02">附近热门商家</p>
+			<img src="./images/shouyin01.png">
+		</div>
+
+	  <div id="shopList">
+
+	  </div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="foot" style="display:none;">
+		<div class="foot_img"><span class="note">到底啦！</span>
+		</div>
+	</div>
+</div>
+
+
+function searchDataAddr(type,name) {
+		//content = "";
+		pcontent = "";
+		ccontent = "";
+
+		var arrArea;
+		if(type == 0){
+/* 			$(".areaTitle").find("span").html("全部");
+			arrArea = new PCAS('','','','','','',3); */
+			pcontent += '<?php $IndustryDiversion->showProvince(); ?>';
+			$("#areaList").html(pcontent);
+		}
+		else{
+			/* $(".areaTitle").find("span").html(name);
+			arrArea = new PCAS('','','',name,'','',4); */
+			$.ajax({
+				type: "post",
+				url: "ajax_showcity.php",
+				dataType: "json",
+				data: {province: name},
+				success: function (date) {
+					if(date.result==1){
+						ccontent += date.msg;
+						$("#areaList").html(ccontent);
+							//点击一个地区
+							chioceArea(type);
+                    }
+				}
+
+			});
+
+		}
+
+/* 		for(i=0; i < arrArea.length; i++){
+			content += '<li class="itemWrapper">';
+			content += '	<div class="area-info" area-id="'+(i+1)+'">';
+			content += '		<span>'+arrArea[i]+'</span>';
+			content += '		<img class="arrow" src="./images/arrow_right_gray2.png">';
+			content += '	</div>';
+			content += '	<div class="clear"></div>';
+			content += '</li>';
+		}
+
+		$("#areaList").html(content); */
+
+		//点击一个地区
+		chioceArea(type);
+    }
+---------------------------------------------------------------
+20180129
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/timedTaskPayForMember
+
+php.exe index.php Home/Index/index	
+
+cd /opt/www/
+
+/opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/test.php
+
+/opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/index.php
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/test
+
+
+ok成功
+/opt/lampp/bin/php /opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/test.php
+
+/opt/lampp/bin/php /opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/index.php Home/Index/timedTaskPayForMember
+
+/opt/lampp/bin/php /opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/index.php Home/Index/test
+
+/opt/lampp/bin/php /opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/index.php
+
+curl http://www.baidu.com
+
+curl http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/test
+
+好使
+curl http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/timedTaskPayForMember
+
+------------------------------------------------------------------------------------------------------
+guanjingbo
+
+888888
+
+关精博分公司
+
+1.查询商家没有,要去掉
+
+2.正式环境,取消掉调试模式
+
+3.ios下载,Android下载,隐藏掉
+
+4.用户关注后,会员列没有,会员编号.
+
+5.会员列表,按加入时间desc排序
+
+6.会员查询
+
+7.商铺改成商户
+
+8.商铺加上初始密码888888      ----手机的事
+
+9.任何添加,或修改,加个样式,等待中.....的样式.客户样式
+
+
+
+19
+19
+
+
+gsh
+
+888888
+
+
+gsp
+
+888888
+
+----------------------------------------------------------
+20180130
+
+付厚夤 15124525084:
+
+总公司  zfshlm   -》 888888
+
+付厚夤 15124525084:
+
+分公司 daqing  -》 888888
+
+付厚夤 15124525084:
+
+商户  tan  -》888888
+
+付厚夤 15124525084:
+
+门店  tan01  -> 888888
+
+
+总公司  zfshlm   -》 888888
+分公司  daqing   -》 888888
+商户    tan      -》 888888
+门店    tan01    ->  888888
+
+访问地址
+http://sunhongliang.top.1048.url-test.com/zfshlm/public/index/index/index
+
+正式环境中,测试不用
+登陆页做下路径隐藏登陆页
+
+
+qqhrfgsgjb
+888888
+齐齐哈尔分公司关精博
+
+登陆验证码,有失败的情况,能否加入主动刷新.
+
+qqhrshgjb
+888888
+齐齐哈尔商户关精博
+
+
+店铺
+qqhrmdgjb
+888888
+齐齐哈尔商户关精博
+
+
+
+gjbsh
+
+888888
+
+gjbsp
+888888
+
+--------------------------------------------------
+20180131
+AppSecret
+
+$query = 'SELECT id,appid,appsecret,access_token FROM weixin_menus where isvalid=true and customer_id='.$customer_id;
+
+
+开发者ID(AppID)::wxaf034ee5c10a4dfc
+
+------------------------------------------------------
+
+旧软件后台登陆入口
+http://www.zfshlm.com/index/login.html
+
+----------------------------------------------------
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/gdjk03/03index.html
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/gdjk03/04index.html
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/gdjk04/04index.html
+
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/gdjk04/index.html
+
+
+消费者首页列表分页
+
+需要的组成部分:
+
+1.js滚动监控
+
+2.ajax
+
+3.thinkphp,查询数据库limit
+
+js滚动监控及展示demo
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/gdjk04/index.html
+
+
+三个页
+
+分享页
+
+分享成功页,红包发放页
+
+分享成功但红包不能发放重复页
+
+分享提示图标
+
+规则页面
+
+得红包后提示分享的语言
+
+收银二维码牌(标语,提示语):最好送
+:扫码支付领红包,分享再得红包
+
+:扫码支付领红包(6元以上必得),分享再得红包
+
+
+后台功能这,测试
+
+----------------------------------------------
+20180205
+
+回顾和总结
+前端模块和后端模块的操作手册,和技术文档(序列图,加文件解释)
+---------------------------------------------------------------
+前端模块测试
+后端模块测试
+lbs
+七牛云
+前端分页
+与市场部联调
+***************************************
+
+
+
+近期的工作重点:
+
+春节前:
+
+回顾和总结
+前端模块和后端模块的操作手册,和技术文档(序列图,加文字解释)
+---------------------------------------------------------------
+春节后:
+
+前端模块测试
+后端模块测试
+lbs
+七牛云
+前端分页
+与市场部联调
+--------------------------------------------
+回顾
+svn
+
+gjb
+gjb
+
+zfshlmafter10
+zfshlm后端_1.0版本_TP5.0
+https://PCOS-1705031334:8443/svn/zfshlm后端_1.0版本_TP5.0/
+
+
+zfshlmfront10
+zfshlm前端_1.0版本_TP3.2
+https://PCOS-1705031334:8443/svn/zfshlm前端_1.0版本_TP3.2/
+
+
+-----------------------------------------------------------------
+20180206
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/index.php/Home/Index/zhifw.html?id=97
+
+-----------------------------------------------------
+20180208
+
+195上的位置
+/opt/www/weixin_platform
+
+
+[root@iZ2ze6brl5j5ankwx6i7lzZ opt]# find / -name httpd.conf
+
+/opt/lampp/apache2/conf/httpd.conf
+/opt/lampp/etc/original/httpd.conf
+/opt/lampp/etc/httpd.conf
+
+
+--------------------------------
+60上的位置
+find / -name httpd.conf
+
+/opt/lampp/apache2/conf/httpd.conf   --不是
+/opt/lampp/etc/httpd.conf            --这个可能是 这个文件引用了/opt/lampp/apache2/conf/httpd.conf可以放在上面文件里
+/opt/lampp/etc/original/httpd.conf   --这个文件不确定
+/etc/httpd/conf/httpd.conf   --这不是
+
+
+复制文件做备份
+cd  /opt/lampp/apache2/conf/
+
+cp httpd.conf httpd.conf.bak
+
+-rw-r--r-- 1 root root 239 Jan 16 10:58 httpd.conf
+-rw-r--r-- 1 root root 239 Feb  8 09:58 httpd.conf.bak
+
+编辑文件
+vim httpd.conf
+
+加入
+ProxyPass  /abc  http://www.zfshlm.com
+ProxyPassReverse /abc  http://www.zfshlm.com
+
+ProxyPass  /bcd  http://sunhongliang.top.1048.url-test.com
+ProxyPassReverse /bcd  http://sunhongliang.top.1048.url-test.com
+
+
+重启xampp
+重启xampp
+/opt/lampp/lampp restart 
+
+
+ok可以转发了
+http://47.93.11.60/abc   -->www.zfshlm.com
+这回转发它
+http://sunhongliang.top.1048.url-test.com/zfshlm/public/index/index/index
+
+
+---------------------------------------------
+目标要转发他,
+
+http://sunhongliang.top.1048.url-test.com/zfshlm/public/index/index/index
+
+------------------------------------------------
+现在不能转发静态文件
+要允许转发静态文件
+
+/opt/lampp/apache2/conf/httpd.conf
+
+----------------------------------------------------
+
+http://47.93.11.60/index
+
+http://sunhongliang.top.1048.url-test.com/zfshlm/public/admin/index/index.html
+
+http://47.93.11.60/bcd
+
+http://47.93.11.60/bcd/zfshlm/public/index/index/index
+
+第一步请求转发
+
+第二步请求重定向
+
+-----------------------------------------------------
+正式环境
+
+编辑文件
+vim httpd.conf
+
+加入
+ProxyPass  /admin  http://sunhongliang.top.1048.url-test.com
+ProxyPassReverse /admin  http://sunhongliang.top.1048.url-test.com
+
+
+访问效果
+http://www.zfshlm.com/admin
+
+
+重启xampp
+/opt/lampp/lampp restart 
+
+访问路径
+http://www.zfshlm.com/admin/zfshlm/public/index/index/index
+
+
+----------------------------------------------------------
+测试环境管理
+http://47.93.11.60/zfshlm/public/index/index/index
+
+----------------------------------------------------------
+用md5方式
+zfshlm.com
+9a75e275974b2fa724f9154d11e554e7
+
+-----------------------------------------------------
+改成
+ProxyPass  /9a75e275974b2fa724f9154d11e554e7  http://sunhongliang.top.1048.url-test.com
+ProxyPassReverse /9a75e275974b2fa724f9154d11e554e7  http://sunhongliang.top.1048.url-test.com
+
+-------------------------------------------------------
+访问路径
+http://www.zfshlm.com/9a75e275974b2fa724f9154d11e554e7/zfshlm/public/index/index/index
+http://sunhongliang.top.1048.url-test.com/zfshlm/public/index/index/index
+
+http://47.93.11.60/zfshlm/public/captcha.html
+
+
+http://www.zfshlm.com/zfshlm/public/admin/index/index.html
+
+http://www.zfshlm.com/9a75e275974b2fa724f9154d11e554e7/zfshlm/public/admin/index/index.html
+
+把测试环境配置上请求重定向
+test
+098f6bcd4621d373cade4e832627b4f6
+
+ProxyPass  /098f6bcd4621d373cade4e832627b4f6  http://47.93.11.60/
+ProxyPassReverse /098f6bcd4621d373cade4e832627b4f6  http://47.93.11.60/
+
+http://www.zfshlm.com/098f6bcd4621d373cade4e832627b4f6/zfshlm/public/index/index/index
+
+http://47.93.11.60/zfshlm/public/index/index/index
+
+/opt/lampp/apache2/conf
+vim httpd.conf
+
+重启xampp
+/opt/lampp/lampp restart 
+
+------------------------------------------------------
+测试
+gjb2
+888888
+
+gjbsp2
+888888
+
+
+正式
+
+zftsh
+888888
+
+
+zftsp
+888888
+---------------------------------------------------------------
+关精博铭句
+我:
+流量为王，流量是任何商业模式的基础。
+我:
+坚持，无论做什么事，坚持是基本功，做一个事就要有做三年，五年，十年，或一辈子的打算，没有这个劲何谈成功，成功是什么？是你千万次失败换来的一次低概率事件！加油(? ??_??)?
+                ？:
+
+我:
+不要盲目的相信所谓的"高大上",更不要盲目的崇拜"外来的和尚会念经",因为你不了解所谓的"高大上",不了解"外来的和尚",实践是检验人,事,物的最好标准.
