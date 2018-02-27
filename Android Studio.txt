@@ -1,0 +1,8 @@
+android studio 模拟器
+https://www.baidu.com/s?wd=android%20studio%20%E6%A8%A1%E6%8B%9F%E5%99%A8&rsv_spt=1&rsv_iqid=0xe42f4cb000047622&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=98012088_5_dg&ch=12&rsv_enter=1&oq=android%2520studio%2520%25E4%25B8%258B%25E8%25BD%25BD&rsv_t=8e79kyLFTcxVdTqbRe%2BNyUJP8%2B40KXDqaDGJLFi6F8SIRt8z5kAPmHuY3XCieNuxBZdSzQ&rsv_pq=d3482c2900052b1a&rsv_sug3=18&rsv_sug1=16&rsv_sug7=100&bs=android%20studio%20%E4%B8%8B%E8%BD%BD
+
+
+Android Studio 模拟器的选择和安装
+
+http://blog.csdn.net/qq_33505204/article/details/78452286
+
