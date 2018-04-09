@@ -5342,6 +5342,37 @@ md5在线解密破解,md5解密加密
 
 http://www.cmd5.com/
 
+zfshlmjsb
+
+a94d33d8dd3b1f54213eab8163f58f0a
+
+1.先建立文件夹
+
+a94d33d8dd3b1f54213eab8163f58f0a
+
+2.index.php
+
+访问地址
+
+http://47.93.11.60/a94d33d8dd3b1f54213eab8163f58f0a/index.php
+
+3.修改195上的apache配置文件
+/opt/lampp/apache2/conf/httpd.conf
+
+
+ cd /opt/lampp/apache2/conf/
+ 
+ 已经有了
+
+你用的URL
+http://www.zfshlm.com/098f6bcd4621d373cade4e832627b4f6/a94d33d8dd3b1f54213eab8163f58f0a/index.php
+
+等价的地址(把098f6bcd4621d373cade4e832627b4f6重定向到http://47.93.11.60/)
+
+http://47.93.11.60/a94d33d8dd3b1f54213eab8163f58f0a/index.php
+
+主意事项:
+把URL中的098f6bcd4621d373cade4e832627b4f6做成变量,很重要,一旦不用重定向,还得去掉
 
 ---------------------------------------------
 目标要转发他,
@@ -5367,6 +5398,10 @@ http://47.93.11.60/bcd/zfshlm/public/index/index/index
 第一步请求转发
 
 第二步请求重定向
+
+
+
+
 
 -----------------------------------------------------
 正式环境
