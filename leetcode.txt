@@ -468,6 +468,37 @@ export default (str) => {
 	
 	
 
+5-1 冒泡排序
+
+（数据结构）十分钟搞定时间复杂度（算法的时间复杂度）
+
+https://www.jianshu.com/p/f4cca5ce055a
+
+cd code/
+mkdir sort
+touch sort/lesson1-1.js
+cd ../test/
+mkdir sort
+touch sort/lesson1-1.test.js
+
+export default (arr) => {
+	return arr
+}
+
+
+export default (arr) => {
+	//冒泡排序
+	for(let i = arr.length -1 , tmp; i > 0 ; i--){
+		for(let j = 0 ; j < i ; j++){
+			tmp = arr[j]
+			if(tmp > arr[j+1]){
+				arr[j] = arr[j+1]
+				arr[j+1] = tmp
+			}
+		}
+	}
+	return arr
+}
 
 
 
