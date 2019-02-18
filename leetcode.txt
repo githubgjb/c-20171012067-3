@@ -578,3 +578,11 @@ export default (arr) => {
 递归的本质
 	每个处理过程是相同的,输入和输出是相同的,处理次数未知
 	边界条件
+	
+	
+高数工具
+https://www.baidu.com/s?wd=%E9%AB%98%E6%95%B0%E5%B7%A5%E5%85%B7&rsv_spt=1&rsv_iqid=0xe8fade0600142253&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=12&rsv_sug1=9&rsv_sug7=101
+
+数字帝国
+https://zh.numberempire.com/
+
