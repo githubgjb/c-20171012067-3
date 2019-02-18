@@ -1,0 +1,52 @@
+
+数学符号大全
+https://www.baidu.com/s?wd=%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E5%A4%A7%E5%85%A8&rsv_spt=1&rsv_iqid=0x8ec0781e000182c9&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=5&rsv_sug1=7&rsv_sug7=100&rsv_t=357888gb82ywnhV%2FZNN6VSjCYvUG7EcEHzeiopacEARGorva5BtpnKIe8XVjLVRLAHQz
+
+数学符号归纳
+http://www.fhdq.net/sx/12.html
+
+
+4、集合符号
+∪   ∩   ∈
+
+“⊆ ⊂ ⊇ ⊃”是“包含”符号等。⊃
+
+
+2-1 集合
+
+集合的概念
+
+集合:具有某种特定性质的事物的总体.
+
+	 组成这个集合的事物称为该集合的元素
+
+∈ 属于（??不属于）	 
+a ∈ M   a  ?? M
+
+列举法
+A = {a1,a2,...an}
+
+描述法
+M ={x|x所具有性质P}
+
+举例
+B = {x|x∈R,x^2 - 1 = 0}
+
+B = {1,-1}
+
+数集分类
+
+全体非负整数集合
+
+N --- 自然数集 N = {0,1,2,3,4,...,n,...}
+
+正整数,负整数,0
+Z ---  整数集  Z = {...,-n,...,-2,-1,0,1,2,3,...,n,....}
+
+Q --- 有理数集 Q = {p/q | p∈Z , q∈N+ 且p,q互质}
+
+R --- 实数集   R = {x|x是有理数或无理数}
+
+子集:若x ∈ A,则必x ∈ B就说A是B的子集,记作A ∈ B
+
+7.21秒
