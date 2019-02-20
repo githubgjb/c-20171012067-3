@@ -48,8 +48,67 @@ eval作用域(字符串子的时候)
 
 / 热门框架Vue开发WebApp / 步骤一 · 2-4 使用let实现面试常见小例子 
 
+生成十个按钮,每个按钮点击的时候弹出1-10
+
+var i = 0;
+for (i=1 ; i<=10 ; i++) {
+	(function(i){
+		var btn = document.createElement('button');
+		btn.innerText = i;
+		btn.onclick = function(){
+			alert(i);
+		}
+		document.body.appendChild(btn);
+	})(i);
+}
+
+独立的函数作用域
+
+用let会省事一些,因为它有块级作域
+
+for (let i=1 ; i<=10 ; i++) {
+	var btn = document.createElement('button');
+	btn.innerText = i;
+	btn.onclick = function(){
+		alert(i);
+	}
+	document.body.appendChild(btn);
+}
 
 
+2-6 const
+
+常量,不可改变量 
+
+常量必须被赋值
+
+const引用类型可以修改
+
+const xiaoming = {
+	age: 14,
+	name:'小明'
+};
+
+console.log(xiaoming);
+xiaoming.age = 22;
+console.log(xiaoming);
+
+冻结
+Object.freeze();
+
+
+const xiaoming = {
+	age: 14,
+	name:'小明'
+};
+Object.freeze(xiaoming);
+console.log(xiaoming);
+xiaoming.age = 22;
+console.log(xiaoming);
+
+
+
+ 2-6 const
 
 
 
