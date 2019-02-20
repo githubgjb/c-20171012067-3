@@ -1,0 +1,59 @@
+let 
+
+const
+
+块级作用域
+
+编辑器
+VS Code Atom  Sublime 或IDE WebStrorm
+
+环境
+Chrome  Node.js
+
+浏览器标准支持
+http://kangax.github.io/compat-table/es6/
+
+2-1 let
+
+var
+
+window.location.href === location.href
+
+对全局进行污染
+
+<script type="text/javascript">
+</script>
+
+
+<script type="text/javascript">
+	var age = 14;
+	console.log(window.age);
+</script>
+
+let和var的主要区别
+
+let声明的变量只在当前(块极)作用域内有效
+let声明的变量不能被重复声明
+不存在变量提升
+
+ES6之前的作用域
+
+全局作域
+函数数作用域
+eval作用域(字符串子的时候)
+
+块级作用域
+通俗的讲,就是一对花括号中的区域{...}
+
+
+/ 热门框架Vue开发WebApp / 步骤一 · 2-4 使用let实现面试常见小例子 
+
+
+
+
+
+
+
+
+
+
