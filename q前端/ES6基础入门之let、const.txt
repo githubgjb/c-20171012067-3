@@ -112,9 +112,25 @@ console.log(xiaoming);
  
  2-8 const扩展
 
+es6之前怎么声明常量
 
+//Object.defineProperty();
 
+var CST = {};
 
+Object.defineProperty(CST,'BASE_NAME',{
+	value: '小明',
+	writable: false
+});
 
+//要是放到window对象,就是全局的了
+Object.defineProperty(window,'BASE_NAME',{
+	value: '小明',
+	writable: false
+});
 
+防止对象被扩展
+Object.seal(CST);
+
+ES6变量的解构赋值
 
