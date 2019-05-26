@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4DA7E9B7-02F6-4191-8B80-C66FA888E850}</ProjectGuid>
+    <ProjectGuid>{60335C78-E133-491A-869D-2943F3555D5F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MergeSort</RootNamespace>
   </PropertyGroup>
@@ -79,7 +79,6 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SortTestHelper.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
