@@ -27,6 +27,12 @@
     <ClInclude Include="sortTestHelper.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="selectionSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mergeSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

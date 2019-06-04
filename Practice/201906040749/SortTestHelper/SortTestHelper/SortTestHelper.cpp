@@ -3,14 +3,22 @@
 
 #include "stdafx.h"
 #include "sortTestHelper.h"
+#include "selectionSort.h"
+#include "mergeSort.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	int n = 10000;
+	int n = 1000000;
 	int *arr = sortTestHelper::generateRandomArray(n,0,n);
 
-	sortTestHelper::printArray(arr,n);
+	//selectionSort(arr,n);
+	//sortTestHelper::printArray(arr,n);
 
+	//mergeSort(arr,n);
+	//sortTestHelper::printArray(arr,n);
+
+	//sortTestHelper::testSort("Selection Sort", selectionSort, arr, n);
+	sortTestHelper::testSort("mergeSort Sort", mergeSort, arr, n);
 
 	delete(arr);
 

@@ -79,6 +79,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="mergeSort.h" />
+    <ClInclude Include="selectionSort.h" />
     <ClInclude Include="sortTestHelper.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
