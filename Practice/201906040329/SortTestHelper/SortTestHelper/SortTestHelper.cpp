@@ -8,7 +8,7 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	int n = 10000;
+	int n = 100000;
 	int *arr = sortTestHelper::generateRandomArray(n,0,n);
 
 	mergeSort(arr,n);
