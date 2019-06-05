@@ -54,4 +54,19 @@ namespace sortTestHelper{
 		cout << sortName << " : " << double(endTime - startTime) / CLOCKS_PER_SEC << " S " << endl;
 	
 	}
+
+	int* copyIntArray(int a[],int n){
+		int* arr = new int[n];
+
+		//* 在VS中, copy函数被认为是不安全的, 请大家手动写一遍for循环:)
+		//头指针,尾指针,目标数组
+		//copy(a,a+n,arr);
+		for (int i = 0; i < n; i++)
+		{
+			arr[i] = a[i];
+		}
+
+
+		return arr;
+	}
 }
