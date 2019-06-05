@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="insertionSort.h" />
+    <ClInclude Include="insertionSort02.h" />
     <ClInclude Include="mergeSort.h" />
     <ClInclude Include="selectionSort.h" />
     <ClInclude Include="sortTestHelper.h" />
