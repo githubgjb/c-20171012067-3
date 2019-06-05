@@ -7,14 +7,18 @@
 #include "selectionSort.h"
 #include "insertionSort.h"
 #include "insertionSort02.h"
+#include "insertionSort03.h"
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int n = 10000;
-	int *arr = sortTestHelper::generateRandomArray(n,0,n);
+	//int *arr = sortTestHelper::generateRandomArray(n, 0, 3);
+	//int *arr = sortTestHelper::generateRandomArray(n,0,n);
+	int *arr = sortTestHelper::generateNearlyOrderedArray(n,10);
 	int *arr2 = sortTestHelper::copyIntArray(arr,n);
 	int *arr3 = sortTestHelper::copyIntArray(arr, n);
+	int *arr4 = sortTestHelper::copyIntArray(arr, n);
 
 	//mergeSort(arr,n);
 
@@ -22,12 +26,14 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	sortTestHelper::testSort("Insertion Sort",insertionSort,arr,n);
 	sortTestHelper::testSort("Insertion02 Sort", insertionSort02, arr3, n);
+	sortTestHelper::testSort("Insertion03 Sort", insertionSort03, arr4, n);
 	sortTestHelper::testSort("Selection Sort",selectionSort,arr2,n);
 	
 
 	delete(arr);
 	delete(arr2);
 	delete(arr3);
+	delete(arr4);
 	return 0;
 }
 
