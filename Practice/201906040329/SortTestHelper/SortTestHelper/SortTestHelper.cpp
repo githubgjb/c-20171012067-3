@@ -12,13 +12,46 @@
 #include "insertionSort05.h"
 #include "insertionSort06.h"
 #include "insertionSort07.h"
+#include "mergeSort02.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	int n = 10000;
+
+	int n = 50000;
+	// ≤‚ ‘1 “ª∞„≤‚ ‘
+	cout << "Test for random array, size = " << n << ", random range [0, " << n << "]" << endl;
+	int *arr1 = sortTestHelper::generateRandomArray(n, 0, n);
+	int *arr2 = sortTestHelper::copyIntArray(arr1, n);
+
+	sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr1, n);
+	sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr2, n);
+
+	delete(arr1);
+	delete(arr2);
+
+	cout << endl;
+
+	// ≤‚ ‘3 ≤‚ ‘Ω¸∫ı”––Úµƒ ˝◊È
+	//int swapTimes = 10;
+	int swapTimes = 0;
+	cout << "Test for nearly ordered array, size = " << n << ", swap time = " << swapTimes << endl;
+	arr1 = sortTestHelper::generateNearlyOrderedArray(n, swapTimes);
+	arr2 = sortTestHelper::copyIntArray(arr1, n);
+
+	sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr1, n);
+	sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr2, n);
+
+	delete(arr1);
+	delete(arr2);
+
+	cout << endl;
+
+
+	/*
+	int n = 50000;
 	//int *arr = sortTestHelper::generateRandomArray(n, 0, 3);
-	//int *arr = sortTestHelper::generateRandomArray(n,0,n);
-	int *arr = sortTestHelper::generateNearlyOrderedArray(n,10);
+	int *arr = sortTestHelper::generateRandomArray(n,0,n);
+	//int *arr = sortTestHelper::generateNearlyOrderedArray(n,10);
 	int *arr2 = sortTestHelper::copyIntArray(arr,n);
 	int *arr3 = sortTestHelper::copyIntArray(arr, n);
 	int *arr4 = sortTestHelper::copyIntArray(arr, n);
@@ -35,11 +68,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	//sortTestHelper::testSort("Insertion05 Sort", insertionSort05, arr4, n);
 	//sortTestHelper::testSort("Insertion06 Sort", insertionSort06, arr4, n);
 	sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr4, n);
-
+	sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr3, n);
 	delete(arr);
 	delete(arr2);
 	delete(arr3);
 	delete(arr4);
+	*/
+
+
 	return 0;
 }
 

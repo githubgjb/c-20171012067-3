@@ -87,6 +87,7 @@
     <ClInclude Include="insertionSort06.h" />
     <ClInclude Include="insertionSort07.h" />
     <ClInclude Include="mergeSort.h" />
+    <ClInclude Include="mergeSort02.h" />
     <ClInclude Include="selectionSort.h" />
     <ClInclude Include="sortTestHelper.h" />
     <ClInclude Include="stdafx.h" />
