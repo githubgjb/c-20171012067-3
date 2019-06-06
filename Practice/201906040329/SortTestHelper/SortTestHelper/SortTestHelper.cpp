@@ -13,6 +13,7 @@
 #include "insertionSort06.h"
 #include "insertionSort07.h"
 #include "mergeSort02.h"
+#include "mergeSortBU.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -22,12 +23,15 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "Test for random array, size = " << n << ", random range [0, " << n << "]" << endl;
 	int *arr1 = sortTestHelper::generateRandomArray(n, 0, n);
 	int *arr2 = sortTestHelper::copyIntArray(arr1, n);
+	int *arr3 = sortTestHelper::copyIntArray(arr1, n);
 
 	sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr1, n);
 	sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr2, n);
+	sortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr3, n);
 
 	delete(arr1);
 	delete(arr2);
+	delete(arr3);
 
 	cout << endl;
 
@@ -37,12 +41,15 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "Test for nearly ordered array, size = " << n << ", swap time = " << swapTimes << endl;
 	arr1 = sortTestHelper::generateNearlyOrderedArray(n, swapTimes);
 	arr2 = sortTestHelper::copyIntArray(arr1, n);
+	arr3 = sortTestHelper::copyIntArray(arr1, n);
 
 	sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr1, n);
 	sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr2, n);
+	sortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr3, n);
 
 	delete(arr1);
 	delete(arr2);
+	delete(arr3);
 
 	cout << endl;
 

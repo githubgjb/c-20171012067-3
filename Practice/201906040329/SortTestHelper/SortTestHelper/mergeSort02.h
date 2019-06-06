@@ -1,3 +1,6 @@
+#ifndef CHAPTER_03_COMPLETED_CODE_INSERTIONSORT_HinsertionSort03
+#define CHAPTER_03_COMPLETED_CODE_INSERTIONSORT_HinsertionSort03
+
 
 #include "insertionSort03.h"
 
@@ -74,3 +77,5 @@ void mergeSort02(T arr[],int n)
 {
 	__mergeSort02(arr,0,n-1);
 }
+
+#endif //CHAPTER_03_COMPLETED_CODE_INSERTIONSORT_HinsertionSort03
