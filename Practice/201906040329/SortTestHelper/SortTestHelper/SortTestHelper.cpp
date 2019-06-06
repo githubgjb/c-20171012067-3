@@ -10,6 +10,8 @@
 #include "insertionSort03.h"
 #include "insertionSort04.h"
 #include "insertionSort05.h"
+#include "insertionSort06.h"
+#include "insertionSort07.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -30,7 +32,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	//sortTestHelper::testSort("Insertion03 Sort", insertionSort03, arr4, n);
 	//sortTestHelper::testSort("Selection Sort",selectionSort,arr2,n);
 	//sortTestHelper::testSort("Insertion04 Sort", insertionSort04, arr4, n);
-	sortTestHelper::testSort("Insertion05 Sort", insertionSort05, arr4, n);
+	//sortTestHelper::testSort("Insertion05 Sort", insertionSort05, arr4, n);
+	//sortTestHelper::testSort("Insertion06 Sort", insertionSort06, arr4, n);
+	sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr4, n);
 
 	delete(arr);
 	delete(arr2);
