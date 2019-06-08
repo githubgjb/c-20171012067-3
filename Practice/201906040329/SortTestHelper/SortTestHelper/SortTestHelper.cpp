@@ -18,6 +18,7 @@
 #include "mergeSortBU03.h"
 #include "mergeSortBU04.h"
 #include "mergeSortBU05.h"
+#include "mergeSortBU06.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 
@@ -32,7 +33,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr1, n);
 	sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr2, n);
 	sortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr3, n);
-	sortTestHelper::testSort("mergeSortBU05 Sort", mergeSortBU05, arr4, n);
+	sortTestHelper::testSort("mergeSortBU06 Sort", mergeSortBU06, arr4, n);
 
 	delete(arr1);
 	delete(arr2);
