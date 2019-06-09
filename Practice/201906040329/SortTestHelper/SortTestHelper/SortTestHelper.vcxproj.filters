@@ -75,6 +75,12 @@
     <ClInclude Include="mergeSortBU06.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="mergeSortBU07.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mergeSortBU08.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
