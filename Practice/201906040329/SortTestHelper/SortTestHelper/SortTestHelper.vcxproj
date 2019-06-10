@@ -102,6 +102,7 @@
     <ClInclude Include="quickSor03.h" />
     <ClInclude Include="quickSort01.h" />
     <ClInclude Include="quickSort02.h" />
+    <ClInclude Include="quickSort04.h" />
     <ClInclude Include="selectionSort.h" />
     <ClInclude Include="sortTestHelper.h" />
     <ClInclude Include="stdafx.h" />
