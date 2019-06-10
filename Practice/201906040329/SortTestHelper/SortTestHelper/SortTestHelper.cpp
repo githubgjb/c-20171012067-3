@@ -23,29 +23,32 @@
 #include "mergeSortBU09.h"
 #include "mergeSortBU10.h"
 #include "mergeSortBU11.h"
+#include "quickSort01.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 
-	int n = 50000;
+	int n = 1000000;
 	// ≤‚ ‘1 “ª∞„≤‚ ‘
 	cout << "Test for random array, size = " << n << ", random range [0, " << n << "]" << endl;
 	int *arr1 = sortTestHelper::generateRandomArray(n, 0, n);
 	int *arr2 = sortTestHelper::copyIntArray(arr1, n);
 	int *arr3 = sortTestHelper::copyIntArray(arr1, n);
-	int *arr4 = sortTestHelper::copyIntArray(arr1, n);
+	//int *arr4 = sortTestHelper::copyIntArray(arr1, n);
 
-	sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr1, n);
-	sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr2, n);
-	sortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr3, n);
-	sortTestHelper::testSort("mergeSortBU11 Sort", mergeSortBU11, arr4, n);
+	//sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr1, n);
+    sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr3, n);
+	//sortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr3, n);
+	sortTestHelper::testSort("mergeSortBU11 Sort", mergeSortBU11, arr1, n);
+	sortTestHelper::testSort("quickSort01 Sort", quickSort01, arr2, n);
 
 	delete(arr1);
 	delete(arr2);
 	delete(arr3);
-	delete(arr4);
+	//delete(arr4);
 
 	cout << endl;
 
+	/*
 	// ≤‚ ‘3 ≤‚ ‘Ω¸∫ı”––Úµƒ ˝◊È
 	//int swapTimes = 10;
 	int swapTimes = 0;
@@ -63,7 +66,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	delete(arr3);
 
 	cout << endl;
-
+	*/
 
 	/*
 	int n = 50000;
