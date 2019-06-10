@@ -24,6 +24,8 @@
 #include "mergeSortBU10.h"
 #include "mergeSortBU11.h"
 #include "quickSort01.h"
+#include "quickSort02.h"
+#include "quickSor03.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 
@@ -33,18 +35,19 @@ int _tmain(int argc, _TCHAR* argv[])
 	int *arr1 = sortTestHelper::generateRandomArray(n, 0, n);
 	int *arr2 = sortTestHelper::copyIntArray(arr1, n);
 	int *arr3 = sortTestHelper::copyIntArray(arr1, n);
-	//int *arr4 = sortTestHelper::copyIntArray(arr1, n);
+	int *arr4 = sortTestHelper::copyIntArray(arr1, n);
 
 	//sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr1, n);
     sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr3, n);
 	//sortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr3, n);
 	sortTestHelper::testSort("mergeSortBU11 Sort", mergeSortBU11, arr1, n);
 	sortTestHelper::testSort("quickSort01 Sort", quickSort01, arr2, n);
+	sortTestHelper::testSort("quickSort03 Sort", quickSort03, arr4, n);
 
 	delete(arr1);
 	delete(arr2);
 	delete(arr3);
-	//delete(arr4);
+	delete(arr4);
 
 	cout << endl;
 

@@ -99,7 +99,9 @@
     <ClInclude Include="mergeSortBU09.h" />
     <ClInclude Include="mergeSortBU10.h" />
     <ClInclude Include="mergeSortBU11.h" />
+    <ClInclude Include="quickSor03.h" />
     <ClInclude Include="quickSort01.h" />
+    <ClInclude Include="quickSort02.h" />
     <ClInclude Include="selectionSort.h" />
     <ClInclude Include="sortTestHelper.h" />
     <ClInclude Include="stdafx.h" />
