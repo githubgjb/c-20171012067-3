@@ -102,6 +102,15 @@
     <ClInclude Include="quickSort04.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="quickSort05.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="quickSort06.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="quickSort07.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
