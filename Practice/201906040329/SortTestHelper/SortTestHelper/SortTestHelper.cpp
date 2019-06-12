@@ -35,6 +35,7 @@
 #include "quickSort10.h"
 #include "quickSort11.h"
 #include "quickSort12.h"
+#include "quickSort13.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 
@@ -75,6 +76,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr2, n);
 	sortTestHelper::testSort("mergeSortBU11 Sort", mergeSortBU11, arr3, n);
 	sortTestHelper::testSort("quickSort12 Sort", quickSort12, arr4, n);
+	sortTestHelper::testSort("quickSort13 Sort", quickSort13, arr1, n);
 
 
 	delete[] arr1;
