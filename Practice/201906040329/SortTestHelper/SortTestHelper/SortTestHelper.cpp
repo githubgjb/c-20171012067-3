@@ -34,6 +34,7 @@
 #include "quickSort09.h"
 #include "quickSort10.h"
 #include "quickSort11.h"
+#include "quickSort12.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 
@@ -44,6 +45,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	int *arr2 = sortTestHelper::copyIntArray(arr1, n);
 	int *arr3 = sortTestHelper::copyIntArray(arr1, n);
 	int *arr4 = sortTestHelper::copyIntArray(arr1, n);
+	int *arr5 = sortTestHelper::copyIntArray(arr1, n);
 
 	//sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr1, n);
     sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr3, n);
@@ -51,11 +53,13 @@ int _tmain(int argc, _TCHAR* argv[])
 	sortTestHelper::testSort("mergeSortBU11 Sort", mergeSortBU11, arr1, n);
 	sortTestHelper::testSort("quickSort01 Sort", quickSort01, arr2, n);
 	sortTestHelper::testSort("quickSort10 Sort", quickSort10, arr4, n);
+	sortTestHelper::testSort("quickSort12 Sort", quickSort12, arr5, n);
 
 	delete(arr1);
 	delete(arr2);
 	delete(arr3);
 	delete(arr4);
+	delete(arr5);
 
 	cout << endl;
 
@@ -70,7 +74,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr1, n);
 	sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr2, n);
 	sortTestHelper::testSort("mergeSortBU11 Sort", mergeSortBU11, arr3, n);
-	sortTestHelper::testSort("quickSort11 Sort", quickSort11, arr4, n);
+	sortTestHelper::testSort("quickSort12 Sort", quickSort12, arr4, n);
 
 
 	delete[] arr1;
@@ -89,17 +93,20 @@ int _tmain(int argc, _TCHAR* argv[])
 	arr2 = sortTestHelper::copyIntArray(arr1, n);
 	arr3 = sortTestHelper::copyIntArray(arr1, n);
 	arr4 = sortTestHelper::copyIntArray(arr1, n);
+	arr5 = sortTestHelper::copyIntArray(arr1, n);
 
 	sortTestHelper::testSort("Insertion07 Sort", insertionSort07, arr1, n);
 	sortTestHelper::testSort("MergeSort02 Sort", mergeSort02, arr2, n);
 	sortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr3, n);
 	sortTestHelper::testSort("quickSort10 Sort", quickSort10, arr4, n);
+	sortTestHelper::testSort("quickSort12 Sort", quickSort12, arr5, n);
 
 
 	delete(arr1);
 	delete(arr2);
 	delete(arr3);
 	delete(arr4);
+	delete(arr5);
 
 	cout << endl;
 	
