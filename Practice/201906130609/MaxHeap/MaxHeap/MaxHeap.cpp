@@ -10,6 +10,8 @@
 #include <cmath>
 #include <cassert>
 #include "MaxHeap.h"
+#include "MaxHeap02.h"
+
 
 using namespace std;
 
@@ -18,8 +20,17 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	MaxHeap<int> maxHeap = MaxHeap<int>(100);
-	cout << maxHeap.size() << endl;
+	//MaxHeap<int> maxHeap = MaxHeap<int>(100);
+	//cout << maxHeap.size() << endl;
+
+	MaxHeap02<int> maxHeap02 = MaxHeap02<int>(100);
+	cout << maxHeap02.size() << endl;
+
+	srand(time(NULL));
+	for (size_t i = 0; i < 15; i++)
+	{
+		maxHeap02.insert(rand() % 100);
+	}
 
 	return 0;
 }
