@@ -1,3 +1,7 @@
+#ifndef CHAPTER_03_COMPLETED_CODE_INSERTIONSORT_H_MaxHeap03
+#define CHAPTER_03_COMPLETED_CODE_INSERTIONSORT_H_MaxHeap03
+
+
 #include <iostream>
 #include <algorithm>
 #include <string>
@@ -82,3 +86,5 @@ public:
 
 
 };
+
+#endif //CHAPTER_03_COMPLETED_CODE_INSERTIONSORT_H
