@@ -18,7 +18,7 @@
 #include "quickSort14.h"
 #include "quickSort3Ways.h"
 #include "HeapSort01.h"
-
+#include "HeapSort02.h"
 using namespace std;
 
 
@@ -40,7 +40,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	sortTestHelper::testSort("quickSort14 Sort", quickSort14, arr2, n);
 	sortTestHelper::testSort("quickSort3Ways Sort", quickSort3Ways, arr3, n);
 	sortTestHelper::testSort("heapSort01 Sort", heapSort01, arr4, n);
-
+	sortTestHelper::testSort("heapSort02 Sort", heapSort02, arr5, n);
 
 	delete(arr1);
 	delete(arr2);
@@ -63,6 +63,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	sortTestHelper::testSort("quickSort14 Sort", quickSort14, arr2, n);
 	sortTestHelper::testSort("quickSort3Ways Sort", quickSort3Ways, arr3, n);
 	sortTestHelper::testSort("heapSort01 Sort", heapSort01, arr4, n);
+	sortTestHelper::testSort("heapSort02 Sort", heapSort02, arr5, n);
 
 	delete[] arr1;
 	delete[] arr2;
@@ -89,6 +90,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	sortTestHelper::testSort("quickSort14 Sort", quickSort14, arr2, n);
 	sortTestHelper::testSort("quickSort3Ways Sort", quickSort3Ways, arr3, n);
 	sortTestHelper::testSort("heapSort01 Sort", heapSort01, arr4, n);
+	sortTestHelper::testSort("heapSort02 Sort", heapSort02, arr5, n);
 
 	delete(arr1);
 	delete(arr2);
