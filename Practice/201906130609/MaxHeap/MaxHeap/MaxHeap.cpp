@@ -19,6 +19,7 @@
 #include "quickSort3Ways.h"
 #include "HeapSort01.h"
 #include "HeapSort02.h"
+#include "HeapSort03.h"
 using namespace std;
 
 
@@ -34,6 +35,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	int *arr3 = sortTestHelper::copyIntArray(arr1, n);
 	int *arr4 = sortTestHelper::copyIntArray(arr1, n);
 	int *arr5 = sortTestHelper::copyIntArray(arr1, n);
+	int *arr6 = sortTestHelper::copyIntArray(arr1, n);
 
 	//todo
 	sortTestHelper::testSort("Merge02 Sort",mergeSort02,arr1,n);
@@ -41,12 +43,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	sortTestHelper::testSort("quickSort3Ways Sort", quickSort3Ways, arr3, n);
 	sortTestHelper::testSort("heapSort01 Sort", heapSort01, arr4, n);
 	sortTestHelper::testSort("heapSort02 Sort", heapSort02, arr5, n);
+	sortTestHelper::testSort("heapSort03 Sort", heapSort03, arr6, n);
 
 	delete(arr1);
 	delete(arr2);
 	delete(arr3);
 	delete(arr4);
 	delete(arr5);
+	delete(arr6);
 
 	cout << endl;
 
@@ -57,6 +61,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	arr3 = sortTestHelper::copyIntArray(arr1, n);
 	arr4 = sortTestHelper::copyIntArray(arr1, n);
 	arr5 = sortTestHelper::copyIntArray(arr1, n);
+	arr6 = sortTestHelper::copyIntArray(arr1, n);
 
 	//todo
 	sortTestHelper::testSort("Merge02 Sort", mergeSort02, arr1, n);
@@ -64,12 +69,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	sortTestHelper::testSort("quickSort3Ways Sort", quickSort3Ways, arr3, n);
 	sortTestHelper::testSort("heapSort01 Sort", heapSort01, arr4, n);
 	sortTestHelper::testSort("heapSort02 Sort", heapSort02, arr5, n);
+	sortTestHelper::testSort("heapSort03 Sort", heapSort03, arr6, n);
 
 	delete[] arr1;
 	delete[] arr2;
 	delete[] arr3;
 	delete[] arr4;
 	delete[] arr5;
+	delete[] arr6;
 
 
 	cout << endl;
@@ -84,6 +91,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	arr3 = sortTestHelper::copyIntArray(arr1, n);
 	arr4 = sortTestHelper::copyIntArray(arr1, n);
 	arr5 = sortTestHelper::copyIntArray(arr1, n);
+	arr6 = sortTestHelper::copyIntArray(arr1, n);
 
 	//todo
 	sortTestHelper::testSort("Merge02 Sort", mergeSort02, arr1, n);
@@ -91,12 +99,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	sortTestHelper::testSort("quickSort3Ways Sort", quickSort3Ways, arr3, n);
 	sortTestHelper::testSort("heapSort01 Sort", heapSort01, arr4, n);
 	sortTestHelper::testSort("heapSort02 Sort", heapSort02, arr5, n);
+	sortTestHelper::testSort("heapSort03 Sort", heapSort03, arr6, n);
 
 	delete(arr1);
 	delete(arr2);
 	delete(arr3);
 	delete(arr4);
 	delete(arr5);
+	delete(arr6);
 
 	cout << endl;
 
