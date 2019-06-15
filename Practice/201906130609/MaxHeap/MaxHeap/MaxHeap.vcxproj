@@ -83,6 +83,7 @@
     <ClInclude Include="HeapSort02.h" />
     <ClInclude Include="HeapSort03.h" />
     <ClInclude Include="IndexMaxHeap06.h" />
+    <ClInclude Include="IndexMaxHeap07.h" />
     <ClInclude Include="insertionSort03.h" />
     <ClInclude Include="MaxHeap.h" />
     <ClInclude Include="MaxHeap02.h" />
