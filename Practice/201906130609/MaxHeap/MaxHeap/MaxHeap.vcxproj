@@ -79,6 +79,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="HeapSort01.h" />
     <ClInclude Include="HeapSort02.h" />
     <ClInclude Include="HeapSort03.h" />
