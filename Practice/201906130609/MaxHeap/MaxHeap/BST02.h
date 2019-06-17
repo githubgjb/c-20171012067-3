@@ -41,6 +41,16 @@ public:
 		root =  insert(root, key, value);
 		
 	}
+
+	bool contain(Key key){
+		return contaion(root,key);
+	}
+
+	Value* search(Key key){
+		return search(root, key);
+	}
+
+
 private:
 	//向以node为根的二叉搜索树中,插入节点(key, value)
 	//返回插入新节点后的二叉树的根
@@ -66,4 +76,49 @@ private:
 		return node;
 
 	}
+
+	//查看以node为根的二叉搜索树中是否包含键值为key的节点
+	bool contaion(Node* node,Key key){
+		
+		if (node == NULL)
+		{
+			return false;
+		}
+
+		if (key == node->key)
+		{
+			return;
+		}
+		else if (key < node->key){
+			return contain(node->left, key);
+		}
+		else // key > node->key
+		{
+			return contain(node->right, key);
+		}
+	}
+
+	//在以node为根的二叉搜索树中查找key所对应的value
+	Value* search(Node* node,Key key){
+		
+		if (node == NULL)
+		{
+			return NULL:
+		}
+		if (key == node->key)
+		{
+			return &(node->value);
+		}
+		else if (key < node->key)
+		{
+			return search(node->left, key);
+		}
+		else //key > node->key
+		{
+			return search(node->right, key);
+		}
+
+	}
+
+
 };
