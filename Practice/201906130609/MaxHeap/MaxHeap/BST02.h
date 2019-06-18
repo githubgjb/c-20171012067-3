@@ -26,6 +26,7 @@ public:
 	}
 	~BST02(){
 		//TODO
+		destory( root );
 	}
 
 	int size(){
@@ -48,6 +49,21 @@ public:
 
 	Value* search(Key key){
 		return search(root, key);
+	}
+
+	//前序遍历
+	void preOrder(){
+		preOrder(root);
+	}
+
+	//中序遍历
+	void inOrder(){
+		inOrder(root);
+	}
+
+	//后序遍历
+	void postOrder(){
+		postOrder(root);
 	}
 
 private:
@@ -120,4 +136,47 @@ private:
 
 	}
 
+	//对以node为根的二叉搜索树进行前序遍历
+	void preOrder(Node* node){
+	
+		if (node != NULL)
+		{
+			cout << node->key << endl;
+			preOrder(node->left);
+			preOrder(node->right);
+		}
+	}
+
+	//以对node为根的二叉搜索树进行中序遍历
+	void inOrder(Node* node){
+		if (node != NULL)
+		{
+			inOrder(node->left);
+			cout << node->key << endl;
+			inOrder(node->right);
+		}
+	}
+
+	//对以node为根的二叉搜索树进行后序遍历
+	void postOrder(Node* node){
+		
+		if (node != NULL)
+		{
+			postOrder(node->left);
+			postOrder(node->right);
+			cout << node->key << endl;
+		}
+
+	}
+
+	void destory(Node* node){
+		if (node != NULL)
+		{
+			destory(node->left);
+			destory(node->right);
+
+			delete node;
+			count--;
+		}
+	}
 };
