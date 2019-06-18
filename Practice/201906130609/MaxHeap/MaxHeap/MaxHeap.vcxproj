@@ -85,6 +85,7 @@
     <ClInclude Include="BST02.h" />
     <ClInclude Include="BST03.h" />
     <ClInclude Include="BST04.h" />
+    <ClInclude Include="BST05.h" />
     <ClInclude Include="FileOps.h" />
     <ClInclude Include="HeapSort01.h" />
     <ClInclude Include="HeapSort02.h" />
