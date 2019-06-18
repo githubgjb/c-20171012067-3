@@ -43,23 +43,23 @@ public:
 	}
 
 	bool contain(Key key){
-		return contaion(root,key);
+		return contain(root, key);
 	}
 
 	Value* search(Key key){
 		return search(root, key);
 	}
 
-
 private:
+	
 	//向以node为根的二叉搜索树中,插入节点(key, value)
 	//返回插入新节点后的二叉树的根
-	Node* insert(Node *node,Key,key,Value value){
-		
+	Node* insert(Node *node, Key key, Value value){
+
 		if (node == NULL)
 		{
 			count++;
-			return new Node(key,value);
+			return new Node(key, value);
 		}
 
 		if (key == node->key)
@@ -78,8 +78,8 @@ private:
 	}
 
 	//查看以node为根的二叉搜索树中是否包含键值为key的节点
-	bool contaion(Node* node,Key key){
-		
+	bool contain(Node* node, Key key){
+
 		if (node == NULL)
 		{
 			return false;
@@ -87,7 +87,7 @@ private:
 
 		if (key == node->key)
 		{
-			return;
+			return true;
 		}
 		else if (key < node->key){
 			return contain(node->left, key);
@@ -99,11 +99,11 @@ private:
 	}
 
 	//在以node为根的二叉搜索树中查找key所对应的value
-	Value* search(Node* node,Key key){
-		
+	Value* search(Node* node, Key key){
+
 		if (node == NULL)
 		{
-			return NULL:
+			return NULL;
 		}
 		if (key == node->key)
 		{
@@ -119,6 +119,5 @@ private:
 		}
 
 	}
-
 
 };
