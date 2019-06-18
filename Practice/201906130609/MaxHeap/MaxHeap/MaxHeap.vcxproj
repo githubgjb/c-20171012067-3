@@ -83,6 +83,7 @@
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BST.h" />
     <ClInclude Include="BST02.h" />
+    <ClInclude Include="BST03.h" />
     <ClInclude Include="FileOps.h" />
     <ClInclude Include="HeapSort01.h" />
     <ClInclude Include="HeapSort02.h" />

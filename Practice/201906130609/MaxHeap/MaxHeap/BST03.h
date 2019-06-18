@@ -1,7 +1,9 @@
+
+#include <queue>
 #include <iostream>
 using namespace std;
 template <typename Key, typename Value>
-class BST02{
+class BST03{
 private:
 	struct Node
 	{
@@ -20,13 +22,13 @@ private:
 	Node *root;
 	int count;
 public:
-	BST02(){
+	BST03(){
 		root = NULL;
 		count = 0;
 	}
-	~BST02(){
+	~BST03(){
 		//TODO
-		destory( root );
+		destory(root);
 	}
 
 	int size(){
@@ -37,10 +39,10 @@ public:
 		return count == 0;
 	}
 
-	void insert(Key key,Value value){
-		
-		root =  insert(root, key, value);
-		
+	void insert(Key key, Value value){
+
+		root = insert(root, key, value);
+
 	}
 
 	bool contain(Key key){
@@ -66,8 +68,35 @@ public:
 		postOrder(root);
 	}
 
-private:
+	//层序遍历
+	void levelOrder(){
+		
+		queue<Node*> q;
+		q.push(root);
+
+		while ( !q.empty() )
+		{
+			Node *node = q.front();
+			q.pop();
+
+			cout << node->key << endl;
+			if (node->left)
+			{
+				q.push(node->left);
+			}
+			if (node->right)
+			{
+				q.push(node->right);
+			}
+
+		}
+
 	
+	}
+
+
+private:
+
 	//向以node为根的二叉搜索树中,插入节点(key, value)
 	//返回插入新节点后的二叉树的根
 	Node* insert(Node *node, Key key, Value value){
@@ -138,7 +167,7 @@ private:
 
 	//对以node为根的二叉搜索树进行前序遍历
 	void preOrder(Node* node){
-	
+
 		if (node != NULL)
 		{
 			cout << node->key << endl;
@@ -159,7 +188,7 @@ private:
 
 	//对以node为根的二叉搜索树进行后序遍历
 	void postOrder(Node* node){
-		
+
 		if (node != NULL)
 		{
 			postOrder(node->left);
