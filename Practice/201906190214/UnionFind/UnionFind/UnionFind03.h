@@ -12,23 +12,27 @@ namespace UF3{
 	{
 	private:
 		int* parent;
-		int* sz; //sz[i]表示以i为根的集合中元素个数
+		//int* sz; //sz[i]表示以i为根的集合中元素个数
+		int* rank; //rank[i]表示以i为根的集合所表示的树的层数
 		int count;
 
 	public:
 		UnionFind03(int count){
 			parent = new int[count];
-			sz = new int[count];
+			//sz = new int[count];
+			rank = new int[count];
 			this->count = count;
 			for (int i = 0; i < count; i++)
 			{
 				parent[i] = i;
-				sz[i] = 1;
+				//sz[i] = 1;
+				rank[i] = 1;
 			}
 		}
 		~UnionFind03(){
 			delete[] parent;
-			delete[] sz;
+			//delete[] sz;
+			delete[] rank;
 		}
 		int find(int p){
 			assert(p >= 0 && p < count);
@@ -51,6 +55,7 @@ namespace UF3{
 			{
 				return;
 			}
+			/*
 			if (sz[pRoot] < sz[qRoot] )
 			{
 				parent[pRoot] = qRoot;
@@ -61,8 +66,22 @@ namespace UF3{
 				parent[qRoot] = pRoot;
 				sz[pRoot] += sz[qRoot];
 			}
+			*/
 
 			//parent[pRoot] = qRoot;
+			if (rank[pRoot] < rank[qRoot])
+			{
+				parent[pRoot] = qRoot;
+			}
+			else if (rank[qRoot] < rank[pRoot]){
+				parent[qRoot] = pRoot;
+			}
+			else //rank[pRoot] == rank[qRoot]
+			{
+				parent[pRoot] = qRoot;
+				rank[qRoot] += 1;
+			}
+
 		}
 
 	};
