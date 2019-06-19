@@ -83,6 +83,7 @@
     <ClInclude Include="targetver.h" />
     <ClInclude Include="UnionFind01.h" />
     <ClInclude Include="UnionFind02.h" />
+    <ClInclude Include="UnionFind03.h" />
     <ClInclude Include="UnionFindTestHelper.h" />
   </ItemGroup>
   <ItemGroup>
