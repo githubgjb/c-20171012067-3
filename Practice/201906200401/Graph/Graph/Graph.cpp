@@ -10,9 +10,22 @@
 #include "DenseGraph.h"
 #include "ReadGraph.h"
 #include "Component.h"
+#include "Path.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+
+	string filename = "testG2.txt";
+	SparseGraph g = SparseGraph(7, false);
+	ReadGraph<SparseGraph> readGraph2(g, filename);
+	g.show();
+	cout << endl;
+
+	Path<SparseGraph> dfs(g,0);
+	cout << "DFS : ";
+	dfs.showPath(6);
+
+	/*
 	//TestG1.txt
 	string filename1 = "testG1.txt";
 	SparseGraph g1 = SparseGraph(13, false);
@@ -26,6 +39,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	ReadGraph<SparseGraph> readGraph2(g2, filename2);
 	Component<SparseGraph> component2(g2);
 	cout << "TestG2.txt , Component Count:" << component2.count() << endl;
+	*/
+	
 	/*
 	string filename = "testG1.txt";
 
