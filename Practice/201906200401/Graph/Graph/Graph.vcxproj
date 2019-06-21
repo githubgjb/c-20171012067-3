@@ -77,9 +77,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="testG1.txt" />
+    <Text Include="testG2.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Component.h" />
     <ClInclude Include="DenseGraph.h" />
+    <ClInclude Include="ReadGraph.h" />
     <ClInclude Include="SparseGraph.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
