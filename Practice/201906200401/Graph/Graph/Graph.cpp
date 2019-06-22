@@ -10,11 +10,12 @@
 #include "DenseGraph.h"
 #include "ReadGraph.h"
 #include "Component.h"
+#include "ShortestPath.h"
 #include "Path.h"
+
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-
 	string filename = "testG2.txt";
 	SparseGraph g = SparseGraph(7, false);
 	ReadGraph<SparseGraph> readGraph2(g, filename);
@@ -25,6 +26,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "DFS : ";
 	dfs.showPath(6);
 
+	
+	ShortestPath<SparseGraph> bfs(g,0);
+	cout << "BFS : ";
+	bfs.showPath(6);
+	
+	
 	/*
 	//TestG1.txt
 	string filename1 = "testG1.txt";
