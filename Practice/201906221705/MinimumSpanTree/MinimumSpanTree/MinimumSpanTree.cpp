@@ -6,11 +6,29 @@
 #include "DenseGraph.h"
 #include "SparseGraph.h"
 #include "ReadGraph.h"
+#include "LazyPrimMST.h"
 
 using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	string filename = "testG1.txt";
+	int V = 8;
+	SparseGraph<double> g = SparseGraph<double>(V, false);
+	ReadGraph<SparseGraph<double>, double> readGraph2(g, filename);
+	
+	//Test Lazy Prim MST
+	cout << "Test Lazy Prim MST" << endl;
+	LazyPrimMST<SparseGraph<double>, double> lazyPrimMST(g);
+	vector<Edge<double>> mst = lazyPrimMST.mstEdges();
+	for (int i = 0; i < mst.size(); i++)
+	{
+		cout << mst[i] << endl;
+	}
+	cout << " The MST weight is: "<< lazyPrimMST.result() << endl;
+
+	cout << endl;
+	/*
 	string filename = "testG1.txt";
 	int V = 8;
 	//输出的精确度是两位小数
@@ -26,7 +44,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	ReadGraph<SparseGraph<double>, double> readGraph2(g2, filename);
 	g2.show();
 	cout << endl;
-
+	*/
 	return 0;
 }
 

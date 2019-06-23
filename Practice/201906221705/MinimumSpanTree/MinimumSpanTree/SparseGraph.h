@@ -95,6 +95,8 @@ public:
 			this->v = v;
 			this->index = 0;
 		}
+		~adjIterator(){}
+
 		Edge<Weight>* begin(){
 			index = 0;
 			if (G.g[v].size())
