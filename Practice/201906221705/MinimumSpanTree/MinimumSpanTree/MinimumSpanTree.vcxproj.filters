@@ -22,6 +22,12 @@
     <Text Include="testG2.txt">
       <Filter>头文件</Filter>
     </Text>
+    <Text Include="testG3.txt">
+      <Filter>头文件</Filter>
+    </Text>
+    <Text Include="testG4.txt">
+      <Filter>头文件</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -46,6 +52,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="LazyPrimMST.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexMinHeap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimMST.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

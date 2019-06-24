@@ -7,11 +7,90 @@
 #include "SparseGraph.h"
 #include "ReadGraph.h"
 #include "LazyPrimMST.h"
+#include "PrimMST.h"
+#include <ctime>
 
 using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	//performance
+	string filename1 = "testG1.txt";
+	int V1 = 8;
+	string filename2 = "testG2.txt";
+	int V2 = 250;
+	string filename3 = "testG3.txt";
+	int V3 = 1000;
+	string filename4 = "testG4.txt";
+	int V4 = 10000;
+
+
+	SparseGraph<double> g1 = SparseGraph<double>(V1, false);
+	ReadGraph<SparseGraph<double>, double> readGraph12(g1,filename1);
+
+	SparseGraph<double> g2 = SparseGraph<double>(V2, false);
+	ReadGraph<SparseGraph<double>, double> readGraph2(g2, filename2);
+
+	SparseGraph<double> g3 = SparseGraph<double>(V3, false);
+	ReadGraph<SparseGraph<double>, double> readGraph3(g3, filename3);
+
+	SparseGraph<double> g4 = SparseGraph<double>(V4, false);
+	ReadGraph<SparseGraph<double>, double> readGraph4(g4, filename4);
+
+	cout << endl;
+
+	clock_t startTime, endTime;
+
+	cout << "Test Lazy Prim MST:" << endl;
+	 
+	startTime = clock();
+	LazyPrimMST<SparseGraph<double>, double> lazyPrimMST1(g1);
+	endTime = clock();
+	cout << "Test for G1: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
+
+
+	startTime = clock();
+	LazyPrimMST<SparseGraph<double>, double> lazyPrimMST2(g2);
+	endTime = clock();
+	cout << "Test for G2: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
+
+
+	startTime = clock();
+	LazyPrimMST<SparseGraph<double>, double> lazyPrimMST3(g3);
+	endTime = clock();
+	cout << "Test for G3: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
+
+
+	startTime = clock();
+	LazyPrimMST<SparseGraph<double>, double> lazyPrimMST4(g4);
+	endTime = clock();
+	cout << "Test for G4: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
+
+	//Test Prim MST
+
+	cout << "Test Prim MST:" << endl;
+
+	startTime = clock();
+	PrimMST<SparseGraph<double>, double> PrimMST1(g1);
+	endTime = clock();
+	cout << "Test for G1: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
+
+	startTime = clock();
+	PrimMST<SparseGraph<double>, double> PrimMST2(g2);
+	endTime = clock();
+	cout << "Test for G2: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
+
+	startTime = clock();
+	PrimMST<SparseGraph<double>, double> PrimMST3(g3);
+	endTime = clock();
+	cout << "Test for G3: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
+
+	startTime = clock();
+	PrimMST<SparseGraph<double>, double> PrimMST4(g4);
+	endTime = clock();
+	cout << "Test for G4: " << (double)(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
+
+	/*
 	string filename = "testG1.txt";
 	int V = 8;
 	SparseGraph<double> g = SparseGraph<double>(V, false);
@@ -28,6 +107,19 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << " The MST weight is: "<< lazyPrimMST.result() << endl;
 
 	cout << endl;
+	
+
+	//Test Prim MST
+	cout << "Test Prim MST" << endl;
+	PrimMST<SparseGraph<double>, double> primMST(g);
+	mst = primMST.mstEdges();
+	for (int i = 0; i < mst.size(); i++){
+		cout << mst[i] << endl;
+	}
+	cout << " The MST weight is: " << primMST.result() << endl;
+	cout << endl;
+	*/
+
 	/*
 	string filename = "testG1.txt";
 	int V = 8;

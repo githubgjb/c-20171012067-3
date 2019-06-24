@@ -79,12 +79,16 @@
     <Text Include="ReadMe.txt" />
     <Text Include="testG1.txt" />
     <Text Include="testG2.txt" />
+    <Text Include="testG3.txt" />
+    <Text Include="testG4.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DenseGraph.h" />
     <ClInclude Include="Edge.h" />
+    <ClInclude Include="IndexMinHeap.h" />
     <ClInclude Include="LazyPrimMST.h" />
     <ClInclude Include="MinHeap.h" />
+    <ClInclude Include="PrimMST.h" />
     <ClInclude Include="ReadGraph.h" />
     <ClInclude Include="SparseGraph.h" />
     <ClInclude Include="stdafx.h" />
