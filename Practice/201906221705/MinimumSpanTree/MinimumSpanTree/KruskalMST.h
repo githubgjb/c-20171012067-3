@@ -1,5 +1,5 @@
-#ifndef KruskalMST_H
-#define KruskalMST_H
+#ifndef INC_06_KRUSKAL_ALGORITHM_KRUSKALMST_H
+#define INC_06_KRUSKAL_ALGORITHM_KRUSKALMST_H
 
 #include <iostream>
 #include <vector>
@@ -95,4 +95,4 @@ public:
 
 
 
-#endif //KruskalMST_H
+#endif //INC_06_KRUSKAL_ALGORITHM_KRUSKALMST_H
