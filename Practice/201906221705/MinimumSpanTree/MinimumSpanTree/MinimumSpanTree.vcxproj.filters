@@ -28,6 +28,9 @@
     <Text Include="testG4.txt">
       <Filter>头文件</Filter>
     </Text>
+    <Text Include="testG0.txt">
+      <Filter>头文件</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -64,6 +67,21 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="KruskalMST.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KruskalMST02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHeap02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UF02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Edge02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DenseGraph02.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

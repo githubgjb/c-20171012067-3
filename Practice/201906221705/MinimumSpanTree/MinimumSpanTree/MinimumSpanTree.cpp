@@ -10,12 +10,31 @@
 #include "LazyPrimMST.h"
 #include "PrimMST.h"
 #include "KruskalMST.h"
-
+#include "KruskalMST02.h"
 
 using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+
+	//kruskalMST02  类没有问题
+	//MinHeap02     类没有问题
+	//UF02          类没有问题
+	//Edge02        类没有问题
+
+	string filename = "testG0.txt";
+	int V = 8;
+
+	SparseGraph<double> g = SparseGraph<double>(V, false);
+	ReadGraph<SparseGraph<double>, double> readGraph(g, filename);
+	// Test Kruskal MST
+	KruskalMST<SparseGraph<double>, double> kruskalMST02(g);
+	vector<Edge<double>> mst = kruskalMST02.mstEdges();
+	for (int i = 0; i < mst.size(); i++)
+		cout << mst[i] << endl;
+	cout << "The MST weight is: " << kruskalMST02.result() << endl;
+
+	/*
 	string filename = "testG1.txt";
 	int V = 8;
 
@@ -32,7 +51,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "The MST weight is: " << lazyPrimMST.result() << endl;
 
 	cout << endl;
-
+	
 	
 	// Test Kruskal MST
 	cout << "Test Kruskal MST:" << endl;
@@ -43,7 +62,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "The MST weight is: " << kruskalMST.result() << endl;
 
 	cout << endl;
-	
+	*/
 	/*
 	string filename = "testG1.txt";
 	int V = 8;
