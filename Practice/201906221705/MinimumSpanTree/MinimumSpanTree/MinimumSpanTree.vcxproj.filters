@@ -60,6 +60,12 @@
     <ClInclude Include="PrimMST.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="UF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KruskalMST.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
