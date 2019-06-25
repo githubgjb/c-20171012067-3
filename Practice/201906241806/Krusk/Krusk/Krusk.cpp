@@ -8,10 +8,12 @@
 #include "SparseGraph.h"
 #include "ReadGraph.h"
 #include "KruskalMST.h"
+#include "Dijkstra.h"
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	/*
 	string filename = "testG1.txt";
 	int V = 8;
 
@@ -25,6 +27,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (int i = 0; i < mst.size(); i++)
 		cout << mst[i] << endl;
 	cout << "The MST weight is: " << kruskalMST.result() << endl;
+	*/
 	return 0;
 }
 
