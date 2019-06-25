@@ -81,7 +81,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DenseGraph.h" />
+    <ClInclude Include="Dijkstra.h" />
     <ClInclude Include="Edge.h" />
+    <ClInclude Include="IndexMinHeap.h" />
     <ClInclude Include="KruskalMST.h" />
     <ClInclude Include="MinHeap.h" />
     <ClInclude Include="ReadGraph.h" />
