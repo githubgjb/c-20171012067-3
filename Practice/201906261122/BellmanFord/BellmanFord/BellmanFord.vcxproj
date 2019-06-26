@@ -84,6 +84,7 @@
   <ItemGroup>
     <ClInclude Include="BellmanFord.h" />
     <ClInclude Include="BellmanFord02.h" />
+    <ClInclude Include="BellmanFord03.h" />
     <ClInclude Include="DenseGraph.h" />
     <ClInclude Include="Edge.h" />
     <ClInclude Include="ReadGraph.h" />

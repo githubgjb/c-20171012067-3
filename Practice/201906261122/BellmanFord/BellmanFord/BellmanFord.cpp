@@ -8,7 +8,7 @@
 #include "ReadGraph.h"
 #include "BellmanFord.h"
 #include "BellmanFord02.h"
-
+#include "BellmanFord03.h"
 using namespace std;
 
 // ≤‚ ‘Bellman-FordÀ„∑®
@@ -22,7 +22,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	ReadGraph<SparseGraph<int>, int> readGraph(g, filename);
 
 	cout << "Test Bellman-Ford:" << endl << endl;
-	BellmanFord2<SparseGraph<int>, int> bellmanFord(g, 0);
+	BellmanFord03<SparseGraph<int>, int> bellmanFord(g, 0);
 	//BellmanFord<SparseGraph<int>, int> bellmanFord(g, 0);
 	if (bellmanFord.negativeCycle())
 		cout << "The graph contain negative cycle!" << endl;
