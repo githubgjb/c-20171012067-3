@@ -19,9 +19,6 @@
     <Text Include="testG1.txt">
       <Filter>头文件</Filter>
     </Text>
-    <Text Include="testG2.txt">
-      <Filter>头文件</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -33,28 +30,19 @@
     <ClInclude Include="Edge.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="KruskalMST.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MinHeap.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="UF.h">
+    <ClInclude Include="DenseGraph.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="SparseGraph.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="DenseGraph.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="ReadGraph.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Dijkstra.h">
+    <ClInclude Include="IndexMinHeap.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="IndexMinHeap.h">
+    <ClInclude Include="Dijkstra.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -62,7 +50,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Krusk.cpp">
+    <ClCompile Include="Dijkstra.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
