@@ -72,6 +72,24 @@
     <ClInclude Include="BellmanFord09.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="BellmanFord10.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BellmanFord11.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BellmanFord12.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BellmanFord13.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BellmanFord14.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BellmanFord15.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
