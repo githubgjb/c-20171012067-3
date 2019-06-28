@@ -17,7 +17,20 @@ private:
 	vector<Edge<Weight>*> from; // from[i]记录最短路径中, 到达i点的边是哪一条
 	bool hasNegativeCycle;      // 标记图中是否有负权环
 
-
+	bool detectNegativeCycle(){
+		for (int i = 0; i < G.V(); i++)
+		{
+			typename Graph::adjIterator adj(G, i);
+			for (Edge<Weight>* e = adj.begin(); !adj.end(); e = adj.next())
+			{
+				if (!from[e->w()] || distTo[e->v()] + e->wt() < distTo[e->w()])
+				{
+					return true;
+				}
+			}
+		}
+		return false;
+	}
 
 public:
 	// 构造函数, 使用BellmanFord算法求最短路径
@@ -29,7 +42,25 @@ public:
 			from.push_back(NULL);
 		}
 		//Bellman-Ford
+		distTo[s] = Weight();
 
+		//v-1 Relaxation
+		for (int pass = 1; pass < G.V(); pass++)
+		{
+			for (int i = 0; i < G.V(); i++)
+			{
+				typename Graph::adjIterator adj(G,i);
+				for (Edge<Weight>* e = adj.begin() ; !adj.end() ; e=adj.next() )
+				{
+					if ( !from[e->w()] || distTo[e->v()] + e->wt() < distTo[e->w()] )
+					{
+						distTo[e->w()] = distTo[e->v()] + e->wt();
+						from[e->w()] = e;
+					}
+				}
+			}
+		}
+		hasNegativeCycle = detectNegativeCycle();
 	}
 
 	~BellmanFord13(){
