@@ -90,6 +90,7 @@
     <ClInclude Include="BellmanFord06.h" />
     <ClInclude Include="BellmanFord07.h" />
     <ClInclude Include="BellmanFord08.h" />
+    <ClInclude Include="BellmanFord09.h" />
     <ClInclude Include="DenseGraph.h" />
     <ClInclude Include="Edge.h" />
     <ClInclude Include="ReadGraph.h" />
