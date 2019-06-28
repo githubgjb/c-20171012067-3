@@ -7,6 +7,7 @@
 #include "DenseGraph.h"
 #include "ReadGraph.h"
 #include "Dijkstra.h"
+#include "Dijkstra02.h"
 
 using namespace std;
 
@@ -22,7 +23,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	ReadGraph<SparseGraph<int>, int> readGraph(g, filename);
 
 	cout << "Test Dijkstra:" << endl << endl;
-	Dijkstra<SparseGraph<int>, int> dij(g, 0);
+	Dijkstra02<SparseGraph<int>, int> dij(g, 0);
 	for (int i = 0; i < V; i++){
 		if (dij.hasPathTo(i)){
 			cout << "Shortest Path to " << i << " : " << dij.shortestPathTo(i) << endl;
