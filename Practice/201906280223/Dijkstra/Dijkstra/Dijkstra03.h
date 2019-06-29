@@ -8,7 +8,7 @@ using namespace std;
 
 // Dijkstra算法求最短路径
 template<typename Graph, typename Weight>
-class Dijkstra02{
+class Dijkstra03{
 
 private:
 	Graph &G;                   // 图的引用
@@ -20,7 +20,7 @@ private:
 
 public:
 	// 构造函数, 使用Dijkstra算法求最短路径
-	Dijkstra02(Graph &graph, int s) :G(graph){
+	Dijkstra03(Graph &graph, int s) :G(graph){
 
 		// 算法初始化
 		assert(s >= 0 && s < G.V());
@@ -35,27 +35,27 @@ public:
 
 		// 使用索引堆记录当前找到的到达每个顶点的最短距离
 		IndexMinHeap<Weight> ipq(G.V());
-
+		from[s] = new Edge<Weight>(s, s, Weight());
+		
 		//Dijkstra
 		distTo[s] = Weight();
-		//
-		from[s] = new Edge<Weight>(s, s, Weight());
-
 		marked[s] = true;
-		ipq.insert( s, distTo[s] );
-		while ( !ipq.isEmpty() )
+		ipq.insert(s, distTo[s]);
+
+		while (!ipq.isEmpty())
 		{
 			int v = ipq.extractMinIndex();
-			//distTo[v]就是s到v的最短举例
+			//distTo[v]就是s到v的最短距离
 			marked[v] = true;
+
 			//Relaxation
 			typename Graph::adjIterator adj(G,v);
 			for (Edge<Weight>* e = adj.begin(); !adj.end(); e = adj.next())
 			{
 				int w = e->other(v);
-				if (!marked[v])
+				if (!marked[w])
 				{
-					if (from[w] == NULL || distTo[v] + e->wt() < distTo[w])
+					if (from[w]==NULL || distTo[v] + e->wt() < distTo[w])
 					{
 						distTo[w] = distTo[v] + e->wt();
 						from[w] = e;
@@ -63,19 +63,23 @@ public:
 						{
 							ipq.change(w,distTo[w]);
 						}
-						else{
+						else
+						{
 							ipq.insert(w,distTo[w]);
 						}
 					}
 				}
+
 			}
+
 		}
+
 
 
 	}
 
 	// 析构函数
-	~Dijkstra02(){
+	~Dijkstra03(){
 		delete[] distTo;
 		delete[] marked;
 		delete from[0];
