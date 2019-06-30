@@ -91,6 +91,7 @@
     <ClInclude Include="Dijkstra08.h" />
     <ClInclude Include="Dijkstra09.h" />
     <ClInclude Include="Dijkstra10.h" />
+    <ClInclude Include="Dijkstra11.h" />
     <ClInclude Include="Edge.h" />
     <ClInclude Include="IndexMinHeap.h" />
     <ClInclude Include="ReadGraph.h" />
