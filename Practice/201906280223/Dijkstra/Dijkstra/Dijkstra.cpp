@@ -11,6 +11,9 @@
 #include "Dijkstra03.h"
 #include "Dijkstra04.h"
 #include "Dijkstra05.h"
+#include "Dijkstra06.h"
+#include "Dijkstra07.h"
+#include "Dijkstra08.h"
 using namespace std;
 
 // 测试我们的Dijkstra最短路径算法
@@ -25,7 +28,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	ReadGraph<SparseGraph<int>, int> readGraph(g, filename);
 
 	cout << "Test Dijkstra:" << endl << endl;
-	Dijkstra05<SparseGraph<int>, int> dij(g, 0);
+	Dijkstra08<SparseGraph<int>, int> dij(g, 0);
 	for (int i = 0; i < V; i++){
 		if (dij.hasPathTo(i)){
 			cout << "Shortest Path to " << i << " : " << dij.shortestPathTo(i) << endl;
