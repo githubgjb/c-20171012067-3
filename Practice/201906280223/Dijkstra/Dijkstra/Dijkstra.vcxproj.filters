@@ -66,6 +66,12 @@
     <ClInclude Include="Dijkstra08.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Dijkstra09.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dijkstra10.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
