@@ -93,6 +93,7 @@
     <ClInclude Include="KruskalMST02.h" />
     <ClInclude Include="LazyPrimMST.h" />
     <ClInclude Include="LazyPrimMST02.h" />
+    <ClInclude Include="LazyPrimMST03.h" />
     <ClInclude Include="MinHeap.h" />
     <ClInclude Include="MinHeap02.h" />
     <ClInclude Include="PrimMST.h" />
