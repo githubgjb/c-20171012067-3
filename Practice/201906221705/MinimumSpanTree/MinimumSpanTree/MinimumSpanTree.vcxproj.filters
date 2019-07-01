@@ -93,6 +93,9 @@
     <ClInclude Include="LazyPrimMST04.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LazyPrimMST05.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
