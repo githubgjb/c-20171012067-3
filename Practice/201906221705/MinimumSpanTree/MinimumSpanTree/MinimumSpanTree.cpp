@@ -17,6 +17,7 @@
 #include "LazyPrimMST05.h"
 #include "LazyPrimMST06.h"
 #include "LazyPrimMST07.h"
+#include "LazyPrimMST08.h"
 using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
@@ -30,7 +31,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	// Test Lazy Prim MST
 	cout << "Test Lazy Prim MST:" << endl;
-	LazyPrimMST07<SparseGraph<double>, double> lazyPrimMST(g);
+	LazyPrimMST08<SparseGraph<double>, double> lazyPrimMST(g);
 	vector<Edge<double>> mst = lazyPrimMST.mstEdges();
 	for (int i = 0; i < mst.size(); i++)
 		cout << mst[i] << endl;
