@@ -99,6 +99,8 @@
     <ClInclude Include="LazyPrimMST06.h" />
     <ClInclude Include="LazyPrimMST07.h" />
     <ClInclude Include="LazyPrimMST08.h" />
+    <ClInclude Include="LazyPrimMST09.h" />
+    <ClInclude Include="LazyPrimMST10.h" />
     <ClInclude Include="MinHeap.h" />
     <ClInclude Include="MinHeap02.h" />
     <ClInclude Include="PrimMST.h" />
