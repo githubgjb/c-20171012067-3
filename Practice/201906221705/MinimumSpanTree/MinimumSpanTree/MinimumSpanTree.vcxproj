@@ -108,6 +108,7 @@
     <ClInclude Include="PrimMST03.h" />
     <ClInclude Include="PrimMST04.h" />
     <ClInclude Include="PrimMST05.h" />
+    <ClInclude Include="PrimMST06.h" />
     <ClInclude Include="ReadGraph.h" />
     <ClInclude Include="SparseGraph.h" />
     <ClInclude Include="stdafx.h" />
