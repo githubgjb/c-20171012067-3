@@ -23,6 +23,7 @@
 #include "PrimMST02.h"
 #include "PrimMST03.h"
 #include "PrimMST04.h"
+#include "PrimMST05.h"
 using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
@@ -38,7 +39,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "Test Lazy Prim MST:" << endl;
 	//LazyPrimMST10<SparseGraph<double>, double> lazyPrimMST(g);
 	//PrimMST<SparseGraph<double>, double> lazyPrimMST(g);
-	PrimMST04<SparseGraph<double>, double> lazyPrimMST(g);
+	PrimMST05<SparseGraph<double>, double> lazyPrimMST(g);
 	//PrimMST<SparseGraph<double>, double> PrimMST1(g);
 	vector<Edge<double>> mst = lazyPrimMST.mstEdges();
 	for (int i = 0; i < mst.size(); i++)
