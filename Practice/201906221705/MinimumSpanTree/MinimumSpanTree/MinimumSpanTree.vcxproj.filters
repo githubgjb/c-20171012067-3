@@ -114,6 +114,9 @@
     <ClInclude Include="PrimMST02.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="PrimMST03.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
