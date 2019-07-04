@@ -60,6 +60,9 @@
     <ClInclude Include="KruskalMST02.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="KruskalMST03.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

@@ -10,7 +10,7 @@
 #include "KruskalMST.h"
 #include "Dijkstra.h"
 #include "KruskalMST02.h"
-
+#include "KruskalMST03.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -47,7 +47,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	// Test Kruskal MST
 	cout << "Test Kruskal MST:" << endl;
 	//KruskalMST<SparseGraph<double>, double> kruskalMST(g);
-	KruskalMST02<SparseGraph<double>, double> kruskalMST(g);
+	KruskalMST03<SparseGraph<double>, double> kruskalMST(g);
 	vector<Edge<double>> mst = kruskalMST.mstEdges();
 	for (int i = 0; i < mst.size(); i++)
 		cout << mst[i] << endl;
