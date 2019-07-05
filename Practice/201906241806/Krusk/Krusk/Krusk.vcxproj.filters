@@ -72,6 +72,9 @@
     <ClInclude Include="KruskalMST06.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DenseGraph02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
