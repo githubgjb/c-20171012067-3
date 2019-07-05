@@ -90,6 +90,7 @@
     <ClInclude Include="KruskalMST03.h" />
     <ClInclude Include="KruskalMST04.h" />
     <ClInclude Include="KruskalMST05.h" />
+    <ClInclude Include="KruskalMST06.h" />
     <ClInclude Include="MinHeap.h" />
     <ClInclude Include="ReadGraph.h" />
     <ClInclude Include="SparseGraph.h" />

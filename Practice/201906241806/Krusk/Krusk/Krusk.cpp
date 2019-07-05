@@ -13,7 +13,7 @@
 #include "KruskalMST03.h"
 #include "KruskalMST04.h"
 #include "KruskalMST05.h"
-
+#include "KruskalMST06.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 	/*
@@ -49,7 +49,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	// Test Kruskal MST
 	cout << "Test Kruskal MST:" << endl;
 	//KruskalMST<SparseGraph<double>, double> kruskalMST(g);
-	KruskalMST05<SparseGraph<double>, double> kruskalMST(g);
+	KruskalMST06<SparseGraph<double>, double> kruskalMST(g);
 	vector<Edge<double>> mst = kruskalMST.mstEdges();
 	for (int i = 0; i < mst.size(); i++)
 		cout << mst[i] << endl;
