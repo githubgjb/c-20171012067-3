@@ -83,6 +83,7 @@
   <ItemGroup>
     <ClInclude Include="Component.h" />
     <ClInclude Include="DenseGraph.h" />
+    <ClInclude Include="DenseGraph02.h" />
     <ClInclude Include="Path.h" />
     <ClInclude Include="ReadGraph.h" />
     <ClInclude Include="ShortestPath.h" />
