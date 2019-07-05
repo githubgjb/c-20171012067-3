@@ -84,11 +84,13 @@
     <ClInclude Include="Component.h" />
     <ClInclude Include="DenseGraph.h" />
     <ClInclude Include="DenseGraph02.h" />
+    <ClInclude Include="DenseGraph03.h" />
     <ClInclude Include="Path.h" />
     <ClInclude Include="ReadGraph.h" />
     <ClInclude Include="ShortestPath.h" />
     <ClInclude Include="SparseGraph.h" />
     <ClInclude Include="SparseGraph02.h" />
+    <ClInclude Include="SparseGraph03.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>

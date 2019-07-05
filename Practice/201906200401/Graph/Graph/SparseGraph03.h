@@ -3,49 +3,50 @@
 #include <vector>
 #include <cassert>
 
-//³íÃÜÍ¼ -- ÁÚ½Ó¾ØÕó
 using namespace std;
 
-class DenseGraph{
+//Ï¡ÊèÍ¼ --ÁÚ½Ó±í
+class SparseGraph03{
 private:
 	int n, m;
 	bool directed;
-	vector<vector<bool>> g;
-
+	vector<vector<int>> g;
 public:
-	DenseGraph(int n,bool directed){
+	SparseGraph03(int n,bool directed){
 		this->n = n;
 		this->m = 0;
 		this->directed = directed;
 		for (int i = 0; i < n; i++)
 		{
-			g.push_back(vector<bool>(n,false));
+			g.push_back(vector<int>());
 		}
+
 	}
-	~DenseGraph(){}
+	~SparseGraph03(){}
 	int V(){ return n; }
 	int E(){ return m; }
 
 	void addEdge(int v,int w){
 		assert(v >= 0 && v < n);
 		assert(w >= 0 && w < n);
-		
-		if (hasEdge(v,w))
+
+		g[v].push_back(w);
+		if (v !=w && !directed)
 		{
-			return;
-		}
-		g[v][w] = true;
-		if (!directed)
-		{
-			g[w][v] = true;
+			g[w].push_back(v);
 		}
 		m++;
 	}
-
 	bool hasEdge(int v,int w){
 		assert(v >= 0 && v < n);
 		assert(w >= 0 && w < n);
-		return g[v][w];
+		for (int i = 0; i < g[v].size(); i++)
+		{
+			if (g[v][i] == w)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
-
 };

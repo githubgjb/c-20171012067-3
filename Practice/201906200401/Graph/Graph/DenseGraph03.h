@@ -3,10 +3,11 @@
 #include <vector>
 #include <cassert>
 
-//³íÃÜÍ¼ -- ÁÚ½Ó¾ØÕó
+//³íÃÜÍ¼ --ÁÙ½Ó¾ØÕó
 using namespace std;
 
 class DenseGraph{
+
 private:
 	int n, m;
 	bool directed;
@@ -20,6 +21,7 @@ public:
 		for (int i = 0; i < n; i++)
 		{
 			g.push_back(vector<bool>(n,false));
+
 		}
 	}
 	~DenseGraph(){}
@@ -27,13 +29,14 @@ public:
 	int E(){ return m; }
 
 	void addEdge(int v,int w){
-		assert(v >= 0 && v < n);
-		assert(w >= 0 && w < n);
-		
+		assert(v >=0 && v < n);
+		assert(w >=0 && w < n);
+
 		if (hasEdge(v,w))
 		{
 			return;
 		}
+
 		g[v][w] = true;
 		if (!directed)
 		{
