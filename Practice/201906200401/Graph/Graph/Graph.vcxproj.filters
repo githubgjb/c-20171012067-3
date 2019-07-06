@@ -66,6 +66,12 @@
     <ClInclude Include="SparseGraph04.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DenseGraph05.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SparseGraph05.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
