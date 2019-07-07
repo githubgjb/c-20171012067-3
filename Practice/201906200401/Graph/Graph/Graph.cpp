@@ -12,10 +12,60 @@
 #include "Component.h"
 #include "ShortestPath.h"
 #include "Path.h"
-
+#include "SparseGraph06.h"
+#include "DenseGraph06.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	
+	int N = 20;
+	int M = 100;
+	srand(time(NULL));
+	//Sparse Graph
+	SparseGraph06 g1(N, false);
+	for (int i = 0; i < M; i++)
+	{
+	int a = rand() % N;
+	int b = rand() % N;
+	g1.addEdge( a , b );
+	}
+	//o(E)
+	for (int v = 0; v < N; v++)
+	{
+	cout << v << " : ";
+	SparseGraph06::adjIterator adj(g1, v);
+	for (int w = adj.begin() ; !adj.end(); w=adj.next())
+	{
+	cout << w << " ";
+	}
+	cout << endl;
+	}
+
+	cout << endl;
+
+	//Dense Graph
+	DenseGraph06 g2(N, false);
+	for (int i = 0; i < M; i++)
+	{
+		int a = rand() % N;
+		int b = rand() % N;
+		g2.addEdge(a, b);
+	}
+	//o(V^2)
+	for (int v = 0; v < N; v++)
+	{
+		cout << v << " : ";
+		DenseGraph06::adjIterator adj(g2, v);
+		for (int w = adj.begin(); !adj.end(); w = adj.next())
+		{
+			cout << w << " ";
+		}
+		cout << endl;
+	}
+
+	cout << endl;
+
+	/*
 	string filename = "testG2.txt";
 	SparseGraph g = SparseGraph(7, false);
 	ReadGraph<SparseGraph> readGraph2(g, filename);
@@ -30,7 +80,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	ShortestPath<SparseGraph> bfs(g,0);
 	cout << "BFS : ";
 	bfs.showPath(6);
-	
+	*/
 	
 	/*
 	//TestG1.txt
