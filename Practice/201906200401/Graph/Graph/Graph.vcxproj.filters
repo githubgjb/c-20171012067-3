@@ -90,6 +90,12 @@
     <ClInclude Include="DenseGraph08.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SparseGraph09.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DenseGraph09.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
