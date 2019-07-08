@@ -24,15 +24,31 @@
 #include "DenseGraph10.h"
 #include "SparseGraph11.h"
 #include "DenseGraph11.h"
+#include "SparseGraph12.h"
+#include "DenseGraph12.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	
+
+	string filename = "testG1.txt";
+
+	SparseGraph g1(13, false);
+	ReadGraph<SparseGraph> readGraph1(g1, filename);
+	g1.show();
+
+	cout << endl;
+	cout << endl;
+
+	DenseGraph g2(13, false);
+	ReadGraph<DenseGraph> readGraph2(g2, filename);
+	g2.show();
+
+	/*
 	int N = 20;
 	int M = 100;
 	srand(time(NULL));
 	//Sparse Graph
-	SparseGraph11 g1(N, false);
+	SparseGraph12 g1(N, false);
 	for (int i = 0; i < M; i++)
 	{
 	int a = rand() % N;
@@ -43,7 +59,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (int v = 0; v < N; v++)
 	{
 	cout << v << " : ";
-	SparseGraph11::adjIterator adj(g1, v);
+	SparseGraph12::adjIterator adj(g1, v);
 	for (int w = adj.begin() ; !adj.end(); w=adj.next())
 	{
 	cout << w << " ";
@@ -54,7 +70,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << endl;
 
 	//Dense Graph
-	DenseGraph11 g2(N, false);
+	DenseGraph12 g2(N, false);
 	for (int i = 0; i < M; i++)
 	{
 		int a = rand() % N;
@@ -65,7 +81,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (int v = 0; v < N; v++)
 	{
 		cout << v << " : ";
-		DenseGraph11::adjIterator adj(g2, v);
+		DenseGraph12::adjIterator adj(g2, v);
 		for (int w = adj.begin(); !adj.end(); w = adj.next())
 		{
 			cout << w << " ";
@@ -74,6 +90,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 
 	cout << endl;
+	*/
+	/*---------------------------------------*/
 
 	/*
 	string filename = "testG2.txt";

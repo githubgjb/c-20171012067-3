@@ -93,6 +93,7 @@
     <ClInclude Include="DenseGraph09.h" />
     <ClInclude Include="DenseGraph10.h" />
     <ClInclude Include="DenseGraph11.h" />
+    <ClInclude Include="DenseGraph12.h" />
     <ClInclude Include="Path.h" />
     <ClInclude Include="ReadGraph.h" />
     <ClInclude Include="ShortestPath.h" />
@@ -107,6 +108,7 @@
     <ClInclude Include="SparseGraph09.h" />
     <ClInclude Include="SparseGraph10.h" />
     <ClInclude Include="SparseGraph11.h" />
+    <ClInclude Include="SparseGraph12.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
