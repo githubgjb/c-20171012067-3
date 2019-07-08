@@ -22,6 +22,8 @@
 #include "DenseGraph09.h"
 #include "SparseGraph10.h"
 #include "DenseGraph10.h"
+#include "SparseGraph11.h"
+#include "DenseGraph11.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -30,7 +32,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	int M = 100;
 	srand(time(NULL));
 	//Sparse Graph
-	SparseGraph10 g1(N, false);
+	SparseGraph11 g1(N, false);
 	for (int i = 0; i < M; i++)
 	{
 	int a = rand() % N;
@@ -41,7 +43,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (int v = 0; v < N; v++)
 	{
 	cout << v << " : ";
-	SparseGraph10::adjIterator adj(g1, v);
+	SparseGraph11::adjIterator adj(g1, v);
 	for (int w = adj.begin() ; !adj.end(); w=adj.next())
 	{
 	cout << w << " ";
@@ -52,7 +54,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << endl;
 
 	//Dense Graph
-	DenseGraph10 g2(N, false);
+	DenseGraph11 g2(N, false);
 	for (int i = 0; i < M; i++)
 	{
 		int a = rand() % N;
@@ -63,7 +65,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (int v = 0; v < N; v++)
 	{
 		cout << v << " : ";
-		DenseGraph10::adjIterator adj(g2, v);
+		DenseGraph11::adjIterator adj(g2, v);
 		for (int w = adj.begin(); !adj.end(); w = adj.next())
 		{
 			cout << w << " ";
