@@ -5,13 +5,13 @@
 
 using namespace std;
 
-class SparseGraph07{
+class SparseGraph08{
 private:
 	int n, m;
 	bool directed;
 	vector<vector<int>> g;
 public:
-	SparseGraph07(int n, bool directed){
+	SparseGraph08(int n, bool directed){
 		this->n = n;
 		this->m = 0;
 		this->directed = directed;
@@ -22,7 +22,7 @@ public:
 		}
 
 	}
-	~SparseGraph07(){}
+	~SparseGraph08(){}
 
 	int V(){ return n; }
 	int E(){ return m; }
@@ -55,12 +55,14 @@ public:
 	}
 
 	class adjIterator{
+
 	private:
-		SparseGraph07 &G;
+		SparseGraph08 &G;
 		int v;
 		int index;
+
 	public:
-		adjIterator(SparseGraph07 &graph,int v):G(graph){
+		adjIterator(SparseGraph08 &graph,int v):G(graph){
 			this->v = v;
 			this->index = 0;
 		}
@@ -68,25 +70,24 @@ public:
 
 		int begin(){
 			index = 0;
-			if ( G.g[v].size() )
+			if (G.g[v].size())
 			{
 				return G.g[v][index];
-			}
+			}		
 			return -1;
 		}
-
 		int next(){
 			index++;
 			if (index < G.g[v].size())
 			{
 				return G.g[v][index];
-			}
+			}		
 			return -1;
-		
 		}
 		bool end(){
 			return index >= G.g[v].size();
 		}
+
 	};
 
 };

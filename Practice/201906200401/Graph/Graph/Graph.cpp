@@ -16,6 +16,8 @@
 #include "DenseGraph06.h"
 #include "SparseGraph07.h"
 #include "DenseGraph07.h"
+#include "SparseGraph08.h"
+#include "DenseGraph08.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -24,7 +26,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	int M = 100;
 	srand(time(NULL));
 	//Sparse Graph
-	SparseGraph07 g1(N, false);
+	SparseGraph08 g1(N, false);
 	for (int i = 0; i < M; i++)
 	{
 	int a = rand() % N;
@@ -35,7 +37,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (int v = 0; v < N; v++)
 	{
 	cout << v << " : ";
-	SparseGraph07::adjIterator adj(g1, v);
+	SparseGraph08::adjIterator adj(g1, v);
 	for (int w = adj.begin() ; !adj.end(); w=adj.next())
 	{
 	cout << w << " ";
@@ -46,7 +48,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << endl;
 
 	//Dense Graph
-	DenseGraph07 g2(N, false);
+	DenseGraph08 g2(N, false);
 	for (int i = 0; i < M; i++)
 	{
 		int a = rand() % N;
@@ -57,7 +59,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (int v = 0; v < N; v++)
 	{
 		cout << v << " : ";
-		DenseGraph07::adjIterator adj(g2, v);
+		DenseGraph08::adjIterator adj(g2, v);
 		for (int w = adj.begin(); !adj.end(); w = adj.next())
 		{
 			cout << w << " ";

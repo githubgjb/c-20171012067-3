@@ -5,25 +5,23 @@
 
 using namespace std;
 
-class SparseGraph07{
+class DenseGraph08{
 private:
 	int n, m;
 	bool directed;
-	vector<vector<int>> g;
+	vector<vector<bool>> g;
+
 public:
-	SparseGraph07(int n, bool directed){
+	DenseGraph08(int n, bool directed){
 		this->n = n;
 		this->m = 0;
 		this->directed = directed;
-
 		for (int i = 0; i < n; i++)
 		{
-			g.push_back(vector<int>());
+			g.push_back(vector<bool>(n, false));
 		}
-
 	}
-	~SparseGraph07(){}
-
+	~DenseGraph08(){}
 	int V(){ return n; }
 	int E(){ return m; }
 
@@ -31,62 +29,55 @@ public:
 		assert(v >= 0 && v < n);
 		assert(w >= 0 && w < n);
 
-		g[v].push_back(w);
-
-		if (v != w && !directed)
+		if (hasEdge(v, w))
 		{
-			g[w].push_back(v);
+			return;
+		}
+		g[v][w] = true;
+		if (!directed)
+		{
+			g[w][v] = true;
 		}
 		m++;
-
 	}
 
 	bool hasEdge(int v, int w){
 		assert(v >= 0 && v < n);
 		assert(w >= 0 && w < n);
-		for (int i = 0; i < g[v].size(); i++)
-		{
-			if (g[v][i] == w){
-				return true;
-			}
-		}
-
-		return false;
+		return g[v][w];
 	}
 
 	class adjIterator{
 	private:
-		SparseGraph07 &G;
+		DenseGraph08 &G;
 		int v;
 		int index;
 	public:
-		adjIterator(SparseGraph07 &graph,int v):G(graph){
+		adjIterator(DenseGraph08 &graph,int v):G(graph){
 			this->v = v;
-			this->index = 0;
+			this->index = -1;
 		}
 		~adjIterator(){}
 
 		int begin(){
-			index = 0;
-			if ( G.g[v].size() )
-			{
-				return G.g[v][index];
-			}
-			return -1;
+			index = -1;
+			return next();
 		}
-
 		int next(){
-			index++;
-			if (index < G.g[v].size())
+			for (index += 1; index < G.V(); index++)
 			{
-				return G.g[v][index];
+				if (G.g[v][index])
+				{
+					return index;
+				}
 			}
 			return -1;
-		
 		}
 		bool end(){
-			return index >= G.g[v].size();
+			return index >= G.V();
 		}
+
 	};
+
 
 };
