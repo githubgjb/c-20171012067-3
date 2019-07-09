@@ -33,9 +33,28 @@
 #include "ReadGraph06.h"
 #include "ReadGraph07.h"
 #include "ReadGraph08.h"
+#include "Component02.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 
+	//TestG1.txt
+	string filename1 = "testG1.txt";
+	SparseGraph g1 = SparseGraph(13, false);
+	ReadGraph<SparseGraph> readGraph1(g1, filename1);
+	Component02<SparseGraph> component1(g1);
+	cout << "TestG1.txt , Component Count:" << component1.count() << endl;
+
+	cout << endl;
+
+	//TestG2.txt
+	string filename2 = "testG2.txt";
+	SparseGraph g2 = SparseGraph(7, false);
+	ReadGraph<SparseGraph> readGraph2(g2, filename2);
+	Component02<SparseGraph> component2(g2);
+	cout << "TestG2.txt , Component Count:" << component2.count() << endl;
+
+	cout << endl;
+	/*
 	string filename = "testG1.txt";
 
 	SparseGraph g1(13, false);
@@ -48,6 +67,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	DenseGraph g2(13, false);
 	ReadGraph<DenseGraph> readGraph2(g2, filename);
 	g2.show();
+	*/
+	/*----------------------------------*/
 
 	/*
 	int N = 20;
