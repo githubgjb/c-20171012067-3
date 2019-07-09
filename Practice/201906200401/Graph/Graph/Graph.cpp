@@ -26,14 +26,14 @@
 #include "DenseGraph11.h"
 #include "SparseGraph12.h"
 #include "DenseGraph12.h"
-
+#include "ReadGraph02.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 
 	string filename = "testG1.txt";
 
 	SparseGraph g1(13, false);
-	ReadGraph<SparseGraph> readGraph1(g1, filename);
+	ReadGraph02<SparseGraph> readGraph1(g1, filename);
 	g1.show();
 
 	cout << endl;

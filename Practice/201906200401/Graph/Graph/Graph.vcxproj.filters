@@ -114,6 +114,9 @@
     <ClInclude Include="DenseGraph12.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ReadGraph02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
