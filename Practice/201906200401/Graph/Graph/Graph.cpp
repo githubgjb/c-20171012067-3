@@ -32,13 +32,14 @@
 #include "ReadGraph05.h"
 #include "ReadGraph06.h"
 #include "ReadGraph07.h"
+#include "ReadGraph08.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 
 	string filename = "testG1.txt";
 
 	SparseGraph g1(13, false);
-	ReadGraph07<SparseGraph> readGraph1(g1, filename);
+	ReadGraph08<SparseGraph> readGraph1(g1, filename);
 	g1.show();
 
 	cout << endl;

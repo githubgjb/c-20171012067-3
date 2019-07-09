@@ -132,6 +132,9 @@
     <ClInclude Include="ReadGraph07.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ReadGraph08.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
