@@ -138,6 +138,9 @@
     <ClInclude Include="Component02.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Component03.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
