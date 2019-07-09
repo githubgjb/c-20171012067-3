@@ -97,6 +97,11 @@
     <ClInclude Include="Path.h" />
     <ClInclude Include="ReadGraph.h" />
     <ClInclude Include="ReadGraph02.h" />
+    <ClInclude Include="ReadGraph03.h" />
+    <ClInclude Include="ReadGraph04.h" />
+    <ClInclude Include="ReadGraph05.h" />
+    <ClInclude Include="ReadGraph06.h" />
+    <ClInclude Include="ReadGraph07.h" />
     <ClInclude Include="ShortestPath.h" />
     <ClInclude Include="SparseGraph.h" />
     <ClInclude Include="SparseGraph02.h" />

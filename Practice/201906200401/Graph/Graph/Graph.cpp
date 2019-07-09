@@ -27,13 +27,18 @@
 #include "SparseGraph12.h"
 #include "DenseGraph12.h"
 #include "ReadGraph02.h"
+#include "ReadGraph03.h"
+#include "ReadGraph04.h"
+#include "ReadGraph05.h"
+#include "ReadGraph06.h"
+#include "ReadGraph07.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 
 	string filename = "testG1.txt";
 
 	SparseGraph g1(13, false);
-	ReadGraph02<SparseGraph> readGraph1(g1, filename);
+	ReadGraph07<SparseGraph> readGraph1(g1, filename);
 	g1.show();
 
 	cout << endl;

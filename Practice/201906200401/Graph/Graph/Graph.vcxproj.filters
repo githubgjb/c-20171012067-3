@@ -117,6 +117,21 @@
     <ClInclude Include="ReadGraph02.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ReadGraph03.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadGraph04.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadGraph05.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadGraph06.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadGraph07.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
