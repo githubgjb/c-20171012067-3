@@ -35,6 +35,7 @@
 #include "ReadGraph08.h"
 #include "Component02.h"
 #include "Component03.h"
+#include "Component04.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 
@@ -42,7 +43,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	string filename1 = "testG1.txt";
 	SparseGraph g1 = SparseGraph(13, false);
 	ReadGraph<SparseGraph> readGraph1(g1, filename1);
-	Component03<SparseGraph> component1(g1);
+	Component04<SparseGraph> component1(g1);
 	cout << "TestG1.txt , Component Count:" << component1.count() << endl;
 
 	cout << endl;
@@ -51,7 +52,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	string filename2 = "testG2.txt";
 	SparseGraph g2 = SparseGraph(7, false);
 	ReadGraph<SparseGraph> readGraph2(g2, filename2);
-	Component03<SparseGraph> component2(g2);
+	Component04<SparseGraph> component2(g2);
 	cout << "TestG2.txt , Component Count:" << component2.count() << endl;
 
 	cout << endl;
