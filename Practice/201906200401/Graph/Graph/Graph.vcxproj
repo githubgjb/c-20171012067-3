@@ -85,6 +85,7 @@
     <ClInclude Include="Component02.h" />
     <ClInclude Include="Component03.h" />
     <ClInclude Include="Component04.h" />
+    <ClInclude Include="Component05.h" />
     <ClInclude Include="DenseGraph.h" />
     <ClInclude Include="DenseGraph02.h" />
     <ClInclude Include="DenseGraph03.h" />

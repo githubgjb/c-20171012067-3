@@ -4,18 +4,18 @@
 using namespace std;
 
 template <typename Graph>
-class Component04{
+class Component05{
 private:
 	Graph &G;
 	bool *visited;
 	int ccount;
 	int *id;
-
 	void dfs(int v){
 		visited[v] = true;
 		id[v] = ccount;
-		typename Graph::adjIterator adj(G,v);
-		for (int i = adj.begin(); !adj.end(); i = adj.next())
+		
+		typename Graph::adjIterator adj(G, v);
+		for (int i = adj.begin(); !adj.end() ; i = adj.next())
 		{
 			if (!visited[i])
 			{
@@ -23,10 +23,12 @@ private:
 			}
 
 		}
+
+		
 	}
 
 public:
-	Component04(Graph &graph):G(graph){
+	Component05(Graph &graph):G(graph){
 		visited = new bool[G.V()];
 		id = new int[G.V()];
 		ccount = 0;
@@ -45,10 +47,9 @@ public:
 			}
 
 		}
-		
+	
 	}
-
-	~Component04(){
+	~Component05(){
 		delete[] visited;
 		delete[] id;
 	}
@@ -56,6 +57,7 @@ public:
 	int count(){
 		return ccount;
 	}
+
 	bool isConnected(int v,int w){
 		assert(v >= 0 && v < G.V());
 		assert(w >= 0 && w < G.V());
