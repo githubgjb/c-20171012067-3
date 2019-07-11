@@ -51,6 +51,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "DFS : ";
 	dfs.showPath(6);
 
+	ShortestPath<SparseGraph> bfs(g, 0);
+	cout << "BFS : ";
+	bfs.showPath(6);
+
 	/*
 	//TestG1.txt
 	string filename1 = "testG1.txt";
