@@ -37,9 +37,21 @@
 #include "Component03.h"
 #include "Component04.h"
 #include "Component05.h"
+#include "Path02.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 
+	string filename = "testG2.txt";
+	SparseGraph g = SparseGraph(7, false);
+	ReadGraph<SparseGraph> readGraph2(g, filename);
+	g.show();
+	cout << endl;
+
+	Path02<SparseGraph> dfs(g, 0);
+	cout << "DFS : ";
+	dfs.showPath(6);
+
+	/*
 	//TestG1.txt
 	string filename1 = "testG1.txt";
 	SparseGraph g1 = SparseGraph(13, false);
@@ -57,6 +69,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "TestG2.txt , Component Count:" << component2.count() << endl;
 
 	cout << endl;
+	*/
+	/*-------------------------*/
 	/*
 	string filename = "testG1.txt";
 

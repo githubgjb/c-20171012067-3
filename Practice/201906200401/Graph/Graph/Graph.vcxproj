@@ -99,6 +99,7 @@
     <ClInclude Include="DenseGraph11.h" />
     <ClInclude Include="DenseGraph12.h" />
     <ClInclude Include="Path.h" />
+    <ClInclude Include="Path02.h" />
     <ClInclude Include="ReadGraph.h" />
     <ClInclude Include="ReadGraph02.h" />
     <ClInclude Include="ReadGraph03.h" />
