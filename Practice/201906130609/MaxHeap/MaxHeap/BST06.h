@@ -30,6 +30,7 @@ public:
 	}
 	~BST06(){
 		//TODO
+		destory(root);
 	}
 
 	int size(){
@@ -49,6 +50,18 @@ public:
 
 	Value* search(Key key){
 		return search(root ,key);
+	}
+
+	void preOrder(){
+		preOrder(root);
+	}
+
+	void inOrder(){
+		inOrder(root);
+	}
+
+	void postOrder(){
+		postOrder(root);
 	}
 
 private:
@@ -111,4 +124,41 @@ private:
 		}
 
 	}
+
+	void preOrder(Node* node){
+		if (node != NULL)
+		{
+			cout << node->key << endl;
+			preOrder(node->left);
+			preOrder(node->right);
+		}
+	}
+	void inOrder(Node* node){
+		if (node != NULL)
+		{
+			inOrder(node->left);
+			cout << node->key << endl;
+			inOrder(node->right);
+		}
+	}
+
+	void postOrder(Node* node){
+		if (node != NULL){
+			postOrder(node->left);
+			postOrder(node->right);
+			cout << node->key << endl;
+		}
+	}
+
+	void destory(Node* node){
+		if (node != NULL)
+		{
+			destory(node->left);
+			destory(node->right);
+
+			delete node;
+			count--;
+		}
+	}
+	
 };
