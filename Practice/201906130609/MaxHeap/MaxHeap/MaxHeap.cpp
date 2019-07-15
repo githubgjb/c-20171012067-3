@@ -38,13 +38,19 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	MaxHeap05<int> maxheap = MaxHeap05<int>(100);
 
-	cout << maxheap.size() << endl;
+	//cout << maxheap.size() << endl;
 	srand(time(NULL));
-	for (int i = 0; i < 15; i++)
+	for (int i = 0; i < 50; i++)
 	{
 		maxheap.insert(rand() % 100);
 	}
-	cout << maxheap.size() << endl;
+	//cout << maxheap.size() << endl;
+	while (!maxheap.isEmpty())
+	{
+		cout << maxheap.extractMax() << "  ";
+	}
+	cout << endl;
+
 
 	/*
 	// 我们使用文本量更小的共产主义宣言进行试验:)
