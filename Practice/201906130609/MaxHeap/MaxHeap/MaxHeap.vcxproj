@@ -101,6 +101,7 @@
     <ClInclude Include="MaxHeap03.h" />
     <ClInclude Include="MaxHeap04.h" />
     <ClInclude Include="IndexMaxHeap05.h" />
+    <ClInclude Include="MaxHeap05.h" />
     <ClInclude Include="mergeSort02.h" />
     <ClInclude Include="mergeSortBU11.h" />
     <ClInclude Include="quickSort14.h" />

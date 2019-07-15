@@ -28,6 +28,7 @@
 #include "FileOps.h"
 #include "BinarySearch.h"
 #include "BST06.h"
+#include "MaxHeap05.h"
 using namespace std;
 
 
@@ -35,7 +36,17 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	MaxHeap05<int> maxheap = MaxHeap05<int>(100);
 
+	cout << maxheap.size() << endl;
+	srand(time(NULL));
+	for (int i = 0; i < 15; i++)
+	{
+		maxheap.insert(rand() % 100);
+	}
+	cout << maxheap.size() << endl;
+
+	/*
 	// 我们使用文本量更小的共产主义宣言进行试验:)
 	string filename = "communist.txt";
 	vector<string> words;
@@ -95,6 +106,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 	}
+	*/
+	/*---------------------------------------------------------*/
 
 	/*
 

@@ -108,6 +108,9 @@
     <ClInclude Include="BST06.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MaxHeap05.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
