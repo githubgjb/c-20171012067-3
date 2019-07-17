@@ -2,6 +2,7 @@
 //
 
 #include "stdafx.h"
+#include <stdio.h>
 #include "sortTestHelper.h"
 #include "mergeSort.h"
 #include "selectionSort.h"
@@ -113,7 +114,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	delete(arr5);
 
 	cout << endl;
-	
+	//停下来
+	cout << "停下来 回车结束" << endl;
+	getchar();
 
 	/*
 	int n = 50000;
