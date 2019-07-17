@@ -21,7 +21,7 @@ int __partition14(T arr[], int l, int r){
 
 	//<= v >= v
 	T v = arr[l];
-	int i = l + 1, j = r;
+	int i = l + 1,		 = r;
 
 	//todo
 	while (true)
