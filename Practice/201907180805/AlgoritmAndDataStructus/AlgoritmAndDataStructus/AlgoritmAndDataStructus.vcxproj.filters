@@ -33,6 +33,12 @@
     <ClInclude Include="SortTestHelper.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="insertionSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="insertionSort02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

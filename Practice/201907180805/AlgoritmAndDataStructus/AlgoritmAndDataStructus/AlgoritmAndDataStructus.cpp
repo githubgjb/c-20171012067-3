@@ -7,15 +7,24 @@
 #include <stdio.h>
 #include <string>
 #include "SortTestHelper.h"
+#include "insertionSort.h"
+#include "insertionSort02.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int n = 10000;
-	int *arr = SortTestHelper::generateRandomArray(n, 0, n);
-	
+	//int *arr = SortTestHelper::generateRandomArray(n, 0, n);
+	int *arr = SortTestHelper::generateNearlyOrderedArray(n, 10);
+	int *arr2 = SortTestHelper::copyIntArray(arr,n);
+	int *arr3 = SortTestHelper::copyIntArray(arr, n);
+
 	SortTestHelper::testSort("Selection Sort",selectionSort02,arr,n);
+	SortTestHelper::testSort("Insertion Sort",insertionSort,arr2,n);
+	SortTestHelper::testSort("Insertion02 Sort", insertionSort02, arr3, n);
 
 	delete[] arr;
+	delete[] arr2;
+	delete[] arr3;
 
 
 	cout << "»Ø³µ½áÊø" << endl;
