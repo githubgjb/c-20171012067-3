@@ -9,9 +9,25 @@
 #include "SortTestHelper.h"
 #include "insertionSort.h"
 #include "insertionSort02.h"
+#include "mergeSort.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	int n = 50000;
+	cout << "Test for Random Array,size= " << n << ",random range [0," << n << "]" << endl;
+	int *arr = SortTestHelper::generateRandomArray(n, 0, n);
+	int *arr2 = SortTestHelper::copyIntArray(arr, n);
+
+	SortTestHelper::testSort("Insertion02 Sort", insertionSort02, arr, n);
+	SortTestHelper::testSort("Merge Sort", mergeSort, arr2, n);
+	delete[] arr;
+	delete[] arr2;
+
+
+	cout << "回车结束" << endl;
+	getchar();
+	/*--------------------------------------------------*/
+	/*
 	int n = 10000;
 	//int *arr = SortTestHelper::generateRandomArray(n, 0, n);
 	int *arr = SortTestHelper::generateNearlyOrderedArray(n, 10);
@@ -29,6 +45,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cout << "回车结束" << endl;
 	getchar();
+	*/
+
 	/*----------------------------*/
 	/*
 	int n = 10000;
