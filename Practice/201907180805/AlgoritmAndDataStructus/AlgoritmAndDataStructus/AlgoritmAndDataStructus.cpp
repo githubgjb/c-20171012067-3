@@ -13,28 +13,32 @@
 #include "mergeSort02.h"
 #include "mergeSort03.h"
 #include "mergeSortBU.h"
+#include "quickSort.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	int n = 50000;
+	int n = 1000000;
 	cout << "Test for Random Array,size= " << n << ",random range [0," << n << "]" << endl;
 	int *arr = SortTestHelper::generateRandomArray(n, 0, n);
 	int *arr2 = SortTestHelper::copyIntArray(arr, n);
 	int *arr3 = SortTestHelper::copyIntArray(arr, n);
 	int *arr4 = SortTestHelper::copyIntArray(arr, n);
 	int *arr5 = SortTestHelper::copyIntArray(arr, n);
+	int *arr6 = SortTestHelper::copyIntArray(arr, n);
 
-	SortTestHelper::testSort("Insertion02 Sort", insertionSort02, arr, n);
+	//SortTestHelper::testSort("Insertion02 Sort", insertionSort02, arr, n);
 	SortTestHelper::testSort("Merge Sort", mergeSort, arr2, n);
 	SortTestHelper::testSort("Merge Sort02", mergeSort02, arr3, n);
 	SortTestHelper::testSort("Merge Sort03", mergeSort03, arr4, n);
 	SortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr5, n);
+	SortTestHelper::testSort("quickSort Sort", quickSort, arr6, n);
 
 	delete[] arr;
 	delete[] arr2;
 	delete[] arr3;
 	delete[] arr4;
 	delete[] arr5;
+	delete[] arr6;
 
 	cout << endl;
 
@@ -46,7 +50,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	arr4 = SortTestHelper::copyIntArray(arr, n);
 	arr5 = SortTestHelper::copyIntArray(arr, n);
 
-	SortTestHelper::testSort("Insertion02 Sort", insertionSort02, arr, n);
+	//SortTestHelper::testSort("Insertion02 Sort", insertionSort02, arr, n);
 	SortTestHelper::testSort("Merge Sort", mergeSort, arr2, n);
 	SortTestHelper::testSort("Merge Sort02", mergeSort02, arr3, n);
 	SortTestHelper::testSort("Merge Sort03", mergeSort03, arr4, n);

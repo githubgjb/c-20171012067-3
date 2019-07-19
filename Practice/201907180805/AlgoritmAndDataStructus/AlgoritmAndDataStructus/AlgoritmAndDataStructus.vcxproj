@@ -84,6 +84,7 @@
     <ClInclude Include="mergeSort.h" />
     <ClInclude Include="mergeSort02.h" />
     <ClInclude Include="mergeSortBU.h" />
+    <ClInclude Include="quickSort.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SelectionSort02.h" />
     <ClInclude Include="SortTestHelper.h" />
