@@ -82,11 +82,14 @@
     <ClInclude Include="insertionSort.h" />
     <ClInclude Include="insertionSort02.h" />
     <ClInclude Include="mergeSort.h" />
+    <ClInclude Include="mergeSort02.h" />
+    <ClInclude Include="mergeSortBU.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SelectionSort02.h" />
     <ClInclude Include="SortTestHelper.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="mergeSort03.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AlgoritmAndDataStructus.cpp" />

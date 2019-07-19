@@ -42,6 +42,15 @@
     <ClInclude Include="mergeSort.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="mergeSort02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mergeSort03.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mergeSortBU.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

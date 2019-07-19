@@ -10,6 +10,9 @@
 #include "insertionSort.h"
 #include "insertionSort02.h"
 #include "mergeSort.h"
+#include "mergeSort02.h"
+#include "mergeSort03.h"
+#include "mergeSortBU.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -17,13 +20,43 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "Test for Random Array,size= " << n << ",random range [0," << n << "]" << endl;
 	int *arr = SortTestHelper::generateRandomArray(n, 0, n);
 	int *arr2 = SortTestHelper::copyIntArray(arr, n);
+	int *arr3 = SortTestHelper::copyIntArray(arr, n);
+	int *arr4 = SortTestHelper::copyIntArray(arr, n);
+	int *arr5 = SortTestHelper::copyIntArray(arr, n);
 
 	SortTestHelper::testSort("Insertion02 Sort", insertionSort02, arr, n);
 	SortTestHelper::testSort("Merge Sort", mergeSort, arr2, n);
+	SortTestHelper::testSort("Merge Sort02", mergeSort02, arr3, n);
+	SortTestHelper::testSort("Merge Sort03", mergeSort03, arr4, n);
+	SortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr5, n);
+
 	delete[] arr;
 	delete[] arr2;
+	delete[] arr3;
+	delete[] arr4;
+	delete[] arr5;
 
+	cout << endl;
 
+	int swapTimes = 10;
+	cout << "Test for Random Nearly Ordered Array,size= " << n << ",random range [0," << n << "],swap time = " << swapTimes << endl;
+	arr = SortTestHelper::generateNearlyOrderedArray(n,swapTimes);
+	arr2 = SortTestHelper::copyIntArray(arr, n);
+	arr3 = SortTestHelper::copyIntArray(arr, n);
+	arr4 = SortTestHelper::copyIntArray(arr, n);
+	arr5 = SortTestHelper::copyIntArray(arr, n);
+
+	SortTestHelper::testSort("Insertion02 Sort", insertionSort02, arr, n);
+	SortTestHelper::testSort("Merge Sort", mergeSort, arr2, n);
+	SortTestHelper::testSort("Merge Sort02", mergeSort02, arr3, n);
+	SortTestHelper::testSort("Merge Sort03", mergeSort03, arr4, n);
+	SortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr5, n);
+
+	delete[] arr;
+	delete[] arr2;
+	delete[] arr3;
+	delete[] arr4;
+	delete[] arr5;
 	cout << "»Ø³µ½áÊø" << endl;
 	getchar();
 	/*--------------------------------------------------*/
