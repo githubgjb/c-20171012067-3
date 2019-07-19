@@ -14,6 +14,7 @@
 #include "mergeSort03.h"
 #include "mergeSortBU.h"
 #include "quickSort.h"
+#include "quickSort02.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -25,6 +26,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	int *arr4 = SortTestHelper::copyIntArray(arr, n);
 	int *arr5 = SortTestHelper::copyIntArray(arr, n);
 	int *arr6 = SortTestHelper::copyIntArray(arr, n);
+	int *arr7 = SortTestHelper::copyIntArray(arr, n);
 
 	//SortTestHelper::testSort("Insertion02 Sort", insertionSort02, arr, n);
 	SortTestHelper::testSort("Merge Sort", mergeSort, arr2, n);
@@ -32,6 +34,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	SortTestHelper::testSort("Merge Sort03", mergeSort03, arr4, n);
 	SortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr5, n);
 	SortTestHelper::testSort("quickSort Sort", quickSort, arr6, n);
+	SortTestHelper::testSort("quickSort02 Sort", quickSort02, arr7, n);
 
 	delete[] arr;
 	delete[] arr2;
@@ -39,6 +42,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	delete[] arr4;
 	delete[] arr5;
 	delete[] arr6;
+	delete[] arr7;
 
 	cout << endl;
 
@@ -49,18 +53,21 @@ int _tmain(int argc, _TCHAR* argv[])
 	arr3 = SortTestHelper::copyIntArray(arr, n);
 	arr4 = SortTestHelper::copyIntArray(arr, n);
 	arr5 = SortTestHelper::copyIntArray(arr, n);
+	arr6 = SortTestHelper::copyIntArray(arr, n);
 
 	//SortTestHelper::testSort("Insertion02 Sort", insertionSort02, arr, n);
 	SortTestHelper::testSort("Merge Sort", mergeSort, arr2, n);
 	SortTestHelper::testSort("Merge Sort02", mergeSort02, arr3, n);
 	SortTestHelper::testSort("Merge Sort03", mergeSort03, arr4, n);
 	SortTestHelper::testSort("mergeSortBU Sort", mergeSortBU, arr5, n);
+	SortTestHelper::testSort("quickSort02 Sort", quickSort02, arr6, n);
 
 	delete[] arr;
 	delete[] arr2;
 	delete[] arr3;
 	delete[] arr4;
 	delete[] arr5;
+	delete[] arr6;
 	cout << "»Ø³µ½áÊø" << endl;
 	getchar();
 	/*--------------------------------------------------*/
