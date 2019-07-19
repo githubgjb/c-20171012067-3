@@ -15,6 +15,7 @@
 #include "mergeSortBU.h"
 #include "quickSort.h"
 #include "quickSort02.h"
+#include "quickSort03.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -68,6 +69,19 @@ int _tmain(int argc, _TCHAR* argv[])
 	delete[] arr4;
 	delete[] arr5;
 	delete[] arr6;
+
+	cout << endl;
+
+	cout << "Test for Random Array,size= " << n << ",random range [0,10]" << endl;
+	arr = SortTestHelper::generateRandomArray(n, 0, 10);
+	arr2 = SortTestHelper::copyIntArray(arr, n);
+	
+
+	SortTestHelper::testSort("Merge Sort03", mergeSort03, arr, n);
+	SortTestHelper::testSort("quickSort03 Sort", quickSort03, arr2, n);
+
+	delete[] arr;
+	delete[] arr2;
 	cout << "»Ø³µ½áÊø" << endl;
 	getchar();
 	/*--------------------------------------------------*/
