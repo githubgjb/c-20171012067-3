@@ -16,7 +16,7 @@
 #include "quickSort.h"
 #include "quickSort02.h"
 #include "quickSort03.h"
-
+#include "quickSort3Ways.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int n = 1000000;
@@ -75,13 +75,16 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "Test for Random Array,size= " << n << ",random range [0,10]" << endl;
 	arr = SortTestHelper::generateRandomArray(n, 0, 10);
 	arr2 = SortTestHelper::copyIntArray(arr, n);
+	arr3 = SortTestHelper::copyIntArray(arr, n);
 	
 
 	SortTestHelper::testSort("Merge Sort03", mergeSort03, arr, n);
 	SortTestHelper::testSort("quickSort03 Sort", quickSort03, arr2, n);
+	SortTestHelper::testSort("quickSort3Ways Sort", quickSort3Ways, arr3, n);
 
 	delete[] arr;
 	delete[] arr2;
+	delete[] arr3;
 	cout << "»Ø³µ½áÊø" << endl;
 	getchar();
 	/*--------------------------------------------------*/
