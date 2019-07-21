@@ -17,8 +17,29 @@
 #include "quickSort02.h"
 #include "quickSort03.h"
 #include "quickSort3Ways.h"
+#include "MaxHeap.h"
+
+
 int _tmain(int argc, _TCHAR* argv[])
 {
+	MaxHeap<int> maxHeap = MaxHeap<int>(100);
+	//cout << maxHeap.size() << endl;
+
+	srand(time(NULL));
+	for (int i = 0; i < 31; i++)
+	{
+		maxHeap.insert(rand()%100);
+	}
+	while (!maxHeap.isEmpty())
+	{
+		cout << maxHeap.extractMax() << " ";
+	}
+	cout << endl;
+
+	cout << "回车结束" << endl;
+	getchar();
+	/*------------------------------------*/
+	/*
 	int n = 1000000;
 	cout << "Test for Random Array,size= " << n << ",random range [0," << n << "]" << endl;
 	int *arr = SortTestHelper::generateRandomArray(n, 0, n);
@@ -87,6 +108,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	delete[] arr3;
 	cout << "回车结束" << endl;
 	getchar();
+	*/
 	/*--------------------------------------------------*/
 	/*
 	int n = 10000;
