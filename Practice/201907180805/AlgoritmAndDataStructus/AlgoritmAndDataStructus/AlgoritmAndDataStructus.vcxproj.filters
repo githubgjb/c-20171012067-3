@@ -66,6 +66,15 @@
     <ClInclude Include="quickSort03.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="heapSort01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="heapSort02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="heapSort03.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

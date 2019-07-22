@@ -35,7 +35,7 @@ private:
 				j += 1;
 			}
 			//父节点比左右两结点都大结束循环
-			if (data[k] > data[j])
+			if (data[k] >= data[j])
 			{
 				break;
 			}
@@ -50,6 +50,23 @@ public:
 		count = 0;
 		this->capacity = capacity;
 	}
+
+	MaxHeap(Item arr[],int n){
+		data = new Item[n+1];
+		capacity = n;
+		for (int i = 0; i < n; i++)
+		{
+			data[i + 1] = arr[i];
+		}
+		count = n;
+
+		for (int i = count/2; i >= 1; i--)
+		{
+			shiftDown(i);
+		}
+
+	}
+
 	~MaxHeap(){
 		delete[] data;
 	}
