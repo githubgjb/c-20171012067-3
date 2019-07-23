@@ -27,6 +27,7 @@ public:
 	}
 	~BST(){
 		//TODO
+		destory(root);
 	}
 
 	int size(){
@@ -47,6 +48,18 @@ public:
 
 	Value* search(Key key){
 		return search(root ,key);
+	}
+
+	void preOrder(){
+		preOrder(root);
+	}
+
+	void inOrder(){
+		inOrder(root);
+	}
+
+	void postOrder(){
+		postOrder(root);
 	}
 private:
 	Node* insert(Node *node,Key key,Value value){
@@ -107,5 +120,44 @@ private:
 			return search(node->right, key);
 		}
 	
+	}
+
+	void preOrder(Node* node){
+		
+		if (node != null)
+		{
+			cout << node->key << end;
+			preOrder(node->left);
+			preOrder(node->right);
+		}
+	}
+
+	void inOrder(Node* node){
+		
+		if (node!= null)
+		{
+			inOrder(node->left);
+			cout << node->key << end;
+			inOrder(node->right);
+		}
+	}
+	void postOrder(Node* node){
+		if (node != null)
+		{
+			postOrder(node->left);
+			postOrder(node->right);
+			cout << node->key << end;
+		}
+	}
+
+	void destory(Node* node){
+		if (node != NULL)
+		{
+			destory(node->left);
+			destory(node->right);
+
+			delete node;
+			count--;
+		}
 	}
 };
