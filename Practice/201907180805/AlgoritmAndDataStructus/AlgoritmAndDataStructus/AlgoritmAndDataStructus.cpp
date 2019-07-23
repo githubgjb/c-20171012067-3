@@ -1,6 +1,16 @@
 // AlgoritmAndDataStructus.cpp : 定义控制台应用程序的入口点。
 //
 
+
+#include <iostream>
+#include <algorithm>
+#include <string>
+#include <ctime>
+#include <cmath>
+#include <cassert>
+#include <vector>
+#include <string>
+#include <time.h>
 #include "stdafx.h"
 #include "SelectionSort.h"
 #include "SelectionSort02.h"
@@ -21,10 +31,51 @@
 #include "heapSort01.h"
 #include "heapSort02.h"
 #include "heapSort03.h"
+#include "BST.h"
+#include "FileOps.h"
 
-
+using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
+
+	// 我们使用文本量更小的共产主义宣言进行试验:)
+	string filename = "communist.txt";
+	vector<string> words;
+
+	if (FileOps::readFile(filename, words)) {
+	
+		cout << "There are totally " << words.size() << " words in " << filename << endl;
+		cout << endl;
+
+
+		// 测试1, 我们按照文本原有顺序插入进二分搜索树
+		time_t startTime = clock();
+		BST<string, int> *bst = new BST<string, int>();
+		for (vector<string>::iterator iter = words.begin(); iter != words.end(); iter++) {
+			int *res = (*bst).search(*iter);
+			if (res == NULL)
+				(*bst).insert(*iter, 1);
+			else
+				(*res)++;
+		}
+
+		// 我们查看unite一词的词频
+		if (bst->contain("unite"))
+			cout << "'unite' : " << *(*bst).search("unite") << endl;
+		else
+			cout << "No word 'unite' in " + filename << endl;
+		time_t endTime = clock();
+
+		cout << "BST , time: " << double(endTime - startTime) / CLOCKS_PER_SEC << " s." << endl;
+		cout << endl;
+
+		delete bst;
+	}
+
+
+	cout << "回车结束" << endl;
+	getchar();
+
 	/*------------------------*/
 	/*
 	MaxHeap<int> maxHeap = MaxHeap<int>(100);
@@ -45,7 +96,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	getchar();
 	*/
 	/*------------------------------------*/
-	
+	/*
 	int n = 1000000;
 	cout << "Test for Random Array,size= " << n << ",random range [0," << n << "]" << endl;
 	int *arr = SortTestHelper::generateRandomArray(n, 0, n);
@@ -143,7 +194,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cout << "回车结束" << endl;
 	getchar();
-	
+	*/
 	/*--------------------------------------------------*/
 	/*
 	int n = 10000;

@@ -16,6 +16,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="communist.txt">
+      <Filter>头文件</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -76,6 +79,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="IndexMaxHeap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BST.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileOps.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

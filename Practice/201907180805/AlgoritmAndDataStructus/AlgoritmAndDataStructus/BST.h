@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-template <template Key,typename Value>
+template <typename Key, typename Value>
 class BST{
 private:
 	struct Node
@@ -14,7 +14,7 @@ private:
 		Node(Key key,Value value){
 			this->key = key;
 			this->value = value;
-			this->left = this->right = NULL:
+			this->left = this->right = NULL;
 		}
 	};
 
@@ -22,7 +22,7 @@ private:
 	int count;
 public:
 	BST(){
-		root = NULL:
+		root = NULL;
 		count = 0;
 	}
 	~BST(){
@@ -40,6 +40,14 @@ public:
 	void insert(Key key,Value value){
 		root = insert(root,key,value);
 	}
+
+	bool contain(Key key){
+		return contain(root,key);
+	}
+
+	Value* search(Key key){
+		return search(root ,key);
+	}
 private:
 	Node* insert(Node *node,Key key,Value value){
 		
@@ -49,7 +57,7 @@ private:
 			return new Node(key, value);
 		}
 
-		if (key = node->key)
+		if (key == node->key)
 		{
 			node->value = value;
 		}
@@ -64,4 +72,40 @@ private:
 	
 	}
 
+	bool contain(Node* node,Key key){
+		if (node == NULL)
+		{
+			return false;
+		}
+
+		if (key == node->key)
+		{
+			return true;
+		}
+		else if (key < node->key){
+			return contain(node->left,key);
+		}
+		else{ //key > node->key
+			return contain(node->right, key);
+		}
+	}
+	Value* search(Node* node , Key key){
+
+		if (node == NULL)
+		{
+			return NULL;
+		}
+
+		if (key == node->key)
+		{
+			return &(node->value);
+		}
+		else if (key < node->key){
+			return search(node->left, key);
+		}
+		else{ //key > node->key
+			return search(node->right, key);
+		}
+	
+	}
 };
