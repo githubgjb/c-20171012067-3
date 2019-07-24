@@ -19,6 +19,14 @@ private:
 			this->value = value;
 			this->left = this->right = NULL;
 		}
+
+		Node(Node *node){
+			this->key = node->key;
+			this->value = node->value;
+			this->left = node->left;
+			this->right = node->right;
+		}
+
 	};
 
 	Node *root;
@@ -109,6 +117,9 @@ public:
 		}
 	}
 
+	void remove(Key key){
+		root = remove(root, key);
+	}
 
 private:
 	Node* insert(Node *node,Key key,Value value){
@@ -250,6 +261,53 @@ private:
 
 		node->right = removeMax(node->right);
 		return node;
+	}
+
+	Node* remove(Node* node,Key key){
+		
+		if (node == NULL)
+		{
+			return  NULL;
+		}
+		if (key < node->key)
+		{
+		   node->left = remove(node->left,key);
+		   return node;
+		}
+		else if ( key > node->key){
+		   node->right = remove(node->right,key);
+		   return node;
+		}
+		else{ //key == node->key
+			if (node->left == NULL)
+			{
+				Node *rightNode = node->right;
+				delete node;
+				count--;
+				return rightNode;
+			}
+			if (node->right == NULL)
+			{
+				Node *leftNode = node->left;
+				delete node;
+				count--;
+				return leftNode;
+			}
+			
+			//node->left != NULL && node->right != NULL
+			//Node *delNode = node;
+			Node *successor = new Node(minimum(node->right));
+			count++;
+
+			successor->right = removeMin(node->right);
+			successor->left = node->left;
+
+			//delete delNode;
+			delete node;
+			count--;
+			return successor;
+		}
+
 	}
 
 };
