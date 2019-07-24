@@ -1,4 +1,7 @@
 #include <iostream>
+#include <queue>
+#include <cassert>
+
 using namespace std;
 
 template <typename Key, typename Value>
@@ -61,6 +64,52 @@ public:
 	void postOrder(){
 		postOrder(root);
 	}
+
+	void levelOrder(){
+		queue<Node*> q;
+		q.push(root);
+		while ( !q.empty() )
+		{
+			Node *node = q.front();
+			q.pop();
+			cout << node->key << end;
+			if ( node->left )
+			{
+				q.push(node->left);
+			}
+			if (node->right)
+			{
+				q.push(node->right);
+			}
+		}
+	}
+	Key minimum(){
+		assert(count != 0);
+		Node* minNode = minimum(root);
+		return minNode->key;
+	}
+
+	Key maximum(){
+		assert(count != 0);
+		Node* maxNode = maximum(root);
+		return maxNode->key;
+	}
+
+	void removeMin(){
+		if (root)
+		{
+			root = removeMin( root );
+		}
+	}
+
+	void removeMax(){
+		if (root)
+		{
+			root = removeMax( root );
+		}
+	}
+
+
 private:
 	Node* insert(Node *node,Key key,Value value){
 		
@@ -160,4 +209,47 @@ private:
 			count--;
 		}
 	}
+
+	Node* minimum(Node* node){
+		if (node->left == NULL)
+		{
+			return node;
+		}
+		return minimum(node->left);
+	}
+
+	Node* maximum(Node* node){
+		if (node->right == NULL)
+		{
+			return node;
+		}
+		return maximum(node->right);
+	}
+
+	Node* removeMin(Node* node){
+		if (node->left == NULL)
+		{
+			Node* rightNode = node->right;
+			delete node;
+			count--;
+			return rightNode;
+		}
+		node->left = removeMin(node->left);
+		return node;
+	}
+
+	Node* removeMax(Node* node){
+		
+		if (node->right == NULL)
+		{
+			Node* leftNode = node->left;
+			delete node;
+			count--;
+			return leftNode;
+		}
+
+		node->right = removeMax(node->right);
+		return node;
+	}
+
 };
