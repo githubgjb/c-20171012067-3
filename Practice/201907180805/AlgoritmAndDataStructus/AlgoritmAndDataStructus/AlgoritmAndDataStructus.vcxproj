@@ -97,6 +97,7 @@
     <ClInclude Include="quickSort02.h" />
     <ClInclude Include="quickSort03.h" />
     <ClInclude Include="quickSort3Ways.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SelectionSort02.h" />
     <ClInclude Include="SortTestHelper.h" />
@@ -116,6 +117,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AlgoritmAndDataStructus.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
