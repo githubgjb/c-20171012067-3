@@ -107,6 +107,7 @@
     <ClInclude Include="UnionFind02.h" />
     <ClInclude Include="UnionFind03.h" />
     <ClInclude Include="UnionFind04.h" />
+    <ClInclude Include="UnionFind05.h" />
     <ClInclude Include="UnionFindTestHelper.h" />
   </ItemGroup>
   <ItemGroup>
