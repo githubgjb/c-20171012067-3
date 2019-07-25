@@ -4,6 +4,7 @@
 #include <ctime>
 
 #include "UnionFind.h"
+#include "UnionFind02.h"
 
 using namespace std;
 namespace UnionFindTestHelper{
@@ -28,6 +29,29 @@ namespace UnionFindTestHelper{
 		time_t endTime = clock();
 
 		cout << "UF1, " << 2 * n << " ops, " << double(endTime - startTime) / CLOCKS_PER_SEC << " s" << endl;
+	}
+
+	void testUF2(int n){
+		srand(time(NULL));
+		UF2::UnionFind02 uf = UF2::UnionFind02(n);
+
+		time_t startTime = clock();
+		for (int i = 0; i < n; i++)
+		{
+			int a = rand() % n;
+			int b = rand() % n;
+			uf.unionElements(a, b);
+		}
+		for (int i = 0; i < n; i++)
+		{
+			int a = rand() % n;
+			int b = rand() % n;
+			uf.isConnected(a, b);
+		}
+		time_t endTime = clock();
+
+		cout << "UF2, " << 2 * n << " ops, " << double(endTime - startTime) / CLOCKS_PER_SEC << " s" << endl;
+		
 	}
 
 }
