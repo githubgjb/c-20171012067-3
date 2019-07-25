@@ -103,6 +103,8 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="mergeSort03.h" />
+    <ClInclude Include="UnionFind.h" />
+    <ClInclude Include="UnionFindTestHelper.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AlgoritmAndDataStructus.cpp" />

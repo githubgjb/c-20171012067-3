@@ -33,11 +33,19 @@
 #include "heapSort03.h"
 #include "BST.h"
 #include "FileOps.h"
+#include "UnionFindTestHelper.h"
 
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
+	int n = 10000;
+	UnionFindTestHelper::testUF1(n);
 
+	cout << "回车结束" << endl;
+	getchar();
+	/*--------------------------------------*/
+
+	/*
 	// 我们使用文本量更小的共产主义宣言进行试验:)
 	string filename = "communist.txt";
 	vector<string> words;
@@ -75,7 +83,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cout << "回车结束" << endl;
 	getchar();
-
+	*/
 	/*------------------------*/
 	/*
 	MaxHeap<int> maxHeap = MaxHeap<int>(100);
