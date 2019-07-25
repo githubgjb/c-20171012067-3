@@ -82,6 +82,7 @@
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BST.h" />
+    <ClInclude Include="DenseGraph.h" />
     <ClInclude Include="FileOps.h" />
     <ClInclude Include="heapSort01.h" />
     <ClInclude Include="heapSort02.h" />
@@ -101,6 +102,7 @@
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SelectionSort02.h" />
     <ClInclude Include="SortTestHelper.h" />
+    <ClInclude Include="SparseGraph.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="mergeSort03.h" />

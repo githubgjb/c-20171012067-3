@@ -111,6 +111,12 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DenseGraph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SparseGraph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
