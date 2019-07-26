@@ -51,4 +51,9 @@ public:
 		}
 		return false;
 	}
+
+	class adjIterator{
+
+
+	};
 };
