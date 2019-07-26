@@ -78,6 +78,8 @@
   <ItemGroup>
     <Text Include="communist.txt" />
     <Text Include="ReadMe.txt" />
+    <Text Include="testG1.txt" />
+    <Text Include="testG2.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
@@ -98,6 +100,7 @@
     <ClInclude Include="quickSort02.h" />
     <ClInclude Include="quickSort03.h" />
     <ClInclude Include="quickSort3Ways.h" />
+    <ClInclude Include="ReadGraph.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SelectionSort02.h" />

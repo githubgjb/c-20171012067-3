@@ -34,10 +34,30 @@
 #include "BST.h"
 #include "FileOps.h"
 #include "UnionFindTestHelper.h"
+#include "SparseGraph.h"
+#include "DenseGraph.h"
+#include "ReadGraph.h"
 
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
+	string filename = "testG1.txt";
+	SparseGraph g1(13, false);
+	ReadGraph<SparseGraph> readGraph1(g1,filename);
+	g1.show();
+
+	cout << endl;
+
+	DenseGraph g2(13, false);
+	ReadGraph<DenseGraph> readGraph2(g2,filename);
+
+	g2.show();
+
+	cout << "回车结束" << endl;
+	getchar();
+
+	/*------------------------------*/
+	/*
 	//int n = 10000;
 	int n = 1000000;
 	//UnionFindTestHelper::testUF1(n);
@@ -48,6 +68,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cout << "回车结束" << endl;
 	getchar();
+	*/
 	/*--------------------------------------*/
 
 	/*
