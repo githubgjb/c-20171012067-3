@@ -84,6 +84,7 @@
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BST.h" />
+    <ClInclude Include="Component.h" />
     <ClInclude Include="DenseGraph.h" />
     <ClInclude Include="FileOps.h" />
     <ClInclude Include="heapSort01.h" />
