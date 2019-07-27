@@ -38,10 +38,28 @@
 #include "DenseGraph.h"
 #include "ReadGraph.h"
 #include "Component.h"
+#include "Path.h"
+
 
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
+	
+	string filename = "testG2.txt";
+	SparseGraph g(7, false);
+	ReadGraph<SparseGraph> readGraph2(g, filename);
+	g.show();
+	cout << endl;
+	
+	Path<SparseGraph> dfs(g,0);
+	cout << "DFS : ";
+	dfs.showPath(6);
+	dfs.showPath(5);
+
+	cout << "回车结束" << endl;
+	getchar();
+	/*------------------------------*/
+	/*
 	string filename = "testG1.txt";
 	SparseGraph g1(13, false);
 	ReadGraph<SparseGraph> readGraph1(g1,filename);
@@ -60,7 +78,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cout << "回车结束" << endl;
 	getchar();
-
+	*/
 	/*------------------------------*/
 	/*
 	//int n = 10000;
