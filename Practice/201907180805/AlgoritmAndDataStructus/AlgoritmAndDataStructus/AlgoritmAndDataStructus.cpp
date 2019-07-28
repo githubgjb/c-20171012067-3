@@ -11,6 +11,8 @@
 #include <vector>
 #include <string>
 #include <time.h>
+#include <iomanip>
+#include <ctime>
 #include "stdafx.h"
 #include "SelectionSort.h"
 #include "SelectionSort02.h"
@@ -40,11 +42,35 @@
 #include "Component.h"
 #include "Path.h"
 #include "ShortestPath.h"
+#include "DenseGraphEdge.h"
+#include "ReadGraphEdge.h"
+#include "SparseGraphEdge.h"
 
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
+	string filename = "testEdgeG0.txt";
+	int V = 8;
+	//输出的精确度是两位小数
+	//cout << fixed << setprecision(2);
+	//Test Weighted Dense Graph
 	
+	DenseGraphEdge<double> g1 = DenseGraphEdge<double>(V, false);
+	ReadGraphEdge<DenseGraphEdge<double>, double> readGraph1(g1, filename);
+	g1.show();
+	cout << endl;
+	
+
+	//Test Weighted Sparse Graph
+	SparseGraphEdge<double> g2 = SparseGraphEdge<double>(V, false);
+	ReadGraphEdge<SparseGraphEdge<double>, double> readGraph2(g2, filename);
+	g2.show();
+	cout << endl;
+
+	cout << "回车结束" << endl;
+	getchar();
+	/*------------------------------*/
+	/*
 	string filename = "testG2.txt";
 	SparseGraph g(7, false);
 	ReadGraph<SparseGraph> readGraph2(g, filename);
@@ -61,6 +87,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cout << "回车结束" << endl;
 	getchar();
+	*/
 	/*------------------------------*/
 	/*
 	string filename = "testG1.txt";

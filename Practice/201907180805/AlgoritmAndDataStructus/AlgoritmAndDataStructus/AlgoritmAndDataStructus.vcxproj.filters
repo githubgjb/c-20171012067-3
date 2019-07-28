@@ -25,6 +25,9 @@
     <Text Include="testG2.txt">
       <Filter>头文件</Filter>
     </Text>
+    <Text Include="testEdgeG0.txt">
+      <Filter>头文件</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -133,6 +136,18 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="ShortestPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Edge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DenseGraphEdge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadGraphEdge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SparseGraphEdge.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

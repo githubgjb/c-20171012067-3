@@ -78,6 +78,7 @@
   <ItemGroup>
     <Text Include="communist.txt" />
     <Text Include="ReadMe.txt" />
+    <Text Include="testEdgeG0.txt" />
     <Text Include="testG1.txt" />
     <Text Include="testG2.txt" />
   </ItemGroup>
@@ -86,6 +87,8 @@
     <ClInclude Include="BST.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="DenseGraph.h" />
+    <ClInclude Include="DenseGraphEdge.h" />
+    <ClInclude Include="Edge.h" />
     <ClInclude Include="FileOps.h" />
     <ClInclude Include="heapSort01.h" />
     <ClInclude Include="heapSort02.h" />
@@ -103,12 +106,14 @@
     <ClInclude Include="quickSort03.h" />
     <ClInclude Include="quickSort3Ways.h" />
     <ClInclude Include="ReadGraph.h" />
+    <ClInclude Include="ReadGraphEdge.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SelectionSort02.h" />
     <ClInclude Include="ShortestPath.h" />
     <ClInclude Include="SortTestHelper.h" />
     <ClInclude Include="SparseGraph.h" />
+    <ClInclude Include="SparseGraphEdge.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="mergeSort03.h" />
