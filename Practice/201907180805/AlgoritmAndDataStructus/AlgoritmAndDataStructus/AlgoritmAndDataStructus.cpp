@@ -39,7 +39,7 @@
 #include "ReadGraph.h"
 #include "Component.h"
 #include "Path.h"
-
+#include "ShortestPath.h"
 
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
@@ -54,7 +54,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	Path<SparseGraph> dfs(g,0);
 	cout << "DFS : ";
 	dfs.showPath(6);
-	dfs.showPath(5);
+	
+	ShortestPath<SparseGraph> bfs(g,0);
+	cout << "BFS : ";
+	bfs.showPath(6);
 
 	cout << "»Ø³µ½áÊø" << endl;
 	getchar();
