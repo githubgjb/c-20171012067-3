@@ -149,6 +149,8 @@ filetype
 美国大选 site:xinhuawang.com
 （3）限定文件类型（filetype:）
 智能教育 filetype:ppt
+
+探索需求：设计前的质量 filetype:pdf
 （4）特定时间内的关键词搜索（20xx..20xx）
 知识付费 2015..2017
 （5）不包含关键词（-）
