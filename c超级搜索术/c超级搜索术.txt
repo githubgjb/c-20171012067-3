@@ -218,6 +218,12 @@ filetype:pdf "learning design" intitle:STEM
 读书世界
 http://www.readbooks.cc/buy/index.asp?bid=243693&fid=
 
+
+简历 filetype:ppt,doc,pdf
+
+filetype:doc 简历 
+
+简历 filetype:doc
 ----------------------------------------------------------------
 
 课时4   一招教你找到90%想要找的人 
