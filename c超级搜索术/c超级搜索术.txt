@@ -385,6 +385,7 @@ Xmind除了可以用来构建知识库之外，还可以用来管理文档。通
 使用软件：
 
 全能扫描王
+https://www.camscanner.com/team/price
 
 印象笔记
 
@@ -400,4 +401,13 @@ Xmind                 ----
 
 Everything
 
-石墨文档
+石墨文档                ---
+https://shimo.im/welcome
+
+clover
+
+Clover 3
+http://cn.ejie.me/
+clover还可以添加书签，建立快速通道。
+“Ctrl+T”——新开页面；“Ctrl+W”——关闭页面；
+“Ctrl+Tab”——切换页面；“Ctrl+D”——添加书签。
