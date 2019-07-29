@@ -45,10 +45,35 @@
 #include "DenseGraphEdge.h"
 #include "ReadGraphEdge.h"
 #include "SparseGraphEdge.h"
+#include "LazyPrimMST.h"
 
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
+	string filename = "testEdgeG0.txt";
+	int V = 8;
+
+	SparseGraphEdge<double> g = SparseGraphEdge<double>(V, false);
+	ReadGraphEdge<SparseGraphEdge<double>, double> readGraph2(g, filename);
+	//Test Lazy Prim MST
+
+	cout << "Test Lazy Prim MST:" << endl;
+
+	lazyPrimMST<SparseGraphEdge<double>, double> lazyPrimMST(g);
+
+	vector<Edge<double>> mst = lazyPrimMST.mstEdges();
+	for (int i = 0; i < mst.size(); i++)
+	{
+		cout << mst[i] << endl;
+	}
+	cout << "The MST Weight is:" << lazyPrimMST.result() << endl;
+	cout << endl;
+
+
+	cout << "回车结束" << endl;
+	getchar();
+	/*------------------------------*/
+	/*
 	string filename = "testEdgeG0.txt";
 	int V = 8;
 	//输出的精确度是两位小数
@@ -69,6 +94,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cout << "回车结束" << endl;
 	getchar();
+	*/
 	/*------------------------------*/
 	/*
 	string filename = "testG2.txt";

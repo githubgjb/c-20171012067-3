@@ -1,7 +1,7 @@
 
 #include <vector>
 #include "MinHeap.h"
-#include "Edge.h"
+//#include "Edge.h"
 
 using namespace std;
 
@@ -19,9 +19,12 @@ private:
 		marked[v] = true;
 
 		typename Graph::adjIterator adj(G,v);
-		for (Edge i = 0; i < length; i++)
+		for (Edge<Weight>* e = adj.begin(); !adj.end(); e = adj.next())
 		{
-
+			if (!marked[e->other(v)])
+			{
+				pq.insert(*e);
+			}
 		}
 	}
 
@@ -37,7 +40,28 @@ public:
 
 		//Lazy Prim
 		visit(0); 
+		while (!pq.isEmpty())
+		{
+		   Edge<Weight> e = pq.extractMin();
+		   if (marked[e.v()] == marked[e.w()])
+		   {
+			   continue;
+		   }
+		   mst.push_back(e);
+		   if (!marked[e.v()])
+		   {
+			   visit(e.v());
+		   }
+		   else{
+			   visit(e.w());
+		   }
+		}
 
+		mstWeight = mst[0].wt();
+		for (int i = 1; i < mst.size(); i++)
+		{
+			mstWeight += mst[i].wt();
+		}
 	}
 	~lazyPrimMST(){
 		delete[] marked;

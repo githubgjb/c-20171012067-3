@@ -96,10 +96,12 @@
     <ClInclude Include="IndexMaxHeap.h" />
     <ClInclude Include="insertionSort.h" />
     <ClInclude Include="insertionSort02.h" />
+    <ClInclude Include="LazyPrimMST.h" />
     <ClInclude Include="MaxHeap.h" />
     <ClInclude Include="mergeSort.h" />
     <ClInclude Include="mergeSort02.h" />
     <ClInclude Include="mergeSortBU.h" />
+    <ClInclude Include="MinHeap.h" />
     <ClInclude Include="Path.h" />
     <ClInclude Include="quickSort.h" />
     <ClInclude Include="quickSort02.h" />

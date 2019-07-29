@@ -79,11 +79,11 @@ public:
 
 	class adjIterator{
 	private:
-		SparseGraph &G;
+		SparseGraphEdge &G;
 		int v;
 		int index;
 	public:
-		adjIterator(SparseGraph &graph, int v) :G(graph){
+		adjIterator(SparseGraphEdge &graph, int v) :G(graph){
 			this->v = v;
 			this->index = 0;
 		}
