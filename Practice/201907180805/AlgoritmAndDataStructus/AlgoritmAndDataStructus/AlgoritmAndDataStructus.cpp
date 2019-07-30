@@ -46,6 +46,7 @@
 #include "ReadGraphEdge.h"
 #include "SparseGraphEdge.h"
 #include "LazyPrimMST.h"
+#include "PrimMST.h"
 
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
@@ -69,6 +70,16 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "The MST Weight is:" << lazyPrimMST.result() << endl;
 	cout << endl;
 
+	//Test Prim MST
+	cout << "Test Prim MST:" << endl;
+	PrimMST<SparseGraphEdge<double>,double> primMST(g);
+	mst = primMST.mstEdges();
+	for (int i = 0; i < mst.size(); i++)
+	{
+		cout << mst[i] << endl;
+	}
+	cout << "The MST Weight is:" << primMST.result() << endl;
+	cout << endl;
 
 	cout << "»Ø³µ½áÊø" << endl;
 	getchar();
