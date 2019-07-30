@@ -47,6 +47,7 @@
 #include "SparseGraphEdge.h"
 #include "LazyPrimMST.h"
 #include "PrimMST.h"
+#include "KruskalMST.h"
 
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
@@ -80,6 +81,18 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	cout << "The MST Weight is:" << primMST.result() << endl;
 	cout << endl;
+
+	//Test KruskaMST MST
+	cout << "Test KruskaMST MST:" << endl;
+	KruskalMST<SparseGraphEdge<double>,double> kruskalMST(g);
+	mst = kruskalMST.mstEdges();
+	for (int i = 0; i < mst.size(); i++)
+	{
+		cout << mst[i] << endl;
+	}
+	cout << "The MST Weight is:" << primMST.result() << endl;
+	cout << endl;
+
 
 	cout << "»Ø³µ½áÊø" << endl;
 	getchar();

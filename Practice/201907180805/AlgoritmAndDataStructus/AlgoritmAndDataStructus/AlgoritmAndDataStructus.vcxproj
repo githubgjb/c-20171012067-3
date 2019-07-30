@@ -97,6 +97,7 @@
     <ClInclude Include="IndexMinHeap.h" />
     <ClInclude Include="insertionSort.h" />
     <ClInclude Include="insertionSort02.h" />
+    <ClInclude Include="KruskalMST.h" />
     <ClInclude Include="LazyPrimMST.h" />
     <ClInclude Include="MaxHeap.h" />
     <ClInclude Include="mergeSort.h" />
