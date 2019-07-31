@@ -81,6 +81,7 @@
     <Text Include="testEdgeG0.txt" />
     <Text Include="testG1.txt" />
     <Text Include="testG2.txt" />
+    <Text Include="testG2Dijkstra.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
@@ -88,8 +89,14 @@
     <ClInclude Include="Component.h" />
     <ClInclude Include="DenseGraph.h" />
     <ClInclude Include="DenseGraphEdge.h" />
+    <ClInclude Include="Dijkstra.h" />
     <ClInclude Include="Edge.h" />
     <ClInclude Include="FileOps.h" />
+    <ClInclude Include="GraphDijkistraDenseGraph.h" />
+    <ClInclude Include="GraphDijkistraEdge.h" />
+    <ClInclude Include="GraphDijkistraIndexMinHeap.h" />
+    <ClInclude Include="GraphDijkistraReadGraph.h" />
+    <ClInclude Include="GraphDijkistraSparseGraph.h" />
     <ClInclude Include="heapSort01.h" />
     <ClInclude Include="heapSort02.h" />
     <ClInclude Include="heapSort03.h" />

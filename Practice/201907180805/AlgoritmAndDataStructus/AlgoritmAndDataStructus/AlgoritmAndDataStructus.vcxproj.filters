@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\DijkstraFilter">
+      <UniqueIdentifier>{0a826510-314f-4e62-acdc-399cfe87a420}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -26,6 +29,9 @@
       <Filter>头文件</Filter>
     </Text>
     <Text Include="testEdgeG0.txt">
+      <Filter>头文件</Filter>
+    </Text>
+    <Text Include="testG2Dijkstra.txt">
       <Filter>头文件</Filter>
     </Text>
   </ItemGroup>
@@ -164,6 +170,24 @@
     </ClInclude>
     <ClInclude Include="KruskalMST.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dijkstra.h">
+      <Filter>头文件\DijkstraFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphDijkistraEdge.h">
+      <Filter>头文件\DijkstraFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphDijkistraDenseGraph.h">
+      <Filter>头文件\DijkstraFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphDijkistraSparseGraph.h">
+      <Filter>头文件\DijkstraFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphDijkistraReadGraph.h">
+      <Filter>头文件\DijkstraFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphDijkistraIndexMinHeap.h">
+      <Filter>头文件\DijkstraFilter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

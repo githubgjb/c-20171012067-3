@@ -48,10 +48,30 @@
 #include "LazyPrimMST.h"
 #include "PrimMST.h"
 #include "KruskalMST.h"
-
+//#include "Dijkstra.h"
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
+	/*
+	string filename = "testG2Dijkstra.txt";
+	int V = 5;
+	SparseGraphEdge<int> g = SparseGraphEdge<int>(V, false);
+	ReadGraphEdge<SparseGraphEdge<int>, int> readGraph(g, filename);
+
+	cout << "Test Dijkstra:" << endl;
+	GraphDijkistra::Dijkstra<SparseGraphEdge<int>, int> dij(g, 0);
+	for (int i = 1; i < V; i++)
+	{
+		cout << "Shortest Path to" << i<< ":" <<dij.shortestPathTo(i) << endl;
+		dij.showPath(i);
+		cout << "-------------------" << endl;
+	}
+
+	cout << "回车结束" << endl;
+	getchar();
+	*/
+	/*--------------------------------*/
+	
 	string filename = "testEdgeG0.txt";
 	int V = 8;
 
@@ -96,6 +116,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cout << "回车结束" << endl;
 	getchar();
+	
 	/*------------------------------*/
 	/*
 	string filename = "testEdgeG0.txt";
