@@ -3,11 +3,35 @@
 
 //Edge封装到类里，不暴露
 
-#include <iomanip>
 #include "Line.h"
 using namespace std;
 
 namespace Index{
+
+	void mergeSort(){
+		int a[10] = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+		Line line(a, 10);
+		line.mergeSort();
+		for (int i = 0; i < 10; i++)
+		{
+			cout << a[i] << " ";
+		}
+		cout << endl;
+	}
+
+	void insertionSort(){
+		int a[10] = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+		Line line(a,10);
+		//line.insertionSort01Swap();	
+		//line.insertionSort02Swap();
+		line.insertionSort03Assigment();
+		for (int i = 0; i < 10; i++)
+		{
+			cout << a[i] << " ";
+		}
+		cout << endl;
+	}
+
 
 	void selectionSort(){
 		int a[10] = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
@@ -33,8 +57,7 @@ namespace Index{
 		}
 		cout << endl;
 
-		cout << "回车结束" << endl;
-		getchar();
+
 
 	}
 }
