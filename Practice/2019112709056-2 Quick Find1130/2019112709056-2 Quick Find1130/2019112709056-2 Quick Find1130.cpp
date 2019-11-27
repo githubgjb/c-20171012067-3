@@ -1,0 +1,25 @@
+// 2019112709056-2 Quick Find1130.cpp : 定义控制台应用程序的入口点。
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+#include <cassert>
+#include "UnionFindTestHelper.h"
+using namespace std;
+
+
+
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int n = 10000;
+	UnionFindTestHelper::testUF1(n);
+
+	//------------------------------------------------
+	cout << "回车结束" << endl;
+	getchar();
+	return 0;
+}
+
