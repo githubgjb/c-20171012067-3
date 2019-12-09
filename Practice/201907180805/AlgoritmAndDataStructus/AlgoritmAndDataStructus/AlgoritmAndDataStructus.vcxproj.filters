@@ -189,6 +189,9 @@
     <ClInclude Include="GraphDijkistraIndexMinHeap.h">
       <Filter>头文件\DijkstraFilter</Filter>
     </ClInclude>
+    <ClInclude Include="Component01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

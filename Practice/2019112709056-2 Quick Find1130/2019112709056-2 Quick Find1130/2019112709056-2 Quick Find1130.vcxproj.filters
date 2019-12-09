@@ -16,6 +16,12 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="testG1.txt">
+      <Filter>头文件</Filter>
+    </Text>
+    <Text Include="testG2.txt">
+      <Filter>头文件</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -31,6 +37,30 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="UnionFind2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UnionFind3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UnionFind4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UnionFind5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphTestHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadGraph01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Component01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Path01.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -87,6 +87,7 @@
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BST.h" />
     <ClInclude Include="Component.h" />
+    <ClInclude Include="Component01.h" />
     <ClInclude Include="DenseGraph.h" />
     <ClInclude Include="DenseGraphEdge.h" />
     <ClInclude Include="Dijkstra.h" />
