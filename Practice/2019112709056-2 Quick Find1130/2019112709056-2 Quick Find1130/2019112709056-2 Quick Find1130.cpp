@@ -26,7 +26,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//GraphTestHelper::testGraph1();
 	//GraphTestHelper::testReadGraph01();
 
-	GraphTestHelper::testPath01();
+	//GraphTestHelper::testPath01();
+	GraphTestHelper::testReadGraphWeight();
 
 	//------------------------------------------------
 	cout << "»Ø³µ½áÊø" << endl;

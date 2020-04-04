@@ -5,6 +5,8 @@
 #include "ReadGraph01.h"
 #include "Component01.h"
 #include "Path01.h"
+#include "ShortestPath01.h"
+#include "Graph2Weight.h"
 
 using namespace std;
 
@@ -86,6 +88,28 @@ namespace GraphTestHelper{
 		Path01::Path01<Graph1::SparseGraph> dfs(g , 0);
 		cout << " DFS: ";
 		dfs.showPath(6);
+
+		ShortestPath01::ShortestPath<Graph1::SparseGraph> bfs(g, 0);
+		cout << "BFS: ";
+		bfs.showPath(6);
+
+
+	}
+
+	void testReadGraphWeight(){
+		string filename = "testG1Weight.txt";
+		int V = 8;
+		cout << fixed << setprecision(2);
+
+		Graph2Weight::DenseGraph<double> g1 = Graph2Weight::DenseGraph<double>(V, false);
+		ReadGraph01::ReadGraphWeight<Graph2Weight::DenseGraph<double>, double> readGraph1(g1, filename);
+		g1.show();
+		cout << endl;
+
+		Graph2Weight::SparseGraph<double> g2 = Graph2Weight::SparseGraph<double>(V, false);
+		ReadGraph01::ReadGraphWeight<Graph2Weight::SparseGraph<double>, double> readGraph2(g2, filename);
+		g2.show();
+		cout << endl;
 
 	}
 }

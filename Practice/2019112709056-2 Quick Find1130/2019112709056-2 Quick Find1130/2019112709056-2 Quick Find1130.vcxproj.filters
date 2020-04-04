@@ -22,6 +22,9 @@
     <Text Include="testG2.txt">
       <Filter>头文件</Filter>
     </Text>
+    <Text Include="testG1Weight.txt">
+      <Filter>头文件</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -61,6 +64,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Path01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShortestPath01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Edge01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph2Weight.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
